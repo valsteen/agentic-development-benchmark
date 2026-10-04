@@ -1,0 +1,720 @@
+{
+  "report_revision": 35,
+  "assessment_date": "2026-10-04",
+  "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
+  "units": {
+    "cost": "USD at recorded API prices, not subscription invoices",
+    "time": "minutes"
+  },
+  "accounting": "Run totals include implementation, review, correction and managing the work; exclude human-answer pauses, evidence PR creation and later assessment.",
+  "runs": [
+    {
+      "arm": "opus",
+      "model": "Opus 5.5 high",
+      "cost": 16.645880200000008,
+      "active_minutes": 25.797008304848955,
+      "candidate_reviews": 1,
+      "correction_rounds": 0,
+      "source_reviews": 0,
+      "reviewer_cost": 3.4505703999999993,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 13.195309800000004,
+      "candidate": "d2f65c8a96064049b61b9dadf18fdd48a87422de",
+      "pr": "https://github.com/valsteen/pinboard/pull/155",
+      "footprint": {
+        "documentation/guidance": [
+          18,
+          17,
+          6
+        ],
+        "production": [
+          811,
+          12,
+          11
+        ],
+        "tests": [
+          585,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "arm": "sonnet",
+      "model": "Sonnet 5.5 high",
+      "cost": 18.792475600000003,
+      "active_minutes": 38.086132904169304,
+      "candidate_reviews": 3,
+      "correction_rounds": 2,
+      "source_reviews": 0,
+      "reviewer_cost": 5.0711104,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 13.721365199999996,
+      "candidate": "1771a5f0686e6697df5ddcb593ad6fa99e090ee1",
+      "pr": "https://github.com/valsteen/pinboard/pull/156",
+      "footprint": {
+        "documentation/guidance": [
+          19,
+          16,
+          6
+        ],
+        "production": [
+          729,
+          14,
+          13
+        ],
+        "tests": [
+          600,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "arm": "astra",
+      "model": "Astra 6 low",
+      "cost": 45.03893600000001,
+      "active_minutes": 64.65042387916473,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 1,
+      "reviewer_cost": 8.79513,
+      "source_review_cost": 1.773296,
+      "correction_worker_cost": 8.672112000000002,
+      "owner_cost": 25.798398000000006,
+      "candidate": "7d8d343b4f67b0c238b9d8a26fe5663077c1fca2",
+      "pr": "https://github.com/valsteen/pinboard/pull/161",
+      "footprint": {
+        "documentation/guidance": [
+          32,
+          14,
+          6
+        ],
+        "production": [
+          660,
+          20,
+          11
+        ],
+        "tests": [
+          609,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "arm": "sol",
+      "model": "Sol 6.1 high",
+      "cost": 14.260441599999995,
+      "active_minutes": 144.09423199515246,
+      "candidate_reviews": 4,
+      "correction_rounds": 3,
+      "source_reviews": 3,
+      "reviewer_cost": 3.0783807999999997,
+      "source_review_cost": 2.198952,
+      "correction_worker_cost": 2.7670551999999997,
+      "owner_cost": 6.216053599999999,
+      "candidate": "7dd83dc8e95a289231f1e91b3a59ca9119f3346e",
+      "pr": "https://github.com/valsteen/pinboard/pull/162",
+      "footprint": {
+        "documentation/guidance": [
+          22,
+          17,
+          6
+        ],
+        "production": [
+          723,
+          23,
+          12
+        ],
+        "tests": [
+          781,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "arm": "luna",
+      "model": "Luna 6 high",
+      "cost": 0.9216599,
+      "active_minutes": 110.66107210486662,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 0,
+      "reviewer_cost": 0.13386794,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 0.7877919599999997,
+      "candidate": "c56116a1201db703322302f7bef75ffbef96352e",
+      "pr": "https://github.com/valsteen/pinboard/pull/163",
+      "footprint": {
+        "documentation/guidance": [
+          25,
+          18,
+          6
+        ],
+        "production": [
+          769,
+          18,
+          11
+        ],
+        "tests": [
+          568,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "arm": "luna-xhigh",
+      "model": "Luna 6 xhigh",
+      "cost": 1.64110056,
+      "active_minutes": 257.041559201382,
+      "candidate_reviews": 3,
+      "correction_rounds": 2,
+      "source_reviews": 0,
+      "reviewer_cost": 0.37081891999999994,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 1.2686965199999982,
+      "candidate": "5e01eb65556289a481accbc8c61f10d30593aff6",
+      "pr": "https://github.com/valsteen/pinboard/pull/165",
+      "footprint": {
+        "documentation/guidance": [
+          21,
+          16,
+          6
+        ],
+        "production": [
+          1155,
+          15,
+          14
+        ],
+        "tests": [
+          904,
+          29,
+          6
+        ]
+      }
+    }
+  ],
+  "stages": [
+    {
+      "arm": "sonnet",
+      "phase": "initial implementation/verification",
+      "minutes": 20.77023333311081,
+      "all_agent_cost": 9.678001400000001,
+      "owner_cost": 9.678001400000001
+    },
+    {
+      "arm": "sonnet",
+      "phase": "review 1",
+      "minutes": 3.2307833353678386,
+      "all_agent_cost": 1.8173142,
+      "owner_cost": 0
+    },
+    {
+      "arm": "sonnet",
+      "phase": "correction 1 and coordination",
+      "minutes": 4.5586999972661335,
+      "all_agent_cost": 1.9460270000000002,
+      "owner_cost": 1.9460270000000002
+    },
+    {
+      "arm": "sonnet",
+      "phase": "review 2",
+      "minutes": 3.3414833347002664,
+      "all_agent_cost": 2.2259154,
+      "owner_cost": 0
+    },
+    {
+      "arm": "sonnet",
+      "phase": "correction 2 and coordination",
+      "minutes": 2.1108166654904683,
+      "all_agent_cost": 1.1536716,
+      "owner_cost": 1.1536716
+    },
+    {
+      "arm": "sonnet",
+      "phase": "review 3",
+      "minutes": 2.4341833353042603,
+      "all_agent_cost": 1.0278808,
+      "owner_cost": 0
+    },
+    {
+      "arm": "sonnet",
+      "phase": "final disposition/report",
+      "minutes": 1.6197166681289672,
+      "all_agent_cost": 0.9436652000000001,
+      "owner_cost": 0.9436652000000001
+    },
+    {
+      "arm": "opus",
+      "phase": "initial implementation/verification",
+      "minutes": 18.17058333555857,
+      "all_agent_cost": 12.2215302,
+      "owner_cost": 12.2215302
+    },
+    {
+      "arm": "opus",
+      "phase": "review 1",
+      "minutes": 6.296666665871938,
+      "all_agent_cost": 3.4505704,
+      "owner_cost": 0
+    },
+    {
+      "arm": "opus",
+      "phase": "final disposition/report",
+      "minutes": 1.3119333346684774,
+      "all_agent_cost": 0.9737796000000001,
+      "owner_cost": 0.9737796000000001
+    },
+    {
+      "arm": "astra",
+      "phase": "initial implementation/verification",
+      "minutes": 29.4257666627566,
+      "all_agent_cost": 15.618034,
+      "owner_cost": 15.618034
+    },
+    {
+      "arm": "astra",
+      "phase": "review 1",
+      "minutes": 6.103666667143504,
+      "all_agent_cost": 6.529922,
+      "owner_cost": 2.456518
+    },
+    {
+      "arm": "astra",
+      "phase": "correction 1 and coordination",
+      "minutes": 17.664633333683014,
+      "all_agent_cost": 15.340132,
+      "owner_cost": 4.357996
+    },
+    {
+      "arm": "astra",
+      "phase": "review 2",
+      "minutes": 8.073833334445954,
+      "all_agent_cost": 5.76148,
+      "owner_cost": 1.576482
+    },
+    {
+      "arm": "astra",
+      "phase": "final disposition/report",
+      "minutes": 3.8202833334604898,
+      "all_agent_cost": 1.789368,
+      "owner_cost": 1.789368
+    },
+    {
+      "arm": "sol",
+      "phase": "initial implementation/verification",
+      "minutes": 38.99136666854223,
+      "all_agent_cost": 2.6539868,
+      "owner_cost": 2.6539868
+    },
+    {
+      "arm": "sol",
+      "phase": "review 1",
+      "minutes": 8.85801666577657,
+      "all_agent_cost": 1.3239,
+      "owner_cost": 0.4618192
+    },
+    {
+      "arm": "sol",
+      "phase": "correction 1 and coordination",
+      "minutes": 26.411649998029073,
+      "all_agent_cost": 2.5893516,
+      "owner_cost": 0.8673484
+    },
+    {
+      "arm": "sol",
+      "phase": "review 2",
+      "minutes": 6.291350003083547,
+      "all_agent_cost": 0.8003188,
+      "owner_cost": 0.2397712
+    },
+    {
+      "arm": "sol",
+      "phase": "correction 2 and coordination",
+      "minutes": 19.526333332061768,
+      "all_agent_cost": 2.118504,
+      "owner_cost": 0.6632104
+    },
+    {
+      "arm": "sol",
+      "phase": "review 3",
+      "minutes": 7.438466668128967,
+      "all_agent_cost": 0.849132,
+      "owner_cost": 0.20142960000000001
+    },
+    {
+      "arm": "sol",
+      "phase": "correction 3 and coordination",
+      "minutes": 20.91423333088557,
+      "all_agent_cost": 2.4239236,
+      "owner_cost": 0.5460424
+    },
+    {
+      "arm": "sol",
+      "phase": "review 4",
+      "minutes": 8.583916668097178,
+      "all_agent_cost": 1.12413,
+      "owner_cost": 0.2052508
+    },
+    {
+      "arm": "sol",
+      "phase": "final disposition/report",
+      "minutes": 7.783766667048137,
+      "all_agent_cost": 0.3771948,
+      "owner_cost": 0.3771948
+    },
+    {
+      "arm": "luna",
+      "phase": "initial implementation/verification",
+      "minutes": 73.43021666606268,
+      "all_agent_cost": 0.58446,
+      "owner_cost": 0.58446
+    },
+    {
+      "arm": "luna",
+      "phase": "review 1",
+      "minutes": 12.960350000858307,
+      "all_agent_cost": 0.10396958,
+      "owner_cost": 0.03341696
+    },
+    {
+      "arm": "luna",
+      "phase": "correction 1 and coordination",
+      "minutes": 8.716733332475027,
+      "all_agent_cost": 0.10938942,
+      "owner_cost": 0.09960532
+    },
+    {
+      "arm": "luna",
+      "phase": "review 2",
+      "minutes": 7.350316667556763,
+      "all_agent_cost": 0.07137202000000001,
+      "owner_cost": 0.02685862
+    },
+    {
+      "arm": "luna",
+      "phase": "final disposition/report",
+      "minutes": 8.184983332951864,
+      "all_agent_cost": 0.05246888,
+      "owner_cost": 0.04345106
+    },
+    {
+      "arm": "luna-xhigh",
+      "phase": "initial implementation/verification",
+      "minutes": 145.52200000286103,
+      "all_agent_cost": 0.85242846,
+      "owner_cost": 0.8508433400000001
+    },
+    {
+      "arm": "luna-xhigh",
+      "phase": "review 1",
+      "minutes": 32.33818333148956,
+      "all_agent_cost": 0.21979068000000002,
+      "owner_cost": 0.07956466000000001
+    },
+    {
+      "arm": "luna-xhigh",
+      "phase": "correction 1 and coordination",
+      "minutes": 22.07793333530426,
+      "all_agent_cost": 0.12336552,
+      "owner_cost": 0.12336552
+    },
+    {
+      "arm": "luna-xhigh",
+      "phase": "review 2",
+      "minutes": 16.230499998728433,
+      "all_agent_cost": 0.14532052,
+      "owner_cost": 0.048778800000000004
+    },
+    {
+      "arm": "luna-xhigh",
+      "phase": "correction 2 and coordination",
+      "minutes": 6.457400000095367,
+      "all_agent_cost": 0.045677100000000005,
+      "owner_cost": 0.045677100000000005
+    },
+    {
+      "arm": "luna-xhigh",
+      "phase": "review 3",
+      "minutes": 16.18779999812444,
+      "all_agent_cost": 0.1493684,
+      "owner_cost": 0.04124224
+    },
+    {
+      "arm": "luna-xhigh",
+      "phase": "final disposition/report",
+      "minutes": 18.207299999396007,
+      "all_agent_cost": 0.10514988,
+      "owner_cost": 0.07922486000000001
+    }
+  ],
+  "stage_accounting": "Elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Stage timings do not exactly reproduce the main active-time definition.",
+  "checks": [
+    {
+      "check": "Ordinary change present or absent",
+      "outcomes": {
+        "Opus 5.5 high": "Pass",
+        "Sonnet 5.5 high": "Pass",
+        "Astra 6 low": "Pass",
+        "Sol 6.1 high": "Pass",
+        "Luna 6 high": "Pass",
+        "Luna 6 xhigh": "Pass"
+      },
+      "failure_penalty": 0
+    },
+    {
+      "check": "Executable permission change absent",
+      "outcomes": {
+        "Opus 5.5 high": "False present",
+        "Sonnet 5.5 high": "False present",
+        "Astra 6 low": "False present",
+        "Sol 6.1 high": "Pass",
+        "Luna 6 high": "False present",
+        "Luna 6 xhigh": "False present"
+      },
+      "failure_penalty": 4
+    },
+    {
+      "check": "Required Git content unreadable",
+      "outcomes": {
+        "Opus 5.5 high": "Wrong diagnosis",
+        "Sonnet 5.5 high": "Wrong diagnosis",
+        "Astra 6 low": "Wrong diagnosis",
+        "Sol 6.1 high": "Pass",
+        "Luna 6 high": "Wrong diagnosis",
+        "Luna 6 xhigh": "Wrong diagnosis"
+      },
+      "failure_penalty": 2
+    },
+    {
+      "check": "Absent change checked from a nested directory",
+      "outcomes": {
+        "Opus 5.5 high": "Pass",
+        "Sonnet 5.5 high": "Pass",
+        "Astra 6 low": "Pass",
+        "Sol 6.1 high": "False present",
+        "Luna 6 high": "Pass",
+        "Luna 6 xhigh": "Pass"
+      },
+      "failure_penalty": 4
+    },
+    {
+      "check": "Target containing a NUL character",
+      "outcomes": {
+        "Opus 5.5 high": "Unexpected error",
+        "Sonnet 5.5 high": "Unexpected error",
+        "Astra 6 low": "Pass",
+        "Sol 6.1 high": "Pass",
+        "Luna 6 high": "Pass",
+        "Luna 6 xhigh": "Pass"
+      },
+      "failure_penalty": 1
+    },
+    {
+      "check": "Result independent of user whitespace setting",
+      "outcomes": {
+        "Opus 5.5 high": "Pass",
+        "Sonnet 5.5 high": "Pass",
+        "Astra 6 low": "Pass",
+        "Sol 6.1 high": "Pass",
+        "Luna 6 high": "Changes",
+        "Luna 6 xhigh": "Stable\u00b9"
+      },
+      "failure_penalty": 2
+    }
+  ],
+  "check_notes": "Selected after examining the runs; not exhaustive or representative. Stable whitespace behavior for Luna 6 xhigh deliberately ignores context whitespace and is not counted as a proven defect.",
+  "quality_rating": {
+    "label": "Quality rating on selected checks (/10)",
+    "formula": "max(0, 10 - sum(remaining failure penalties))",
+    "status": "Editorial severity weights; not a success probability, overall completeness rating or measured production failure rate.",
+    "results": [
+      {
+        "arm": "opus",
+        "rating": 3,
+        "penalty": 7,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          },
+          {
+            "check": "Target containing a NUL character",
+            "result": "Unexpected error",
+            "penalty": 1
+          }
+        ]
+      },
+      {
+        "arm": "sonnet",
+        "rating": 3,
+        "penalty": 7,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          },
+          {
+            "check": "Target containing a NUL character",
+            "result": "Unexpected error",
+            "penalty": 1
+          }
+        ]
+      },
+      {
+        "arm": "astra",
+        "rating": 4,
+        "penalty": 6,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          }
+        ]
+      },
+      {
+        "arm": "sol",
+        "rating": 6,
+        "penalty": 4,
+        "failures": [
+          {
+            "check": "Absent change checked from a nested directory",
+            "result": "False present",
+            "penalty": 4
+          }
+        ]
+      },
+      {
+        "arm": "luna",
+        "rating": 2,
+        "penalty": 8,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          },
+          {
+            "check": "Result independent of user whitespace setting",
+            "result": "Changes",
+            "penalty": 2
+          }
+        ]
+      },
+      {
+        "arm": "luna-xhigh",
+        "rating": 4,
+        "penalty": 6,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          }
+        ]
+      }
+    ]
+  },
+  "maintenance": {
+    "counts": {
+      "opus": 3,
+      "sonnet": 1,
+      "astra": 3,
+      "sol": 2,
+      "luna": 3,
+      "luna-xhigh": 3
+    },
+    "unit": "one documented finding per candidate; unweighted",
+    "scope": "Static reading of the feature path, changed neighbors, relevant tests and documentation; not timed maintenance or systematic naming assessment.",
+    "reviewer": "Sol 6.1 high"
+  },
+  "human_cost_scenario": {
+    "baseline": "Luna 6 high",
+    "formula": "net saving = assumed human minutes saved * hourly human cost / 60 - (alternative AI cost - baseline AI cost)",
+    "assumptions": "Equally useful results; human time savings supplied by the reader, not measured; shared human work cancels out. Background agent runtime is not automatically human work."
+  },
+  "fast_estimates": {
+    "status": "Conditional, not measured Fast runs; same token usage, logical work and quality assumed.",
+    "api_cost_multiplier": 2,
+    "subscription_usage_multiplier": 2.5,
+    "model_speed_multiplier": 1.5,
+    "speed_evidence": "Desktop UI screenshots; written documentation does not specify a Luna-specific numeric multiplier.",
+    "timing_formula": "recorded active minutes - attributed model minutes / 3; overlap counted once; tools, tests, summarization and unattributed time fixed.",
+    "points": [
+      {
+        "arm": "luna",
+        "model": "Luna 6 high \u00b7 Fast (est.)",
+        "cost": 1.8433198,
+        "minutes": 81.50337209869953,
+        "minutes_low": 79.70192756423882
+      },
+      {
+        "arm": "luna-xhigh",
+        "model": "Luna 6 xhigh \u00b7 Fast (est.)",
+        "cost": 3.28220112,
+        "minutes": 185.4801425210989,
+        "minutes_low": 182.32196717848612
+      }
+    ],
+    "timing": [
+      {
+        "arm": "luna",
+        "active_minutes": 110.66107210486662,
+        "output_without_tool_overlap_minutes": 87.47310001850128,
+        "response_without_tool_overlap_minutes": 92.8774336218834,
+        "output_projection_minutes": 81.50337209869953,
+        "response_projection_minutes": 79.70192756423882
+      },
+      {
+        "arm": "luna-xhigh",
+        "active_minutes": 257.041559201382,
+        "output_without_tool_overlap_minutes": 214.68425004084904,
+        "response_without_tool_overlap_minutes": 224.15877606868744,
+        "output_projection_minutes": 185.4801425210989,
+        "response_projection_minutes": 182.32196717848612
+      }
+    ],
+    "range_note": "Two attribution choices, not confidence intervals; real timings can fall outside the range."
+  },
+  "references": [
+    "https://developers.openai.com/api/docs/models/gpt-6-luna",
+    "https://learn.chatgpt.com/docs/pricing",
+    "https://learn.chatgpt.com/docs/agent-configuration/speed"
+  ],
+  "evidence_limits": "Contains exported values and selected outcomes, not raw session logs, prompts, private reasoning or a complete reproduction package. The original model-authored PR descriptions predate the later checks."
+}
