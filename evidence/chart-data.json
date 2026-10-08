@@ -1,9 +1,9 @@
 {
-  "report_revision": 38,
-  "assessment_date": "2026-10-04",
+  "report_revision": 39,
+  "assessment_date": "2026-10-08",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
-    "cost": "USD at recorded API prices, not subscription invoices",
+    "cost": "USD at recorded API prices, not subscription invoices; Sonnet current-pricing values are a separate recalculation",
     "time": "minutes"
   },
   "accounting": "Run totals include implementation, review, correction and managing the work; exclude human-answer pauses, evidence PR creation and later assessment.",
@@ -199,8 +199,238 @@
           6
         ]
       }
+    },
+    {
+      "arm": "haiku-high",
+      "model": "Haiku 5.5 high",
+      "cost": 19.294506174999984,
+      "active_minutes": 109.94754397011518,
+      "candidate_reviews": 10,
+      "correction_rounds": 9,
+      "source_reviews": 0,
+      "reviewer_cost": 8.834006875,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 10.460499299999995,
+      "candidate": "05d1b2be71ae7b559281609e2c9397a233caa418",
+      "pr": "https://github.com/valsteen/pinboard/pull/173",
+      "footprint": {
+        "production": [
+          747,
+          15,
+          12
+        ],
+        "tests": [
+          1095,
+          3,
+          5
+        ],
+        "documentation/guidance": [
+          15,
+          14,
+          4
+        ]
+      }
+    },
+    {
+      "arm": "haiku-xhigh",
+      "model": "Haiku 5.5 xhigh",
+      "cost": 22.94133624999997,
+      "active_minutes": 205.94020343124868,
+      "candidate_reviews": 10,
+      "correction_rounds": 9,
+      "source_reviews": 0,
+      "reviewer_cost": 11.778046200000002,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 11.162322549999994,
+      "candidate": "2bd2299e1cff4a9c41ff68c37efd740945ef2452",
+      "pr": "https://github.com/valsteen/pinboard/pull/174",
+      "footprint": {
+        "production": [
+          813,
+          25,
+          12
+        ],
+        "tests": [
+          880,
+          12,
+          5
+        ],
+        "documentation/guidance": [
+          15,
+          14,
+          3
+        ]
+      }
     }
   ],
+  "sonnet_current_pricing": {
+    "status": "same observed run, recalculated at current prices; no rerun",
+    "effective_date": "2026-10-07",
+    "source": "https://www.anthropic.com/claude-haiku-5-5",
+    "cache_read_tokens": 67764498,
+    "original_rate_per_million": 0.2,
+    "current_rate_per_million": 0.1,
+    "formula": "18.7924756 - 67764498 * (0.20 - 0.10) / 1000000 = 12.0160258",
+    "original_cost": 18.792475599999996,
+    "current_cost": 12.016025799999994,
+    "owner_current_cost": 8.702366599999994,
+    "reviewer_current_cost": 3.3136592,
+    "reduction_usd": 6.776449800000002,
+    "reduction_percent": 36.05937793528386,
+    "unchanged": [
+      "elapsed time",
+      "code",
+      "quality findings",
+      "review rounds"
+    ]
+  },
+  "haiku_billing": {
+    "checked_date": "2026-10-08",
+    "sources": [
+      "https://www.anthropic.com/claude-haiku-5-5",
+      "https://platform.claude.com/docs/en/about-claude/pricing"
+    ],
+    "rates_per_million_up_to_100k_prompt_tokens": {
+      "input": 0.1,
+      "output": 0.5,
+      "cache_read": 0.01,
+      "cache_write_5m": 0.125,
+      "cache_write_1h": 0.2
+    },
+    "above_100k_multiplier": 5,
+    "tier_selection": "Each response: input plus cache creation plus cache read tokens greater than 100,000 uses the higher tier.",
+    "runs": {
+      "haiku-high": {
+        "response_id_deduplicated": true,
+        "includes_all_independent_reviewers": true,
+        "cli_reported_usd": 19.294506174999984,
+        "reconstructed_usd": 19.294506174999995,
+        "unattributed_cli_residual_usd": -1.0658141036401503e-14,
+        "unattributed_output_tokens": 0,
+        "residual_note": "Native reconstruction matches CLI total.",
+        "tiers": {
+          "up_to_100k": {
+            "responses": 0,
+            "tokens": {},
+            "cost": 0
+          },
+          "above_100k": {
+            "responses": 813,
+            "tokens": {
+              "input_tokens": 1626,
+              "output_tokens": 1001911,
+              "cache_read_input_tokens": 290173361,
+              "ephemeral_1h_input_tokens": 767387,
+              "ephemeral_5m_input_tokens": 2420577
+            },
+            "cost": 19.294506175
+          }
+        }
+      },
+      "haiku-xhigh": {
+        "response_id_deduplicated": true,
+        "includes_all_independent_reviewers": true,
+        "cli_reported_usd": 22.94133624999997,
+        "reconstructed_usd": 22.940368749999994,
+        "unattributed_cli_residual_usd": 0.0009674999999766953,
+        "unattributed_output_tokens": 387,
+        "residual_note": "Xhigh CLI aggregate retains 387 more output tokens than native records. All input and cache totals agree. Main cost uses CLI total; residual has no invented role or time attribution.",
+        "tiers": {
+          "up_to_100k": {
+            "responses": 0,
+            "tokens": {},
+            "cost": 0
+          },
+          "above_100k": {
+            "responses": 899,
+            "tokens": {
+              "input_tokens": 1798,
+              "output_tokens": 1319118,
+              "cache_read_input_tokens": 337715045,
+              "ephemeral_1h_input_tokens": 808190,
+              "ephemeral_5m_input_tokens": 3116372
+            },
+            "cost": 22.94036875
+          }
+        }
+      }
+    }
+  },
+  "experiment_accounting": {
+    "original_six_comparison_runs_usd": 97.30049386000002,
+    "original_experiment_including_its_discarded_attempts_usd_rounded": 106.71,
+    "clean_haiku_runs_usd": 42.23584242499996,
+    "eight_comparison_runs_historical_usd": 139.53633628499998,
+    "haiku_discarded_and_setup_entries": [
+      {
+        "arm": "haiku-high",
+        "kind": "discarded-origin-reference-setup",
+        "usd": 8.057074775,
+        "billing": "native reconstruction; interrupted final invocation may omit in-flight usage"
+      },
+      {
+        "arm": "haiku-high",
+        "kind": "discarded-resume-budget-observer-error",
+        "usd": 15.255305375000008,
+        "billing": "CLI reported cumulative"
+      },
+      {
+        "arm": "haiku-high",
+        "kind": "readiness-preflight",
+        "usd": 0.27127605,
+        "billing": "CLI reported"
+      },
+      {
+        "arm": "haiku-high",
+        "kind": "availability",
+        "usd": 0.0011263500000000001,
+        "billing": "CLI reported"
+      },
+      {
+        "arm": "haiku-xhigh",
+        "kind": "availability",
+        "usd": 0.0006637,
+        "billing": "CLI reported"
+      },
+      {
+        "arm": "haiku-high",
+        "kind": "native-budget-resume-preflight",
+        "usd": 0.0035811950000000006,
+        "billing": "CLI cumulative across two invocations"
+      },
+      {
+        "arm": "haiku-high",
+        "kind": "fresh-readiness-preflight",
+        "usd": 0.134027175,
+        "billing": "CLI reported"
+      },
+      {
+        "arm": "haiku-high",
+        "kind": "discarded-incorrect-fresh-allowance",
+        "usd": 2.0255343,
+        "billing": "CLI reported cumulative"
+      },
+      {
+        "arm": "haiku-high",
+        "kind": "full-fresh-allowance-readiness",
+        "usd": 0.13523255,
+        "billing": "CLI reported; separate setup accounting"
+      },
+      {
+        "arm": "haiku-xhigh",
+        "kind": "readiness-preflight",
+        "usd": 0.1479659,
+        "billing": "CLI reported; not deducted from fresh allowance"
+      }
+    ],
+    "haiku_discarded_and_setup_usd_lower_bound": 26.031787370000007,
+    "fresh_allowance_per_haiku_configuration_usd": 80,
+    "active_hours_per_haiku_configuration": 4,
+    "lower_bound_reason": "Discarded first-attempt reconstruction may omit in-flight billing. No recovery elapsed time is subtracted.",
+    "excluded": "Earlier exploration, later common assessments, maintenance review and report work are outside comparison runs. Sonnet repricing does not alter historical spending."
+  },
   "stages": [
     {
       "arm": "sonnet",
@@ -453,9 +683,324 @@
       "minutes": 18.207299999396007,
       "all_agent_cost": 0.10514988,
       "owner_cost": 0.07922486000000001
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "initial implementation/verification",
+      "minutes": 10.707283333937328,
+      "all_agent_cost": 2.0213329,
+      "owner_cost": 2.0213329
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 1",
+      "minutes": 4.863416667779287,
+      "all_agent_cost": 0.9480465,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "correction 1 and coordination",
+      "minutes": 6.203633332252503,
+      "all_agent_cost": 1.0735511,
+      "owner_cost": 1.0735511
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 2",
+      "minutes": 5.421949998537699,
+      "all_agent_cost": 0.969856225,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "correction 2 and coordination",
+      "minutes": 4.578783333301544,
+      "all_agent_cost": 1.02229795,
+      "owner_cost": 1.02229795
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 3",
+      "minutes": 6.760633333524068,
+      "all_agent_cost": 0.866100525,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "correction 3 and coordination",
+      "minutes": 3.84871666431427,
+      "all_agent_cost": 0.8172712,
+      "owner_cost": 0.8172712
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 4",
+      "minutes": 6.91550000111262,
+      "all_agent_cost": 0.977802175,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "correction 4 and coordination",
+      "minutes": 2.354283332824707,
+      "all_agent_cost": 0.50288035,
+      "owner_cost": 0.50288035
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 5",
+      "minutes": 5.404733335971832,
+      "all_agent_cost": 0.759649625,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "correction 5 and coordination",
+      "minutes": 2.6841166655222577,
+      "all_agent_cost": 0.5237224,
+      "owner_cost": 0.5237224
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 6",
+      "minutes": 5.536316665013631,
+      "all_agent_cost": 0.759333675,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "correction 6 and coordination",
+      "minutes": 9.86845000187556,
+      "all_agent_cost": 1.851312,
+      "owner_cost": 1.851312
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 7",
+      "minutes": 6.499616666634878,
+      "all_agent_cost": 0.9507656,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "correction 7 and coordination",
+      "minutes": 3.448883330821991,
+      "all_agent_cost": 0.7048804,
+      "owner_cost": 0.7048804
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 8",
+      "minutes": 6.239300000667572,
+      "all_agent_cost": 0.821292,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "correction 8 and coordination",
+      "minutes": 2.8350333333015443,
+      "all_agent_cost": 0.5647311,
+      "owner_cost": 0.5647311
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 9",
+      "minutes": 3.4628833333651223,
+      "all_agent_cost": 0.7407992999999999,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "correction 9 and coordination",
+      "minutes": 5.242650000254313,
+      "all_agent_cost": 1.12104245,
+      "owner_cost": 1.12104245
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "review 10",
+      "minutes": 6.278600001335144,
+      "all_agent_cost": 1.04036125,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "final disposition/report",
+      "minutes": 0.6879999995231628,
+      "all_agent_cost": 0.25747745000000005,
+      "owner_cost": 0.25747745000000005
+    },
+    {
+      "arm": "haiku-high",
+      "phase": "final launcher startup/shutdown",
+      "minutes": 0.10476063824413966,
+      "all_agent_cost": 0,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "initial implementation/verification",
+      "minutes": 30.846566665172578,
+      "all_agent_cost": 4.32118495,
+      "owner_cost": 4.32118495
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 1",
+      "minutes": 9.23701666990916,
+      "all_agent_cost": 1.1877801000000001,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "correction 1 and coordination",
+      "minutes": 11.747666664918263,
+      "all_agent_cost": 1.18354465,
+      "owner_cost": 1.18354465
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 2",
+      "minutes": 3.2608333349227907,
+      "all_agent_cost": 0.335891875,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "correction 2 and coordination",
+      "minutes": 1.9241833329200744,
+      "all_agent_cost": 0.3488953,
+      "owner_cost": 0.3488953
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 3",
+      "minutes": 3.386816664536794,
+      "all_agent_cost": 0.322948575,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "correction 3 and coordination",
+      "minutes": 0.4270166675249735,
+      "all_agent_cost": 0.08986820000000001,
+      "owner_cost": 0.08986820000000001
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 4",
+      "minutes": 19.69471666812897,
+      "all_agent_cost": 1.09511235,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "correction 4 and coordination",
+      "minutes": 10.482216664155324,
+      "all_agent_cost": 1.1162605,
+      "owner_cost": 1.1162605
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 5",
+      "minutes": 13.714950001239776,
+      "all_agent_cost": 1.723776775,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "correction 5 and coordination",
+      "minutes": 6.691349999109904,
+      "all_agent_cost": 0.72955845,
+      "owner_cost": 0.72955845
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 6",
+      "minutes": 11.264966666698456,
+      "all_agent_cost": 1.627388075,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "correction 6 and coordination",
+      "minutes": 7.783100001017252,
+      "all_agent_cost": 1.0553821,
+      "owner_cost": 1.0553821
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 7",
+      "minutes": 9.626083334287008,
+      "all_agent_cost": 1.18403405,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "correction 7 and coordination",
+      "minutes": 12.31721666653951,
+      "all_agent_cost": 0.63239035,
+      "owner_cost": 0.63239035
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 8",
+      "minutes": 12.709866666793824,
+      "all_agent_cost": 1.687338925,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "correction 8 and coordination",
+      "minutes": 6.415233333905538,
+      "all_agent_cost": 0.7519778500000001,
+      "owner_cost": 0.7519778500000001
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 9",
+      "minutes": 13.455833331743877,
+      "all_agent_cost": 1.4021085,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "correction 9 and coordination",
+      "minutes": 5.470333333810171,
+      "all_agent_cost": 0.6529563500000001,
+      "owner_cost": 0.6529563500000001
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "review 10",
+      "minutes": 13.990716663996379,
+      "all_agent_cost": 1.211666975,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "final disposition/report",
+      "minutes": 1.4703000028928122,
+      "all_agent_cost": 0.28030385,
+      "owner_cost": 0.28030385
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "final launcher startup/shutdown",
+      "minutes": 0.023220097025235493,
+      "all_agent_cost": 0,
+      "owner_cost": 0
+    },
+    {
+      "arm": "haiku-xhigh",
+      "phase": "unattributed CLI billing residual",
+      "minutes": 0,
+      "all_agent_cost": 0.0009674999999766953,
+      "owner_cost": 0
     }
   ],
-  "stage_accounting": "Elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Stage timings do not exactly reproduce the main active-time definition.",
+  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. Costs reconcile to each original run total.",
   "checks": [
     {
       "check": "Ordinary change present or absent",
@@ -465,7 +1010,9 @@
         "Astra 6 low": "Pass",
         "Sol 6.1 high": "Pass",
         "Luna 6 high": "Pass",
-        "Luna 6 xhigh": "Pass"
+        "Luna 6 xhigh": "Pass",
+        "Haiku 5.5 high": "Pass",
+        "Haiku 5.5 xhigh": "Pass"
       },
       "failure_penalty": 0
     },
@@ -477,7 +1024,9 @@
         "Astra 6 low": "False present",
         "Sol 6.1 high": "Pass",
         "Luna 6 high": "False present",
-        "Luna 6 xhigh": "False present"
+        "Luna 6 xhigh": "False present",
+        "Haiku 5.5 high": "False present",
+        "Haiku 5.5 xhigh": "False present"
       },
       "failure_penalty": 4
     },
@@ -489,7 +1038,9 @@
         "Astra 6 low": "Wrong diagnosis",
         "Sol 6.1 high": "Pass",
         "Luna 6 high": "Wrong diagnosis",
-        "Luna 6 xhigh": "Wrong diagnosis"
+        "Luna 6 xhigh": "Wrong diagnosis",
+        "Haiku 5.5 high": "Reports absent",
+        "Haiku 5.5 xhigh": "Reports absent"
       },
       "failure_penalty": 2
     },
@@ -501,7 +1052,9 @@
         "Astra 6 low": "Pass",
         "Sol 6.1 high": "False present",
         "Luna 6 high": "Pass",
-        "Luna 6 xhigh": "Pass"
+        "Luna 6 xhigh": "Pass",
+        "Haiku 5.5 high": "Pass",
+        "Haiku 5.5 xhigh": "Pass"
       },
       "failure_penalty": 4
     },
@@ -513,7 +1066,9 @@
         "Astra 6 low": "Pass",
         "Sol 6.1 high": "Pass",
         "Luna 6 high": "Pass",
-        "Luna 6 xhigh": "Pass"
+        "Luna 6 xhigh": "Pass",
+        "Haiku 5.5 high": "Pass",
+        "Haiku 5.5 xhigh": "Pass"
       },
       "failure_penalty": 1
     },
@@ -525,7 +1080,9 @@
         "Astra 6 low": "Pass",
         "Sol 6.1 high": "Pass",
         "Luna 6 high": "Changes",
-        "Luna 6 xhigh": "Stable\u00b9"
+        "Luna 6 xhigh": "Stable\u00b9",
+        "Haiku 5.5 high": "Changes",
+        "Haiku 5.5 xhigh": "Pass"
       },
       "failure_penalty": 2
     }
@@ -647,6 +1204,45 @@
             "penalty": 2
           }
         ]
+      },
+      {
+        "arm": "haiku-high",
+        "rating": 2,
+        "penalty": 8,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Reports absent",
+            "penalty": 2
+          },
+          {
+            "check": "Result independent of user whitespace setting",
+            "result": "Changes",
+            "penalty": 2
+          }
+        ]
+      },
+      {
+        "arm": "haiku-xhigh",
+        "rating": 4,
+        "penalty": 6,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Reports absent",
+            "penalty": 2
+          }
+        ]
       }
     ]
   },
@@ -657,11 +1253,85 @@
       "astra": 3,
       "sol": 2,
       "luna": 3,
-      "luna-xhigh": 3
+      "luna-xhigh": 3,
+      "haiku-high": 6,
+      "haiku-xhigh": 3
     },
     "unit": "one documented finding per candidate; unweighted",
     "scope": "Static reading of the feature path, changed neighbors, relevant tests and documentation; not timed maintenance or systematic naming assessment.",
-    "reviewer": "Sol 6.1 high"
+    "reviewer": "Sol 6.1 high",
+    "haiku_findings": {
+      "haiku-high": [
+        "An already selected source is converted to a string discriminator and matched again before presentation.",
+        "The rejection schema permits code/retry combinations that the brief rules out. Current callers use the correct combination.",
+        "An extra adapter function only forwards the verified diff to the Git adapter.",
+        "Successful checkpoint facts carry a history identifier that no consumer uses.",
+        "Target restrictions are checked in Python but absent from the advertised input schema.",
+        "A separate partial checkpoint receipt/package validation path repeats rules with an existing focused validator."
+      ],
+      "haiku-xhigh": [
+        "A successful observation carries the same verified candidate identity twice.",
+        "A parallel error-detail serializer repeats an existing formatter and passes loosely typed facts and retry strings.",
+        "Two tests check the same checkpoint query-plan obligation; one adds no distinct scenario."
+      ]
+    }
+  },
+  "haiku_workflow_evidence": {
+    "human_exchanges": {
+      "haiku-high": 3,
+      "haiku-xhigh": 0
+    },
+    "new_product_decisions": {
+      "haiku-high": 0,
+      "haiku-xhigh": 0
+    },
+    "human_implementation_rescue": false,
+    "review_attempts": {
+      "haiku-high": 10,
+      "haiku-xhigh": 10
+    },
+    "review_verdicts": {
+      "haiku-high": 10,
+      "haiku-xhigh": 8
+    },
+    "code_correction_rounds": {
+      "haiku-high": 9,
+      "haiku-xhigh": 7
+    },
+    "history_only_resubmissions": {
+      "haiku-high": 0,
+      "haiku-xhigh": 2
+    },
+    "native_configuration": {
+      "haiku-high": {
+        "model": "claude-haiku-5-5",
+        "effort": "high",
+        "per_turn_effort": "high",
+        "assistant_records_verified": 1949,
+        "native_files": 11
+      },
+      "haiku-xhigh": {
+        "model": "claude-haiku-5-5",
+        "effort": "xhigh",
+        "per_turn_effort": "xhigh",
+        "assistant_records_verified": 2337,
+        "native_files": 11
+      }
+    },
+    "post_run_checks": {
+      "haiku-high": {
+        "adapter_cases": 10,
+        "native_cases": 10,
+        "selected_unittests": 52,
+        "selected_unittests_passed": true
+      },
+      "haiku-xhigh": {
+        "adapter_cases": 10,
+        "native_cases": 10,
+        "selected_unittests": 53,
+        "selected_unittests_passed": true
+      }
+    }
   },
   "human_cost_scenario": {
     "baseline": "Luna 6 high",
@@ -714,7 +1384,9 @@
   "references": [
     "https://developers.openai.com/api/docs/models/gpt-6-luna",
     "https://learn.chatgpt.com/docs/pricing",
-    "https://learn.chatgpt.com/docs/agent-configuration/speed"
+    "https://learn.chatgpt.com/docs/agent-configuration/speed",
+    "https://www.anthropic.com/claude-haiku-5-5",
+    "https://platform.claude.com/docs/en/about-claude/pricing"
   ],
   "evidence_limits": "Contains exported values and selected outcomes, not raw session logs, prompts, private reasoning or a complete reproduction package. The original model-authored PR descriptions predate the later checks."
 }
