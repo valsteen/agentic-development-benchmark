@@ -1,5 +1,5 @@
 {
-  "report_revision": 40,
+  "report_revision": 41,
   "assessment_date": "2026-10-10",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
@@ -321,7 +321,73 @@
       "code",
       "quality findings",
       "review rounds"
-    ]
+    ],
+    "stages": [
+      {
+        "arm": "sonnet",
+        "phase": "initial implementation/verification",
+        "minutes": 20.77023333311081,
+        "cache_read_tokens": 33101237,
+        "original_cost": 9.678001400000001,
+        "reduction_usd": 3.3101237,
+        "current_cost": 6.367877700000001
+      },
+      {
+        "arm": "sonnet",
+        "phase": "review 1",
+        "minutes": 3.2307833353678386,
+        "cache_read_tokens": 5221486,
+        "original_cost": 1.8173142,
+        "reduction_usd": 0.5221486000000001,
+        "current_cost": 1.2951655999999998
+      },
+      {
+        "arm": "sonnet",
+        "phase": "correction 1 and coordination",
+        "minutes": 4.5586999972661335,
+        "cache_read_tokens": 8286495,
+        "original_cost": 1.9460270000000002,
+        "reduction_usd": 0.8286495,
+        "current_cost": 1.1173775000000001
+      },
+      {
+        "arm": "sonnet",
+        "phase": "review 2",
+        "minutes": 3.3414833347002664,
+        "cache_read_tokens": 8574912,
+        "original_cost": 2.2259154,
+        "reduction_usd": 0.8574912000000001,
+        "current_cost": 1.3684241999999998
+      },
+      {
+        "arm": "sonnet",
+        "phase": "correction 2 and coordination",
+        "minutes": 2.1108166654904683,
+        "cache_read_tokens": 4883518,
+        "original_cost": 1.1536716,
+        "reduction_usd": 0.48835180000000006,
+        "current_cost": 0.6653198
+      },
+      {
+        "arm": "sonnet",
+        "phase": "review 3",
+        "minutes": 2.4341833353042603,
+        "cache_read_tokens": 3778114,
+        "original_cost": 1.0278808,
+        "reduction_usd": 0.3778114,
+        "current_cost": 0.6500693999999999
+      },
+      {
+        "arm": "sonnet",
+        "phase": "final disposition/report",
+        "minutes": 1.6197166681289672,
+        "cache_read_tokens": 3918736,
+        "original_cost": 0.9436652000000001,
+        "reduction_usd": 0.39187360000000004,
+        "current_cost": 0.5517916
+      }
+    ],
+    "stage_assignment": "Same original response timestamps and half-open stage boundaries: start < response time <= end, including the initial start. Every response assigned exactly once; each stage repriced from its own cache-read tokens."
   },
   "haiku_billing": {
     "checked_date": "2026-10-08",
@@ -1223,7 +1289,7 @@
       "owner_cost": 0
     }
   ],
-  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. Costs reconcile to each original run total.",
+  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged.",
   "checks": [
     {
       "check": "Ordinary change present or absent",
