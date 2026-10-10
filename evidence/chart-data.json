@@ -1,6 +1,6 @@
 {
-  "report_revision": 39,
-  "assessment_date": "2026-10-08",
+  "report_revision": 40,
+  "assessment_date": "2026-10-10",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
     "cost": "USD at recorded API prices, not subscription invoices; Sonnet current-pricing values are a separate recalculation",
@@ -263,6 +263,43 @@
           3
         ]
       }
+    },
+    {
+      "arm": "luna-medium",
+      "model": "Luna 6 medium",
+      "cost": 1.4507013,
+      "active_minutes": 76.99947684096793,
+      "candidate_reviews": 8,
+      "correction_rounds": 7,
+      "source_reviews": 0,
+      "reviewer_cost": 0.3141614399999999,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 1.13653986,
+      "candidate": "0bedbf3357055e0e41387e27111ef6de749afbe4",
+      "pr": "https://github.com/valsteen/pinboard/pull/177",
+      "footprint": {
+        "production": [
+          743,
+          31,
+          13
+        ],
+        "tests": [
+          634,
+          7,
+          6
+        ],
+        "documentation/guidance": [
+          30,
+          9,
+          6
+        ],
+        "other": [
+          0,
+          0,
+          0
+        ]
+      }
     }
   ],
   "sonnet_current_pricing": {
@@ -358,6 +395,41 @@
       }
     }
   },
+  "luna_medium_billing": {
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+    "rates_usd_per_million": {
+      "uncached_input": 0.1,
+      "cached_input": 0.01,
+      "cache_write": 0.125,
+      "output": 0.5
+    },
+    "long_context_rule": "Above 272000 input tokens, including cached input: double input/cache prices and 1.5 times output prices.",
+    "deduplication": "Last token_usage_record for each response_id across implementing agent and all independent reviewers.",
+    "response_count": 887,
+    "tokens": {
+      "input_tokens": 109671510,
+      "cached_input_tokens": 107546880,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 325539,
+      "reasoning_output_tokens": 136772,
+      "total_tokens": 109997049
+    },
+    "long_context_response_count": 0,
+    "cost": 1.4507013,
+    "owner_cost": 1.13653986,
+    "reviewer_cost": 0.3141614399999999,
+    "limits": {
+      "usd": 20,
+      "active_hours": 6
+    },
+    "elapsed_active_minutes": 76.99947684096793,
+    "base_revision": "d83a480c99785fe0c4f754c439454d331c97e90c",
+    "brief_sha256": "785fdb884d97dc379e20a72fde36ebe8064ed4a073f156a4bbd2429ff2fe6ac8",
+    "cli_version": "0.160.0",
+    "setup_verified_before_measurement": true
+  },
   "experiment_accounting": {
     "original_six_comparison_runs_usd": 97.30049386000002,
     "original_experiment_including_its_discarded_attempts_usd_rounded": 106.71,
@@ -429,7 +501,32 @@
     "fresh_allowance_per_haiku_configuration_usd": 80,
     "active_hours_per_haiku_configuration": 4,
     "lower_bound_reason": "Discarded first-attempt reconstruction may omit in-flight billing. No recovery elapsed time is subtracted.",
-    "excluded": "Earlier exploration, later common assessments, maintenance review and report work are outside comparison runs. Sonnet repricing does not alter historical spending."
+    "excluded": "Earlier exploration, later common assessments, maintenance review and report work are outside comparison runs. Sonnet repricing does not alter historical spending.",
+    "clean_luna_medium_run_usd": 1.4507013,
+    "nine_comparison_runs_historical_usd": 140.98703758499997,
+    "luna_medium_discarded_and_setup_entries": [
+      {
+        "kind": "discarded-CLI-version-mismatch",
+        "usd": 0.05650288,
+        "billing": "deduplicated saved native records; setup-contaminated attempt excluded entirely"
+      },
+      {
+        "kind": "discarded-attempt-readiness-preflight",
+        "usd": 0.00896018,
+        "billing": "separate native cost"
+      },
+      {
+        "kind": "clean-readiness-preflight",
+        "usd": 0.00673684,
+        "billing": "separate native cost"
+      }
+    ],
+    "luna_medium_discarded_and_setup_usd": 0.0721999,
+    "fresh_luna_medium_allowance": {
+      "usd": 20,
+      "active_hours": 6,
+      "previous_spending_deducted": false
+    }
   },
   "stages": [
     {
@@ -998,9 +1095,135 @@
       "minutes": 0,
       "all_agent_cost": 0.0009674999999766953,
       "owner_cost": 0
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "initial implementation/verification",
+      "minutes": 23.424983330567677,
+      "all_agent_cost": 0.58078502,
+      "owner_cost": 0.58078502
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "review 1",
+      "minutes": 2.7351666688919067,
+      "all_agent_cost": 0.05849718,
+      "owner_cost": 0.01987556
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "correction 1 and coordination",
+      "minutes": 6.805233331521352,
+      "all_agent_cost": 0.10301498,
+      "owner_cost": 0.10301498
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "review 2",
+      "minutes": 4.171716666221618,
+      "all_agent_cost": 0.06792444,
+      "owner_cost": 0.012379880000000001
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "correction 2 and coordination",
+      "minutes": 3.6963500022888183,
+      "all_agent_cost": 0.08292568,
+      "owner_cost": 0.08292568
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "review 3",
+      "minutes": 4.971249997615814,
+      "all_agent_cost": 0.0565026,
+      "owner_cost": 0.01468718
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "correction 3 and coordination",
+      "minutes": 3.9836333354314166,
+      "all_agent_cost": 0.09094736,
+      "owner_cost": 0.09094736
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "review 4",
+      "minutes": 0.5920833309491476,
+      "all_agent_cost": 0.015152220000000001,
+      "owner_cost": 0.00248656
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "correction 4 and coordination",
+      "minutes": 0.21865000327428183,
+      "all_agent_cost": 0.00306338,
+      "owner_cost": 0.00306338
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "review 5",
+      "minutes": 6.268466667334239,
+      "all_agent_cost": 0.04828198,
+      "owner_cost": 0.00476404
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "correction 5 and coordination",
+      "minutes": 2.587916664282481,
+      "all_agent_cost": 0.03706188,
+      "owner_cost": 0.03706188
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "review 6",
+      "minutes": 2.8628833333651227,
+      "all_agent_cost": 0.03535226,
+      "owner_cost": 0.0037148400000000005
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "correction 6 and coordination",
+      "minutes": 3.629949998855591,
+      "all_agent_cost": 0.05348358,
+      "owner_cost": 0.05348358
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "review 7",
+      "minutes": 2.8723833362261453,
+      "all_agent_cost": 0.03594012,
+      "owner_cost": 0.0016689200000000002
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "correction 7 and coordination",
+      "minutes": 2.1668999989827475,
+      "all_agent_cost": 0.0482293,
+      "owner_cost": 0.0482293
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "review 8",
+      "minutes": 3.0138999978701273,
+      "all_agent_cost": 0.059661940000000004,
+      "owner_cost": 0.0035743199999999998
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "final disposition/report",
+      "minutes": 2.971416668097178,
+      "all_agent_cost": 0.07387738,
+      "owner_cost": 0.07387738
+    },
+    {
+      "arm": "luna-medium",
+      "phase": "final launcher startup/shutdown",
+      "minutes": 0.026593509192268053,
+      "all_agent_cost": 0,
+      "owner_cost": 0
     }
   ],
-  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. Costs reconcile to each original run total.",
+  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. Costs reconcile to each original run total.",
   "checks": [
     {
       "check": "Ordinary change present or absent",
@@ -1012,7 +1235,8 @@
         "Luna 6 high": "Pass",
         "Luna 6 xhigh": "Pass",
         "Haiku 5.5 high": "Pass",
-        "Haiku 5.5 xhigh": "Pass"
+        "Haiku 5.5 xhigh": "Pass",
+        "Luna 6 medium": "Pass"
       },
       "failure_penalty": 0
     },
@@ -1026,7 +1250,8 @@
         "Luna 6 high": "False present",
         "Luna 6 xhigh": "False present",
         "Haiku 5.5 high": "False present",
-        "Haiku 5.5 xhigh": "False present"
+        "Haiku 5.5 xhigh": "False present",
+        "Luna 6 medium": "False present"
       },
       "failure_penalty": 4
     },
@@ -1040,7 +1265,8 @@
         "Luna 6 high": "Wrong diagnosis",
         "Luna 6 xhigh": "Wrong diagnosis",
         "Haiku 5.5 high": "Reports absent",
-        "Haiku 5.5 xhigh": "Reports absent"
+        "Haiku 5.5 xhigh": "Reports absent",
+        "Luna 6 medium": "Reports absent"
       },
       "failure_penalty": 2
     },
@@ -1054,7 +1280,8 @@
         "Luna 6 high": "Pass",
         "Luna 6 xhigh": "Pass",
         "Haiku 5.5 high": "Pass",
-        "Haiku 5.5 xhigh": "Pass"
+        "Haiku 5.5 xhigh": "Pass",
+        "Luna 6 medium": "False present"
       },
       "failure_penalty": 4
     },
@@ -1068,7 +1295,8 @@
         "Luna 6 high": "Pass",
         "Luna 6 xhigh": "Pass",
         "Haiku 5.5 high": "Pass",
-        "Haiku 5.5 xhigh": "Pass"
+        "Haiku 5.5 xhigh": "Pass",
+        "Luna 6 medium": "Pass"
       },
       "failure_penalty": 1
     },
@@ -1082,7 +1310,8 @@
         "Luna 6 high": "Changes",
         "Luna 6 xhigh": "Stable\u00b9",
         "Haiku 5.5 high": "Changes",
-        "Haiku 5.5 xhigh": "Pass"
+        "Haiku 5.5 xhigh": "Pass",
+        "Luna 6 medium": "Changes"
       },
       "failure_penalty": 2
     }
@@ -1243,6 +1472,33 @@
             "penalty": 2
           }
         ]
+      },
+      {
+        "arm": "luna-medium",
+        "rating": 0,
+        "penalty": 12,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Reports absent",
+            "penalty": 2
+          },
+          {
+            "check": "Absent change checked from a nested directory",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Result independent of user whitespace setting",
+            "result": "Changes",
+            "penalty": 2
+          }
+        ]
       }
     ]
   },
@@ -1255,7 +1511,8 @@
       "luna": 3,
       "luna-xhigh": 3,
       "haiku-high": 6,
-      "haiku-xhigh": 3
+      "haiku-xhigh": 3,
+      "luna-medium": 6
     },
     "unit": "one documented finding per candidate; unweighted",
     "scope": "Static reading of the feature path, changed neighbors, relevant tests and documentation; not timed maintenance or systematic naming assessment.",
@@ -1273,6 +1530,16 @@
         "A successful observation carries the same verified candidate identity twice.",
         "A parallel error-detail serializer repeats an existing formatter and passes loosely typed facts and retry strings.",
         "Two tests check the same checkpoint query-plan obligation; one adds no distinct scenario."
+      ]
+    },
+    "luna_medium_findings": {
+      "luna-medium": [
+        "A selected checkpoint still carries optional references, requiring repeated availability checks; other handoffs retain unused facts.",
+        "Evidence failure details are flattened, searched by field name and reconstructed at the MCP boundary.",
+        "The rejection schema permits code/retry combinations that the brief rules out. Current callers use the correct combination.",
+        "The architecture map assigns Git comparison composition to the evidence adapter, although the MCP owner performs it.",
+        "The installed MCP tool description omits the integration operation, though its schema includes it.",
+        "Checkpoint outcome decoding and intrinsic receipt checks repeat before the existing package validator."
       ]
     }
   },
@@ -1332,6 +1599,46 @@
         "selected_unittests_passed": true
       }
     }
+  },
+  "luna_medium_workflow_evidence": {
+    "human_exchanges": {
+      "luna-medium": 0
+    },
+    "new_product_decisions": {
+      "luna-medium": 0
+    },
+    "human_implementation_rescue": false,
+    "review_attempts": {
+      "luna-medium": 8
+    },
+    "review_verdicts": {
+      "luna-medium": 7
+    },
+    "code_correction_rounds": {
+      "luna-medium": 6
+    },
+    "history_only_resubmissions": {
+      "luna-medium": 1
+    },
+    "native_configuration": {
+      "luna-medium": {
+        "model": "gpt-6-luna",
+        "effort": "medium",
+        "cli_version": "0.160.0",
+        "native_sessions_verified": 9,
+        "independent_review_contexts": true
+      }
+    },
+    "post_run_checks": {
+      "luna-medium": {
+        "adapter_cases": 10,
+        "native_cases": 10,
+        "selected_unittests": 29,
+        "selected_unittests_passed": true,
+        "candidate_unchanged": true
+      }
+    },
+    "task_disposition": "left in review, candidate retained unmerged; read-only SQLite verified after RUN_COMPLETE"
   },
   "human_cost_scenario": {
     "baseline": "Luna 6 high",
