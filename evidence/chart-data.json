@@ -1,5 +1,5 @@
 {
-  "report_revision": 43,
+  "report_revision": 44,
   "assessment_date": "2026-10-11",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
@@ -45,7 +45,17 @@
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": null
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "sonnet",
@@ -84,7 +94,17 @@
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": null
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "astra",
@@ -123,7 +143,17 @@
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": null
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "sol",
@@ -162,7 +192,17 @@
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": null
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "luna",
@@ -201,7 +241,17 @@
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": null
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "luna-xhigh",
@@ -240,7 +290,17 @@
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": null
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "haiku-high",
@@ -279,7 +339,17 @@
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": null
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "haiku-xhigh",
@@ -318,7 +388,17 @@
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": null
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "luna-medium",
@@ -362,7 +442,17 @@
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": null
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "glm",
@@ -401,7 +491,17 @@
       "owner_provider_charged_usd": "3.738422",
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately"
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "glm-flash",
@@ -440,7 +540,17 @@
       "owner_provider_charged_usd": "1.021842",
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately"
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "deepseek",
@@ -479,7 +589,17 @@
       "owner_provider_charged_usd": "0.927573",
       "wall_minutes": null,
       "setup_caveat": "Isolation policy denied one Read of a CLI-saved tool response. Model re-read original brief in smaller sections without observer help. No inputs/configuration changed; all elapsed time/spending retained; counterfactual impact unknown. Fix output-file access before Kimi.",
-      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately"
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     },
     {
       "arm": "kimi",
@@ -518,7 +638,66 @@
       "owner_provider_charged_usd": "15.723665",
       "wall_minutes": 179.0194699,
       "setup_caveat": "Two provider cold-prefill rate-limit interruptions; same native conversation/candidate resumed with two administrative Continue prompts. CLI native retries changed from zero to twelve after isolated compatibility verification. Active time and actual inclusive elapsed are retained; observer diagnosis/setup pauses are not all model/provider time. No reset or estimated recovery subtraction.",
-      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately"
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
+    },
+    {
+      "arm": "mimo",
+      "model": "MiMo v2.6 Pro high",
+      "cost": 8.404813806,
+      "active_minutes": 74.78742333472086,
+      "candidate_reviews": 6,
+      "correction_rounds": 6,
+      "source_reviews": 0,
+      "reviewer_cost": 1.471784484,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 6.933029322,
+      "candidate": "b0df8f4344c972d805507412ae29223f112cde3f",
+      "pr": "https://github.com/valsteen/pinboard/pull/185",
+      "footprint": {
+        "production": [
+          888,
+          22,
+          12
+        ],
+        "tests": [
+          569,
+          3,
+          4
+        ],
+        "documentation/guidance": [
+          18,
+          17,
+          6
+        ]
+      },
+      "provider_model": "mimo-v2.6-pro",
+      "provider_charged_usd": "3.997158",
+      "reviewer_provider_charged_usd": "0.841727",
+      "owner_provider_charged_usd": "3.155431",
+      "wall_minutes": null,
+      "setup_caveat": "Default 200k attempt stopped on automatic-compaction thrashing; preserved separately. Human approved a fresh 1M-context restart using only the remaining original allowance. This run uses that documented client setting, unlike the four earlier Neuralwatt runs.",
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": "model-stopped-before-approval",
+      "client_context_tokens": 1000000,
+      "content_review_verdicts": 3,
+      "approvals": 0,
+      "code_correction_rounds": 3,
+      "review_history_only_resubmissions": 3,
+      "final_candidate_reviewed": false,
+      "last_reviewed_candidate": "4107a9184271931bae9245fd20e9d5a702b0c040",
+      "last_review_outcome": "needs-correction",
+      "no_limit_reached": true
     }
   ],
   "neuralwatt_billing": {
@@ -678,6 +857,63 @@
       "interrupted_rejected_request_count": 217,
       "review_only_catalog_equivalent_usd": "9.7571580",
       "role_attribution": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Reviewer identities verified against native subagent transcripts. No inferred provider session grouping."
+    },
+    "mimo": {
+      "model": "mimo-v2.6-pro",
+      "requested_models": [
+        "mimo-v2.6-pro"
+      ],
+      "served_models": [
+        "XiaomiMiMo/MiMo-V2.6-Pro-MOPD"
+      ],
+      "successful_billed_requests": 605,
+      "usage": {
+        "prompt_tokens": 191677607,
+        "cached_tokens": 190569936,
+        "completion_tokens": 333691,
+        "total_tokens": 192011298
+      },
+      "rates": {
+        "input_per_million": 0.87,
+        "output_per_million": 1.74,
+        "cached_input_per_million": 0.036,
+        "cached_output_per_million": null,
+        "currency": "USD",
+        "pricing_tbd": false,
+        "cached_input_is_default": false,
+        "service_tier": "standard",
+        "flex_discount_multiplier": null
+      },
+      "formula": "((prompt_tokens - cached_tokens) * input_per_million + cached_tokens * cached_input_per_million + completion_tokens * output_per_million) / 1000000",
+      "catalog_token_tariff_equivalent_usd": "8.404813806",
+      "provider_charged_usd": "3.997158",
+      "charge_complete": true,
+      "catalog_equivalent_complete": true,
+      "model_effort": "high",
+      "effective_date": "catalog snapshot verified 2026-10-11; not a claim of rate-change effective date",
+      "billing_adjustments": null,
+      "charged_energy_kwh": null,
+      "interrupted_rejected_request_count": 0,
+      "review_only_charge_usd": "0.841727",
+      "client_context_tokens": 1000000,
+      "default_context_attempt": {
+        "client_context_tokens": 200000,
+        "outcome": "client-stopped-before-review",
+        "active_minutes": 27.137908557631697,
+        "provider_charged_usd": "1.493520",
+        "catalog_token_tariff_equivalent_usd": "2.230675548",
+        "automatic_compactions": 18,
+        "compaction_seconds": 980.027,
+        "excluded_from_completed_candidate_comparison": true
+      },
+      "preparation": {
+        "provider_charged_usd": "0.162832",
+        "catalog_token_tariff_equivalent_usd": "0.669406944",
+        "active_seconds": 230.3996576249937
+      },
+      "caveat": "MiMo v2.6 Pro serves a MOPD preview. The completed 1M-context attempt stopped without approval; the final correction was not reviewed.",
+      "review_only_catalog_equivalent_usd": "1.471784484",
+      "role_attribution": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Agent identities verified against native tool-call/result IDs and subagent transcripts. Only explicit benchmark-reviewer tasks count as reviews; Explore helpers count as implementation. No inferred provider session grouping."
     }
   },
   "neuralwatt_phase_accounting": {
@@ -854,6 +1090,68 @@
         "phase_times": "Native first/last reviewer records define reviews. Other stages fill the intervening observed client timeline, intersected with each invocation's first/last native debug timestamp. Gaps between invocations excluded. Measured active time outside those timestamps is separately retained as unlocated launcher overhead.",
         "limits": "Stage boundaries are observed workflow labels, not model-only generation or human work. Request timestamp assignment cannot divide an inference that spans a boundary. Provider charges and token-tariff equivalents remain separate; existing rate and interruption caveats still apply."
       }
+    },
+    "mimo": {
+      "model": "mimo-v2.6-pro",
+      "roles": {
+        "implementer": {
+          "billed_requests": 475,
+          "provider_charged_usd": "3.155431",
+          "catalog_equivalent_usd": "6.933029322"
+        },
+        "review 1": {
+          "billed_requests": 39,
+          "provider_charged_usd": "0.280895",
+          "catalog_equivalent_usd": "0.431517978"
+        },
+        "review 2": {
+          "billed_requests": 10,
+          "provider_charged_usd": "0.079243",
+          "catalog_equivalent_usd": "0.111378498"
+        },
+        "review 3": {
+          "billed_requests": 9,
+          "provider_charged_usd": "0.056852",
+          "catalog_equivalent_usd": "0.109659576"
+        },
+        "review 4": {
+          "billed_requests": 34,
+          "provider_charged_usd": "0.218092",
+          "catalog_equivalent_usd": "0.383559594"
+        },
+        "review 5": {
+          "billed_requests": 6,
+          "provider_charged_usd": "0.024712",
+          "catalog_equivalent_usd": "0.070490694"
+        },
+        "review 6": {
+          "billed_requests": 32,
+          "provider_charged_usd": "0.181933",
+          "catalog_equivalent_usd": "0.365178144"
+        }
+      },
+      "reconciliation": {
+        "captured_request_ids": 632,
+        "exact_client_header_matches": 632,
+        "request_classes": {
+          "joined": 605,
+          "count-tokens": 27
+        },
+        "unassigned_billed_requests": 0,
+        "unassigned_charged_usd": "0",
+        "unassigned_catalog_equivalent_usd": "0",
+        "provider_charged_usd": "3.997158",
+        "catalog_equivalent_usd": "8.404813806",
+        "active_seconds": 4487.245400083251,
+        "observed_client_seconds": 4487.119,
+        "launcher_seconds_not_timestamped": 0.12640008325161034
+      },
+      "method": {
+        "roles": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Agent identities verified against native tool-call/result IDs and subagent transcripts. Only explicit benchmark-reviewer tasks count as reviews; Explore helpers count as implementation. No inferred provider session grouping.",
+        "phase_costs": "Reviewer requests belong to their review round. Implementer and implementation-helper requests belong to the half-open observed phase containing the provider created_at timestamp. Each billed request is assigned once; a review phase can include implementer coordination.",
+        "phase_times": "Native first/last reviewer records define reviews. Other stages fill the intervening observed client timeline, intersected with each invocation's first/last native debug timestamp. Gaps between invocations excluded. Measured active time outside those timestamps is separately retained as unlocated launcher overhead.",
+        "limits": "Stage boundaries are observed workflow labels, not model-only generation or human work. Request timestamp assignment cannot divide an inference that spans a boundary. Provider charges and token-tariff equivalents remain separate; existing rate and interruption caveats still apply."
+      }
     }
   },
   "kimi_interruption_timing": {
@@ -872,7 +1170,13 @@
     "client": "Claude Code 2.1.293",
     "protocol": "Neuralwatt native Messages",
     "reasoning_effort": "high for implementer and fresh independent reviewers; equal labels do not imply equal capability",
-    "client_context_tokens": 200000,
+    "client_context_tokens": {
+      "glm": 200000,
+      "glm-flash": 200000,
+      "deepseek": 200000,
+      "kimi": 200000,
+      "mimo": 1000000
+    },
     "thinking_replay": "Thinking blocks and signatures were structurally replayed after tools and continuation; backend interpretation and quality impact were not verified.",
     "frozen_source": "d83a480c99785fe0c4f754c439454d331c97e90c",
     "allowances_each": {
@@ -880,8 +1184,8 @@
       "provider_charged_usd": 40
     },
     "role_cost_status": "Reconciled through exact client agent/session headers and response billing IDs; all billed requests assigned once. No inferred provider grouping.",
-    "preparation_provider_charged_usd": "1.244225",
-    "preparation_catalog_equivalent_usd": "7.37702971"
+    "preparation_provider_charged_usd": "1.407057",
+    "preparation_catalog_equivalent_usd": "8.046436654"
   },
   "sonnet_current_pricing": {
     "status": "same observed run, recalculated at current prices; no rerun",
@@ -1174,8 +1478,18 @@
       "active_hours": 6,
       "previous_spending_deducted": false
     },
-    "neuralwatt_comparison_provider_charged_usd": 25.655103999999998,
-    "neuralwatt_preparation_provider_charged_usd": "1.244225",
+    "neuralwatt_comparison_provider_charged_usd": 29.652262,
+    "neuralwatt_preparation_provider_charged_usd": "1.407057",
+    "neuralwatt_excluded_mimo_default_context": {
+      "client_context_tokens": 200000,
+      "outcome": "client-stopped-before-review",
+      "active_minutes": 27.137908557631697,
+      "provider_charged_usd": "1.493520",
+      "catalog_token_tariff_equivalent_usd": "2.230675548",
+      "automatic_compactions": 18,
+      "compaction_seconds": 980.027,
+      "excluded_from_completed_candidate_comparison": true
+    },
     "basis": "Historical original accounting is preserved; provider charges and token-tariff workload equivalents are separate."
   },
   "stages": [
@@ -2131,6 +2445,146 @@
       "provider_charged_usd": "0",
       "catalog_equivalent_usd": "0",
       "billed_requests": 0
+    },
+    {
+      "arm": "mimo",
+      "phase": "initial implementation/verification",
+      "minutes": 31.659516666666665,
+      "all_agent_cost": 4.013379468,
+      "owner_cost": 4.013379468,
+      "provider_charged_usd": "1.800157",
+      "catalog_equivalent_usd": "4.013379468",
+      "billed_requests": 306
+    },
+    {
+      "arm": "mimo",
+      "phase": "review 1",
+      "minutes": 8.058383333333333,
+      "all_agent_cost": 1.226007348,
+      "owner_cost": 0.79448937,
+      "provider_charged_usd": "0.669851",
+      "catalog_equivalent_usd": "1.226007348",
+      "billed_requests": 89
+    },
+    {
+      "arm": "mimo",
+      "phase": "correction 1",
+      "minutes": 7.6600166666666665,
+      "all_agent_cost": 0.709689132,
+      "owner_cost": 0.709689132,
+      "provider_charged_usd": "0.340062",
+      "catalog_equivalent_usd": "0.709689132",
+      "billed_requests": 42
+    },
+    {
+      "arm": "mimo",
+      "phase": "review 2",
+      "minutes": 1.1559166666666667,
+      "all_agent_cost": 0.147026556,
+      "owner_cost": 0.035648058,
+      "provider_charged_usd": "0.102773",
+      "catalog_equivalent_usd": "0.147026556",
+      "billed_requests": 12
+    },
+    {
+      "arm": "mimo",
+      "phase": "correction 2",
+      "minutes": 0.87575,
+      "all_agent_cost": 0.036538386,
+      "owner_cost": 0.036538386,
+      "provider_charged_usd": "0.018761",
+      "catalog_equivalent_usd": "0.036538386",
+      "billed_requests": 2
+    },
+    {
+      "arm": "mimo",
+      "phase": "review 3",
+      "minutes": 1.4778166666666666,
+      "all_agent_cost": 0.232045038,
+      "owner_cost": 0.122385462,
+      "provider_charged_usd": "0.106191",
+      "catalog_equivalent_usd": "0.232045038",
+      "billed_requests": 16
+    },
+    {
+      "arm": "mimo",
+      "phase": "correction 3",
+      "minutes": 1.29965,
+      "all_agent_cost": 0.071755044,
+      "owner_cost": 0.071755044,
+      "provider_charged_usd": "0.019332",
+      "catalog_equivalent_usd": "0.071755044",
+      "billed_requests": 4
+    },
+    {
+      "arm": "mimo",
+      "phase": "review 4",
+      "minutes": 4.4153,
+      "all_agent_cost": 0.540728556,
+      "owner_cost": 0.157168962,
+      "provider_charged_usd": "0.260367",
+      "catalog_equivalent_usd": "0.540728556",
+      "billed_requests": 43
+    },
+    {
+      "arm": "mimo",
+      "phase": "correction 4",
+      "minutes": 3.5831833333333334,
+      "all_agent_cost": 0.382082466,
+      "owner_cost": 0.382082466,
+      "provider_charged_usd": "0.126549",
+      "catalog_equivalent_usd": "0.382082466",
+      "billed_requests": 21
+    },
+    {
+      "arm": "mimo",
+      "phase": "review 5",
+      "minutes": 0.7079333333333333,
+      "all_agent_cost": 0.161649546,
+      "owner_cost": 0.091158852,
+      "provider_charged_usd": "0.063836",
+      "catalog_equivalent_usd": "0.161649546",
+      "billed_requests": 11
+    },
+    {
+      "arm": "mimo",
+      "phase": "correction 5",
+      "minutes": 1.0003333333333333,
+      "all_agent_cost": 0.038084304,
+      "owner_cost": 0.038084304,
+      "provider_charged_usd": "0.029823",
+      "catalog_equivalent_usd": "0.038084304",
+      "billed_requests": 2
+    },
+    {
+      "arm": "mimo",
+      "phase": "review 6",
+      "minutes": 6.849616666666666,
+      "all_agent_cost": 0.4206216,
+      "owner_cost": 0.055443456,
+      "provider_charged_usd": "0.206946",
+      "catalog_equivalent_usd": "0.420621600",
+      "billed_requests": 35
+    },
+    {
+      "arm": "mimo",
+      "phase": "correction after last review and incomplete report",
+      "minutes": 6.0419,
+      "all_agent_cost": 0.425206362,
+      "owner_cost": 0.425206362,
+      "provider_charged_usd": "0.252510",
+      "catalog_equivalent_usd": "0.425206362",
+      "billed_requests": 22
+    },
+    {
+      "arm": "mimo",
+      "phase": "final launcher overhead (not timestamped)",
+      "minutes": 0.0021066680541935055,
+      "all_agent_cost": 0.0,
+      "owner_cost": 0.0,
+      "provider_charged_usd": "0",
+      "catalog_equivalent_usd": "0",
+      "billed_requests": 0
     }
   ],
   "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt role costs join explicit client agent/session headers to actual provider billing IDs through SDK log IDs. Stage costs assign reviewer requests to their review round and implementer requests by provider created_at timestamp. Native review intervals define stage boundaries; stage time intersects each invocation\u2019s observed client timestamps, excluding pauses. Unlocated launcher overhead below 0.4 seconds per run is retained separately. Costs and active minutes reconcile to original full-run totals. See neuralwatt_phase_accounting for exact decimal amounts, coverage and limitations.",
@@ -2150,7 +2604,8 @@
         "GLM 5.3 high": "Pass",
         "GLM 5.3 Flash high": "Pass",
         "DeepSeek V4.1 Flash high": "Pass",
-        "Kimi K3 high": "Pass"
+        "Kimi K3 high": "Pass",
+        "MiMo v2.6 Pro high": "Pass"
       },
       "failure_penalty": 0
     },
@@ -2169,7 +2624,8 @@
         "GLM 5.3 high": "False present",
         "GLM 5.3 Flash high": "False present",
         "DeepSeek V4.1 Flash high": "False present",
-        "Kimi K3 high": "False present"
+        "Kimi K3 high": "False present",
+        "MiMo v2.6 Pro high": "False present"
       },
       "failure_penalty": 4
     },
@@ -2188,7 +2644,8 @@
         "GLM 5.3 high": "Wrong diagnosis",
         "GLM 5.3 Flash high": "Wrong diagnosis",
         "DeepSeek V4.1 Flash high": "Wrong diagnosis",
-        "Kimi K3 high": "Wrong diagnosis"
+        "Kimi K3 high": "Wrong diagnosis",
+        "MiMo v2.6 Pro high": "Reports absent"
       },
       "failure_penalty": 2
     },
@@ -2207,7 +2664,8 @@
         "GLM 5.3 high": "Pass",
         "GLM 5.3 Flash high": "False present",
         "DeepSeek V4.1 Flash high": "Pass",
-        "Kimi K3 high": "Pass"
+        "Kimi K3 high": "Pass",
+        "MiMo v2.6 Pro high": "Pass"
       },
       "failure_penalty": 4
     },
@@ -2226,7 +2684,8 @@
         "GLM 5.3 high": "Pass",
         "GLM 5.3 Flash high": "Pass",
         "DeepSeek V4.1 Flash high": "Pass",
-        "Kimi K3 high": "Unexpected error"
+        "Kimi K3 high": "Unexpected error",
+        "MiMo v2.6 Pro high": "Pass"
       },
       "failure_penalty": 1
     },
@@ -2245,7 +2704,8 @@
         "GLM 5.3 high": "Stable\u00b9",
         "GLM 5.3 Flash high": "Changes",
         "DeepSeek V4.1 Flash high": "Changes",
-        "Kimi K3 high": "Changes"
+        "Kimi K3 high": "Changes",
+        "MiMo v2.6 Pro high": "Changes"
       },
       "failure_penalty": 2
     }
@@ -2526,6 +2986,28 @@
             "penalty": 2
           }
         ]
+      },
+      {
+        "arm": "mimo",
+        "rating": 2,
+        "penalty": 8,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Reports absent",
+            "penalty": 2
+          },
+          {
+            "check": "Result independent of user whitespace setting",
+            "result": "Changes",
+            "penalty": 2
+          }
+        ]
       }
     ]
   },
@@ -2540,6 +3022,7 @@
       "haiku-high": 7,
       "haiku-xhigh": 4,
       "luna-medium": 6,
+      "mimo": 5,
       "kimi": 5,
       "glm": 5,
       "glm-flash": 5,
@@ -2601,6 +3084,13 @@
         "The installed MCP tool description omits the integration operation, though its schema includes it.",
         "Checkpoint outcome decoding and intrinsic receipt checks repeat before the existing package validator."
       ],
+      "mimo": [
+        "An internal source tag and nullable checkpoint identity can represent combinations the operation does not support. Current producers emit valid combinations.",
+        "Checkpoint outcomes are manually decoded and checked in the new storage reader despite an existing typed outcome and focused package validator. The damaged-receipt construction is also repeated within that path.",
+        "Two comparison paths classify an unresolved target by matching diagnostic text and repeat the same rejection construction. A wording change could alter the response kind.",
+        "The registered MCP tool description omits the integration operation.",
+        "A new reader interface has no consumer; its return contract also omits the damaged-receipt result carried by the actual store method."
+      ],
       "kimi": [
         "The same checkout is resolved twice during one integration read.",
         "A typed Git failure code is converted to an unrestricted internal string before response validation.",
@@ -2632,7 +3122,7 @@
     },
     "unit": "one documented finding per candidate; unweighted",
     "scope": "Static reading of the feature path, changed neighbors, relevant tests and documentation; not timed maintenance or systematic naming assessment.",
-    "reviewer": "Sol 6.1 high with root review and cross-candidate calibration",
+    "reviewer": "Sol 6.1 high with root review and cross-candidate calibration; MiMo assessed directly by the authoring agent, without a new independent assessment reviewer",
     "reassessment": "Later issue families were checked against earlier frozen candidates; revised older counts are observer reassessments, not additional findings by the models during their runs."
   },
   "haiku_workflow_evidence": {
@@ -2788,7 +3278,9 @@
     "https://platform.claude.com/docs/en/about-claude/pricing",
     "https://docs.neuralwatt.com/api/messages",
     "https://docs.neuralwatt.com/api/usage-requests",
-    "https://docs.neuralwatt.com/guides/rate-limits"
+    "https://docs.neuralwatt.com/guides/rate-limits",
+    "https://portal.neuralwatt.com/models/mimo-v2.6-pro",
+    "https://code.claude.com/docs/en/model-config#correct-the-window-for-a-gateway-or-custom-model-id"
   ],
   "evidence_limits": "Contains exported values and selected outcomes, not raw session logs, prompts, private reasoning or a complete reproduction package. The original model-authored PR descriptions predate the later checks."
 }
