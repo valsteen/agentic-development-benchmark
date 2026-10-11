@@ -1,5 +1,5 @@
 {
-  "report_revision": 42,
+  "report_revision": 43,
   "assessment_date": "2026-10-11",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
@@ -41,6 +41,8 @@
       },
       "provider_model": null,
       "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
       "phase_split_status": null
@@ -78,6 +80,8 @@
       },
       "provider_model": null,
       "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
       "phase_split_status": null
@@ -115,6 +119,8 @@
       },
       "provider_model": null,
       "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
       "phase_split_status": null
@@ -152,6 +158,8 @@
       },
       "provider_model": null,
       "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
       "phase_split_status": null
@@ -189,6 +197,8 @@
       },
       "provider_model": null,
       "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
       "phase_split_status": null
@@ -226,6 +236,8 @@
       },
       "provider_model": null,
       "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
       "phase_split_status": null
@@ -263,6 +275,8 @@
       },
       "provider_model": null,
       "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
       "phase_split_status": null
@@ -300,6 +314,8 @@
       },
       "provider_model": null,
       "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
       "phase_split_status": null
@@ -342,6 +358,8 @@
       },
       "provider_model": null,
       "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
       "wall_minutes": null,
       "setup_caveat": null,
       "phase_split_status": null
@@ -354,10 +372,10 @@
       "candidate_reviews": 2,
       "correction_rounds": 1,
       "source_reviews": 0,
-      "reviewer_cost": null,
+      "reviewer_cost": 2.47869657,
       "source_review_cost": 0,
       "correction_worker_cost": 0,
-      "owner_cost": null,
+      "owner_cost": 15.75475183,
       "candidate": "8e846e2c9109bc3eff65f7ea618599b9c433f891",
       "pr": "https://github.com/valsteen/pinboard/pull/179",
       "footprint": {
@@ -379,9 +397,11 @@
       },
       "provider_model": "glm-5.3",
       "provider_charged_usd": "4.433961",
+      "reviewer_provider_charged_usd": "0.695539",
+      "owner_provider_charged_usd": "3.738422",
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": "Unknown; full workflow is included in totals"
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately"
     },
     {
       "arm": "glm-flash",
@@ -391,10 +411,10 @@
       "candidate_reviews": 3,
       "correction_rounds": 1,
       "source_reviews": 0,
-      "reviewer_cost": null,
+      "reviewer_cost": 0.61804724,
       "source_review_cost": 0,
       "correction_worker_cost": 0,
-      "owner_cost": null,
+      "owner_cost": 2.56853005,
       "candidate": "e5bbbeac3c9dcabf654c1bf0dbb08371badaaaab",
       "pr": "https://github.com/valsteen/pinboard/pull/180",
       "footprint": {
@@ -416,9 +436,11 @@
       },
       "provider_model": "glm-5.3-flash",
       "provider_charged_usd": "1.413517",
+      "reviewer_provider_charged_usd": "0.391675",
+      "owner_provider_charged_usd": "1.021842",
       "wall_minutes": null,
       "setup_caveat": null,
-      "phase_split_status": "Unknown; full workflow is included in totals"
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately"
     },
     {
       "arm": "deepseek",
@@ -428,10 +450,10 @@
       "candidate_reviews": 1,
       "correction_rounds": 0,
       "source_reviews": 0,
-      "reviewer_cost": null,
+      "reviewer_cost": 0.1273719,
       "source_review_cost": 0,
       "correction_worker_cost": 0,
-      "owner_cost": null,
+      "owner_cost": 2.02102683,
       "candidate": "eeb10ae452b00515f0b3f946db6bc22ab7d62dcb",
       "pr": "https://github.com/valsteen/pinboard/pull/181",
       "footprint": {
@@ -453,9 +475,11 @@
       },
       "provider_model": "deepseek-v4.1-flash",
       "provider_charged_usd": "0.985927",
+      "reviewer_provider_charged_usd": "0.058354",
+      "owner_provider_charged_usd": "0.927573",
       "wall_minutes": null,
       "setup_caveat": "Isolation policy denied one Read of a CLI-saved tool response. Model re-read original brief in smaller sections without observer help. No inputs/configuration changed; all elapsed time/spending retained; counterfactual impact unknown. Fix output-file access before Kimi.",
-      "phase_split_status": "Unknown; full workflow is included in totals"
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately"
     },
     {
       "arm": "kimi",
@@ -465,10 +489,10 @@
       "candidate_reviews": 3,
       "correction_rounds": 2,
       "source_reviews": 0,
-      "reviewer_cost": null,
+      "reviewer_cost": 9.757158,
       "source_review_cost": 0,
       "correction_worker_cost": 0,
-      "owner_cost": null,
+      "owner_cost": 40.7434956,
       "candidate": "3dcaf304af24ca3077b52453e29a30931e7d1396",
       "pr": "https://github.com/valsteen/pinboard/pull/183",
       "footprint": {
@@ -490,9 +514,11 @@
       },
       "provider_model": "kimi-k3",
       "provider_charged_usd": "18.821699",
+      "reviewer_provider_charged_usd": "3.098034",
+      "owner_provider_charged_usd": "15.723665",
       "wall_minutes": 179.0194699,
       "setup_caveat": "Two provider cold-prefill rate-limit interruptions; same native conversation/candidate resumed with two administrative Continue prompts. CLI native retries changed from zero to twelve after isolated compatibility verification. Active time and actual inclusive elapsed are retained; observer diagnosis/setup pauses are not all model/provider time. No reset or estimated recovery subtraction.",
-      "phase_split_status": "Unknown; full workflow is included in totals"
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately"
     }
   ],
   "neuralwatt_billing": {
@@ -525,13 +551,15 @@
       "formula": "((prompt_tokens - cached_tokens) * input_per_million + cached_tokens * cached_input_per_million + completion_tokens * output_per_million) / 1000000",
       "catalog_token_tariff_equivalent_usd": "18.23344840",
       "provider_charged_usd": "4.433961",
-      "review_only_charge_usd": null,
+      "review_only_charge_usd": "0.695539",
       "billing_adjustments": null,
       "charged_energy_kwh": null,
       "charge_complete": true,
       "catalog_equivalent_complete": true,
       "model_effort": "high",
-      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date"
+      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date",
+      "review_only_catalog_equivalent_usd": "2.47869657",
+      "role_attribution": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Reviewer identities verified against native subagent transcripts. No inferred provider session grouping."
     },
     "glm-flash": {
       "model": "glm-5.3-flash",
@@ -562,13 +590,15 @@
       "formula": "((prompt_tokens - cached_tokens) * input_per_million + cached_tokens * cached_input_per_million + completion_tokens * output_per_million) / 1000000",
       "catalog_token_tariff_equivalent_usd": "3.18657729",
       "provider_charged_usd": "1.413517",
-      "review_only_charge_usd": null,
+      "review_only_charge_usd": "0.391675",
       "billing_adjustments": null,
       "charged_energy_kwh": null,
       "charge_complete": true,
       "catalog_equivalent_complete": true,
       "model_effort": "high",
-      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date"
+      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date",
+      "review_only_catalog_equivalent_usd": "0.61804724",
+      "role_attribution": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Reviewer identities verified against native subagent transcripts. No inferred provider session grouping."
     },
     "deepseek": {
       "model": "deepseek-v4.1-flash",
@@ -602,10 +632,12 @@
       "provider_charged_usd": "0.985927",
       "charge_complete": true,
       "catalog_equivalent_complete": true,
-      "review_only_charge_usd": null,
+      "review_only_charge_usd": "0.058354",
       "billing_adjustments": null,
       "charged_energy_kwh": null,
-      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date"
+      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date",
+      "review_only_catalog_equivalent_usd": "0.12737190",
+      "role_attribution": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Reviewer identities verified against native subagent transcripts. No inferred provider session grouping."
     },
     "kimi": {
       "model": "kimi-k3",
@@ -636,14 +668,192 @@
       "formula": "((prompt_tokens - cached_tokens) * input_per_million + cached_tokens * cached_input_per_million + completion_tokens * output_per_million) / 1000000",
       "catalog_token_tariff_equivalent_usd": "50.5006536",
       "provider_charged_usd": "18.821699",
-      "review_only_charge_usd": null,
+      "review_only_charge_usd": "3.098034",
       "billing_adjustments": null,
       "charged_energy_kwh": null,
       "charge_complete": true,
       "catalog_equivalent_complete": true,
       "model_effort": "high",
       "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date",
-      "interrupted_rejected_request_count": 217
+      "interrupted_rejected_request_count": 217,
+      "review_only_catalog_equivalent_usd": "9.7571580",
+      "role_attribution": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Reviewer identities verified against native subagent transcripts. No inferred provider session grouping."
+    }
+  },
+  "neuralwatt_phase_accounting": {
+    "glm": {
+      "model": "glm-5.3",
+      "roles": {
+        "implementer": {
+          "billed_requests": 557,
+          "provider_charged_usd": "3.738422",
+          "catalog_equivalent_usd": "15.75475183"
+        },
+        "review 1": {
+          "billed_requests": 43,
+          "provider_charged_usd": "0.267866",
+          "catalog_equivalent_usd": "1.26025704"
+        },
+        "review 2": {
+          "billed_requests": 48,
+          "provider_charged_usd": "0.427673",
+          "catalog_equivalent_usd": "1.21843953"
+        }
+      },
+      "reconciliation": {
+        "captured_request_ids": 780,
+        "exact_client_header_matches": 780,
+        "request_classes": {
+          "joined": 648,
+          "count-tokens": 132
+        },
+        "unassigned_billed_requests": 0,
+        "unassigned_charged_usd": "0",
+        "unassigned_catalog_equivalent_usd": "0",
+        "provider_charged_usd": "4.433961",
+        "catalog_equivalent_usd": "18.23344840",
+        "active_seconds": 5621.147848749999,
+        "observed_client_seconds": 5620.974,
+        "launcher_seconds_not_timestamped": 0.17384874999879685
+      },
+      "method": {
+        "roles": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Reviewer identities verified against native subagent transcripts. No inferred provider session grouping.",
+        "phase_costs": "Reviewer requests belong to their review round. Implementer requests belong to the half-open observed phase containing the provider created_at timestamp. Each billed request is assigned once; a review phase can include implementer coordination.",
+        "phase_times": "Native first/last reviewer records define reviews. Other stages fill the intervening observed client timeline, intersected with each invocation's first/last native debug timestamp. Gaps between invocations excluded. Measured active time outside those timestamps is separately retained as unlocated launcher overhead.",
+        "limits": "Stage boundaries are observed workflow labels, not model-only generation or human work. Request timestamp assignment cannot divide an inference that spans a boundary. Provider charges and token-tariff equivalents remain separate; existing rate and interruption caveats still apply."
+      }
+    },
+    "glm-flash": {
+      "model": "glm-5.3-flash",
+      "roles": {
+        "implementer": {
+          "billed_requests": 511,
+          "provider_charged_usd": "1.021842",
+          "catalog_equivalent_usd": "2.56853005"
+        },
+        "review 1": {
+          "billed_requests": 45,
+          "provider_charged_usd": "0.171549",
+          "catalog_equivalent_usd": "0.22311277"
+        },
+        "review 2": {
+          "billed_requests": 35,
+          "provider_charged_usd": "0.086425",
+          "catalog_equivalent_usd": "0.16773719"
+        },
+        "review 3": {
+          "billed_requests": 49,
+          "provider_charged_usd": "0.133701",
+          "catalog_equivalent_usd": "0.22719728"
+        }
+      },
+      "reconciliation": {
+        "captured_request_ids": 736,
+        "exact_client_header_matches": 736,
+        "request_classes": {
+          "joined": 640,
+          "count-tokens": 96
+        },
+        "unassigned_billed_requests": 0,
+        "unassigned_charged_usd": "0",
+        "unassigned_catalog_equivalent_usd": "0",
+        "provider_charged_usd": "1.413517",
+        "catalog_equivalent_usd": "3.18657729",
+        "active_seconds": 4581.143115750048,
+        "observed_client_seconds": 4581.004,
+        "launcher_seconds_not_timestamped": 0.13911575004840415
+      },
+      "method": {
+        "roles": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Reviewer identities verified against native subagent transcripts. No inferred provider session grouping.",
+        "phase_costs": "Reviewer requests belong to their review round. Implementer requests belong to the half-open observed phase containing the provider created_at timestamp. Each billed request is assigned once; a review phase can include implementer coordination.",
+        "phase_times": "Native first/last reviewer records define reviews. Other stages fill the intervening observed client timeline, intersected with each invocation's first/last native debug timestamp. Gaps between invocations excluded. Measured active time outside those timestamps is separately retained as unlocated launcher overhead.",
+        "limits": "Stage boundaries are observed workflow labels, not model-only generation or human work. Request timestamp assignment cannot divide an inference that spans a boundary. Provider charges and token-tariff equivalents remain separate; existing rate and interruption caveats still apply."
+      }
+    },
+    "deepseek": {
+      "model": "deepseek-v4.1-flash",
+      "roles": {
+        "implementer": {
+          "billed_requests": 674,
+          "provider_charged_usd": "0.927573",
+          "catalog_equivalent_usd": "2.02102683"
+        },
+        "review 1": {
+          "billed_requests": 38,
+          "provider_charged_usd": "0.058354",
+          "catalog_equivalent_usd": "0.12737190"
+        }
+      },
+      "reconciliation": {
+        "captured_request_ids": 833,
+        "exact_client_header_matches": 833,
+        "request_classes": {
+          "joined": 712,
+          "count-tokens": 121
+        },
+        "unassigned_billed_requests": 0,
+        "unassigned_charged_usd": "0",
+        "unassigned_catalog_equivalent_usd": "0",
+        "provider_charged_usd": "0.985927",
+        "catalog_equivalent_usd": "2.14839873",
+        "active_seconds": 4757.512186415959,
+        "observed_client_seconds": 4757.325,
+        "launcher_seconds_not_timestamped": 0.1871864159593315
+      },
+      "method": {
+        "roles": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Reviewer identities verified against native subagent transcripts. No inferred provider session grouping.",
+        "phase_costs": "Reviewer requests belong to their review round. Implementer requests belong to the half-open observed phase containing the provider created_at timestamp. Each billed request is assigned once; a review phase can include implementer coordination.",
+        "phase_times": "Native first/last reviewer records define reviews. Other stages fill the intervening observed client timeline, intersected with each invocation's first/last native debug timestamp. Gaps between invocations excluded. Measured active time outside those timestamps is separately retained as unlocated launcher overhead.",
+        "limits": "Stage boundaries are observed workflow labels, not model-only generation or human work. Request timestamp assignment cannot divide an inference that spans a boundary. Provider charges and token-tariff equivalents remain separate; existing rate and interruption caveats still apply."
+      }
+    },
+    "kimi": {
+      "model": "kimi-k3",
+      "roles": {
+        "implementer": {
+          "billed_requests": 567,
+          "provider_charged_usd": "15.723665",
+          "catalog_equivalent_usd": "40.7434956"
+        },
+        "review 1": {
+          "billed_requests": 48,
+          "provider_charged_usd": "1.184750",
+          "catalog_equivalent_usd": "3.3801258"
+        },
+        "review 2": {
+          "billed_requests": 48,
+          "provider_charged_usd": "1.053351",
+          "catalog_equivalent_usd": "3.0655290"
+        },
+        "review 3": {
+          "billed_requests": 51,
+          "provider_charged_usd": "0.859933",
+          "catalog_equivalent_usd": "3.3115032"
+        }
+      },
+      "reconciliation": {
+        "captured_request_ids": 1067,
+        "exact_client_header_matches": 1067,
+        "request_classes": {
+          "joined": 714,
+          "count-tokens": 136,
+          "rejected-before-inference": 217
+        },
+        "unassigned_billed_requests": 0,
+        "unassigned_charged_usd": "0",
+        "unassigned_catalog_equivalent_usd": "0",
+        "provider_charged_usd": "18.821699",
+        "catalog_equivalent_usd": "50.5006536",
+        "active_seconds": 9917.889940083958,
+        "observed_client_seconds": 9917.52,
+        "launcher_seconds_not_timestamped": 0.369940083957772
+      },
+      "method": {
+        "roles": "Client sending-request agent/session headers joined to response X-Request-ID through the same SDK log ID, then to the retained provider billing row. Reviewer identities verified against native subagent transcripts. No inferred provider session grouping.",
+        "phase_costs": "Reviewer requests belong to their review round. Implementer requests belong to the half-open observed phase containing the provider created_at timestamp. Each billed request is assigned once; a review phase can include implementer coordination.",
+        "phase_times": "Native first/last reviewer records define reviews. Other stages fill the intervening observed client timeline, intersected with each invocation's first/last native debug timestamp. Gaps between invocations excluded. Measured active time outside those timestamps is separately retained as unlocated launcher overhead.",
+        "limits": "Stage boundaries are observed workflow labels, not model-only generation or human work. Request timestamp assignment cannot divide an inference that spans a boundary. Provider charges and token-tariff equivalents remain separate; existing rate and interruption caveats still apply."
+      }
     }
   },
   "kimi_interruption_timing": {
@@ -669,7 +879,7 @@
       "active_seconds": 21600,
       "provider_charged_usd": 40
     },
-    "role_cost_status": "Unknown: request-level totals include reviewers, but exact attribution to implementer versus reviewer is unavailable.",
+    "role_cost_status": "Reconciled through exact client agent/session headers and response billing IDs; all billed requests assigned once. No inferred provider grouping.",
     "preparation_provider_charged_usd": "1.244225",
     "preparation_catalog_equivalent_usd": "7.37702971"
   },
@@ -1661,9 +1871,269 @@
       "minutes": 0.026593509192268053,
       "all_agent_cost": 0,
       "owner_cost": 0
+    },
+    {
+      "arm": "glm",
+      "phase": "initial implementation/verification",
+      "minutes": 63.8902,
+      "all_agent_cost": 13.5703453,
+      "owner_cost": 13.5703453,
+      "provider_charged_usd": "3.283139",
+      "catalog_equivalent_usd": "13.57034530",
+      "billed_requests": 480
+    },
+    {
+      "arm": "glm",
+      "phase": "review 1",
+      "minutes": 9.275066666666667,
+      "all_agent_cost": 1.30622817,
+      "owner_cost": 0.04597113,
+      "provider_charged_usd": "0.273162",
+      "catalog_equivalent_usd": "1.30622817",
+      "billed_requests": 45
+    },
+    {
+      "arm": "glm",
+      "phase": "correction 1",
+      "minutes": 4.7528999999999995,
+      "all_agent_cost": 0.91075191,
+      "owner_cost": 0.91075191,
+      "provider_charged_usd": "0.159239",
+      "catalog_equivalent_usd": "0.91075191",
+      "billed_requests": 33
+    },
+    {
+      "arm": "glm",
+      "phase": "review 2",
+      "minutes": 8.895733333333334,
+      "all_agent_cost": 1.28244788,
+      "owner_cost": 0.06400835,
+      "provider_charged_usd": "0.453020",
+      "catalog_equivalent_usd": "1.28244788",
+      "billed_requests": 51
+    },
+    {
+      "arm": "glm",
+      "phase": "final disposition/report",
+      "minutes": 6.869,
+      "all_agent_cost": 1.16367514,
+      "owner_cost": 1.16367514,
+      "provider_charged_usd": "0.265401",
+      "catalog_equivalent_usd": "1.16367514",
+      "billed_requests": 39
+    },
+    {
+      "arm": "glm",
+      "phase": "final launcher overhead (not timestamped)",
+      "minutes": 0.002897479166646614,
+      "all_agent_cost": 0.0,
+      "owner_cost": 0.0,
+      "provider_charged_usd": "0",
+      "catalog_equivalent_usd": "0",
+      "billed_requests": 0
+    },
+    {
+      "arm": "glm-flash",
+      "phase": "initial implementation/verification",
+      "minutes": 54.20568333333333,
+      "all_agent_cost": 2.2256969,
+      "owner_cost": 2.2256969,
+      "provider_charged_usd": "0.803529",
+      "catalog_equivalent_usd": "2.22569690",
+      "billed_requests": 443
+    },
+    {
+      "arm": "glm-flash",
+      "phase": "review 1",
+      "minutes": 7.249700000000001,
+      "all_agent_cost": 0.23468697,
+      "owner_cost": 0.0115742,
+      "provider_charged_usd": "0.175577",
+      "catalog_equivalent_usd": "0.23468697",
+      "billed_requests": 47
+    },
+    {
+      "arm": "glm-flash",
+      "phase": "correction 1",
+      "minutes": 1.2878,
+      "all_agent_cost": 0.05842022,
+      "owner_cost": 0.05842022,
+      "provider_charged_usd": "0.023480",
+      "catalog_equivalent_usd": "0.05842022",
+      "billed_requests": 13
+    },
+    {
+      "arm": "glm-flash",
+      "phase": "review 2",
+      "minutes": 3.1626666666666665,
+      "all_agent_cost": 0.17706105,
+      "owner_cost": 0.00932386,
+      "provider_charged_usd": "0.091855",
+      "catalog_equivalent_usd": "0.17706105",
+      "billed_requests": 37
+    },
+    {
+      "arm": "glm-flash",
+      "phase": "final commit and verification",
+      "minutes": 3.2246,
+      "all_agent_cost": 0.11098716,
+      "owner_cost": 0.11098716,
+      "provider_charged_usd": "0.075938",
+      "catalog_equivalent_usd": "0.11098716",
+      "billed_requests": 21
+    },
+    {
+      "arm": "glm-flash",
+      "phase": "review 3",
+      "minutes": 4.671449999999999,
+      "all_agent_cost": 0.24969595,
+      "owner_cost": 0.02249867,
+      "provider_charged_usd": "0.154606",
+      "catalog_equivalent_usd": "0.24969595",
+      "billed_requests": 54
+    },
+    {
+      "arm": "glm-flash",
+      "phase": "final disposition/report",
+      "minutes": 2.5481666666666665,
+      "all_agent_cost": 0.13002904,
+      "owner_cost": 0.13002904,
+      "provider_charged_usd": "0.088532",
+      "catalog_equivalent_usd": "0.13002904",
+      "billed_requests": 25
+    },
+    {
+      "arm": "glm-flash",
+      "phase": "final launcher overhead (not timestamped)",
+      "minutes": 0.002318595834140069,
+      "all_agent_cost": 0.0,
+      "owner_cost": 0.0,
+      "provider_charged_usd": "0",
+      "catalog_equivalent_usd": "0",
+      "billed_requests": 0
+    },
+    {
+      "arm": "deepseek",
+      "phase": "initial implementation/verification",
+      "minutes": 67.96566666666666,
+      "all_agent_cost": 1.87370511,
+      "owner_cost": 1.87370511,
+      "provider_charged_usd": "0.851443",
+      "catalog_equivalent_usd": "1.87370511",
+      "billed_requests": 627
+    },
+    {
+      "arm": "deepseek",
+      "phase": "review 1",
+      "minutes": 5.7552,
+      "all_agent_cost": 0.13605288,
+      "owner_cost": 0.00868098,
+      "provider_charged_usd": "0.059687",
+      "catalog_equivalent_usd": "0.13605288",
+      "billed_requests": 41
+    },
+    {
+      "arm": "deepseek",
+      "phase": "final disposition/report",
+      "minutes": 5.567883333333333,
+      "all_agent_cost": 0.13864074,
+      "owner_cost": 0.13864074,
+      "provider_charged_usd": "0.074797",
+      "catalog_equivalent_usd": "0.13864074",
+      "billed_requests": 44
+    },
+    {
+      "arm": "deepseek",
+      "phase": "final launcher overhead (not timestamped)",
+      "minutes": 0.0031197735993221914,
+      "all_agent_cost": 0.0,
+      "owner_cost": 0.0,
+      "provider_charged_usd": "0",
+      "catalog_equivalent_usd": "0",
+      "billed_requests": 0
+    },
+    {
+      "arm": "kimi",
+      "phase": "initial implementation/verification",
+      "minutes": 92.12265000000001,
+      "all_agent_cost": 27.4767624,
+      "owner_cost": 27.4767624,
+      "provider_charged_usd": "11.231982",
+      "catalog_equivalent_usd": "27.4767624",
+      "billed_requests": 368
+    },
+    {
+      "arm": "kimi",
+      "phase": "review 1",
+      "minutes": 17.267566666666667,
+      "all_agent_cost": 3.595575,
+      "owner_cost": 0.2154492,
+      "provider_charged_usd": "1.220054",
+      "catalog_equivalent_usd": "3.5955750",
+      "billed_requests": 52
+    },
+    {
+      "arm": "kimi",
+      "phase": "correction 1",
+      "minutes": 32.266533333333335,
+      "all_agent_cost": 8.6780412,
+      "owner_cost": 8.6780412,
+      "provider_charged_usd": "3.036012",
+      "catalog_equivalent_usd": "8.6780412",
+      "billed_requests": 130
+    },
+    {
+      "arm": "kimi",
+      "phase": "review 2",
+      "minutes": 6.43545,
+      "all_agent_cost": 3.2007642,
+      "owner_cost": 0.1352352,
+      "provider_charged_usd": "1.081889",
+      "catalog_equivalent_usd": "3.2007642",
+      "billed_requests": 50
+    },
+    {
+      "arm": "kimi",
+      "phase": "correction 2",
+      "minutes": 3.278833333333333,
+      "all_agent_cost": 1.3974336,
+      "owner_cost": 1.3974336,
+      "provider_charged_usd": "0.479470",
+      "catalog_equivalent_usd": "1.3974336",
+      "billed_requests": 19
+    },
+    {
+      "arm": "kimi",
+      "phase": "review 3",
+      "minutes": 9.04285,
+      "all_agent_cost": 3.4207404,
+      "owner_cost": 0.1092372,
+      "provider_charged_usd": "0.887557",
+      "catalog_equivalent_usd": "3.4207404",
+      "billed_requests": 53
+    },
+    {
+      "arm": "kimi",
+      "phase": "final disposition/report",
+      "minutes": 4.878116666666667,
+      "all_agent_cost": 2.7313368,
+      "owner_cost": 2.7313368,
+      "provider_charged_usd": "0.884735",
+      "catalog_equivalent_usd": "2.7313368",
+      "billed_requests": 42
+    },
+    {
+      "arm": "kimi",
+      "phase": "final launcher overhead (not timestamped)",
+      "minutes": 0.006165668065962867,
+      "all_agent_cost": 0.0,
+      "owner_cost": 0.0,
+      "provider_charged_usd": "0",
+      "catalog_equivalent_usd": "0",
+      "billed_requests": 0
     }
   ],
-  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt stage and exact role attribution are unavailable; charts show neutral full-workflow totals, and reviewer/implementer role costs remain null.",
+  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt role costs join explicit client agent/session headers to actual provider billing IDs through SDK log IDs. Stage costs assign reviewer requests to their review round and implementer requests by provider created_at timestamp. Native review intervals define stage boundaries; stage time intersects each invocation\u2019s observed client timestamps, excluding pauses. Unlocated launcher overhead below 0.4 seconds per run is retained separately. Costs and active minutes reconcile to original full-run totals. See neuralwatt_phase_accounting for exact decimal amounts, coverage and limitations.",
   "checks": [
     {
       "check": "Ordinary change present or absent",
