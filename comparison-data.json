@@ -1,0 +1,1080 @@
+{
+  "models": [
+    {
+      "arm": "opus",
+      "model": "Opus 5.5 high",
+      "cost": 16.645880200000008,
+      "active_minutes": 25.797008304848955,
+      "candidate_reviews": 1,
+      "correction_rounds": 0,
+      "source_reviews": 0,
+      "reviewer_cost": 3.4505703999999993,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 13.195309800000004,
+      "candidate": "d2f65c8a96064049b61b9dadf18fdd48a87422de",
+      "pr": "https://github.com/valsteen/pinboard/pull/155",
+      "footprint": {
+        "documentation/guidance": [
+          18,
+          17,
+          6
+        ],
+        "production": [
+          811,
+          12,
+          11
+        ],
+        "tests": [
+          585,
+          3,
+          6
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 16.645880200000008,
+      "quality": 3,
+      "maintenance": 4,
+      "profile": "model-opus-5-5-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 12.2215302,
+          "charged": null
+        },
+        "review": {
+          "tariff": 3.4505704,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 0,
+          "charged": null
+        },
+        "final": {
+          "tariff": 0.9737796000000001,
+          "charged": null
+        }
+      }
+    },
+    {
+      "arm": "sonnet",
+      "model": "Sonnet 5.5 high",
+      "cost": 18.792475600000003,
+      "active_minutes": 38.086132904169304,
+      "candidate_reviews": 3,
+      "correction_rounds": 2,
+      "source_reviews": 0,
+      "reviewer_cost": 5.0711104,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 13.721365199999996,
+      "candidate": "1771a5f0686e6697df5ddcb593ad6fa99e090ee1",
+      "pr": "https://github.com/valsteen/pinboard/pull/156",
+      "footprint": {
+        "documentation/guidance": [
+          19,
+          16,
+          6
+        ],
+        "production": [
+          729,
+          14,
+          13
+        ],
+        "tests": [
+          600,
+          6,
+          5
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 12.016025799999994,
+      "quality": 3,
+      "maintenance": 2,
+      "profile": "model-sonnet-5-5-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 6.367877700000001,
+          "charged": null
+        },
+        "review": {
+          "tariff": 3.3136591999999996,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 1.7826973000000002,
+          "charged": null
+        },
+        "final": {
+          "tariff": 0.5517916,
+          "charged": null
+        }
+      }
+    },
+    {
+      "arm": "astra",
+      "model": "Astra 6 low",
+      "cost": 45.03893600000001,
+      "active_minutes": 64.65042387916473,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 1,
+      "reviewer_cost": 8.79513,
+      "source_review_cost": 1.773296,
+      "correction_worker_cost": 8.672112000000002,
+      "owner_cost": 25.798398000000006,
+      "candidate": "7d8d343b4f67b0c238b9d8a26fe5663077c1fca2",
+      "pr": "https://github.com/valsteen/pinboard/pull/161",
+      "footprint": {
+        "documentation/guidance": [
+          32,
+          14,
+          6
+        ],
+        "production": [
+          660,
+          20,
+          11
+        ],
+        "tests": [
+          609,
+          3,
+          4
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 45.03893600000001,
+      "quality": 4,
+      "maintenance": 3,
+      "profile": "model-astra-6-low",
+      "phase_prices": {
+        "initial": {
+          "tariff": 15.618034,
+          "charged": null
+        },
+        "review": {
+          "tariff": 12.291402,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 15.340132,
+          "charged": null
+        },
+        "final": {
+          "tariff": 1.789368,
+          "charged": null
+        }
+      }
+    },
+    {
+      "arm": "sol",
+      "model": "Sol 6.1 high",
+      "cost": 14.260441599999995,
+      "active_minutes": 144.09423199515246,
+      "candidate_reviews": 4,
+      "correction_rounds": 3,
+      "source_reviews": 3,
+      "reviewer_cost": 3.0783807999999997,
+      "source_review_cost": 2.198952,
+      "correction_worker_cost": 2.7670551999999997,
+      "owner_cost": 6.216053599999999,
+      "candidate": "7dd83dc8e95a289231f1e91b3a59ca9119f3346e",
+      "pr": "https://github.com/valsteen/pinboard/pull/162",
+      "footprint": {
+        "documentation/guidance": [
+          22,
+          17,
+          6
+        ],
+        "production": [
+          723,
+          23,
+          12
+        ],
+        "tests": [
+          781,
+          3,
+          4
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 14.260441599999995,
+      "quality": 6,
+      "maintenance": 2,
+      "profile": "model-sol-6-1-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 2.6539868,
+          "charged": null
+        },
+        "review": {
+          "tariff": 4.0974808000000005,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 7.1317792,
+          "charged": null
+        },
+        "final": {
+          "tariff": 0.3771948,
+          "charged": null
+        }
+      }
+    },
+    {
+      "arm": "luna",
+      "model": "Luna 6 high",
+      "cost": 0.9216599,
+      "active_minutes": 110.66107210486662,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 0,
+      "reviewer_cost": 0.13386794,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 0.7877919599999997,
+      "candidate": "c56116a1201db703322302f7bef75ffbef96352e",
+      "pr": "https://github.com/valsteen/pinboard/pull/163",
+      "footprint": {
+        "documentation/guidance": [
+          25,
+          18,
+          6
+        ],
+        "production": [
+          769,
+          18,
+          11
+        ],
+        "tests": [
+          568,
+          5,
+          6
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 0.9216599,
+      "quality": 2,
+      "maintenance": 4,
+      "profile": "model-luna-6-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 0.58446,
+          "charged": null
+        },
+        "review": {
+          "tariff": 0.17534160000000001,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 0.10938942,
+          "charged": null
+        },
+        "final": {
+          "tariff": 0.05246888,
+          "charged": null
+        }
+      }
+    },
+    {
+      "arm": "luna-xhigh",
+      "model": "Luna 6 xhigh",
+      "cost": 1.64110056,
+      "active_minutes": 257.041559201382,
+      "candidate_reviews": 3,
+      "correction_rounds": 2,
+      "source_reviews": 0,
+      "reviewer_cost": 0.37081891999999994,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 1.2686965199999982,
+      "candidate": "5e01eb65556289a481accbc8c61f10d30593aff6",
+      "pr": "https://github.com/valsteen/pinboard/pull/165",
+      "footprint": {
+        "documentation/guidance": [
+          21,
+          16,
+          6
+        ],
+        "production": [
+          1155,
+          15,
+          14
+        ],
+        "tests": [
+          904,
+          29,
+          6
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 1.64110056,
+      "quality": 4,
+      "maintenance": 5,
+      "profile": "model-luna-6-xhigh",
+      "phase_prices": {
+        "initial": {
+          "tariff": 0.85242846,
+          "charged": null
+        },
+        "review": {
+          "tariff": 0.5144796,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 0.16904262,
+          "charged": null
+        },
+        "final": {
+          "tariff": 0.10514988,
+          "charged": null
+        }
+      }
+    },
+    {
+      "arm": "haiku-high",
+      "model": "Haiku 5.5 high",
+      "cost": 19.294506174999984,
+      "active_minutes": 109.94754397011518,
+      "candidate_reviews": 10,
+      "correction_rounds": 9,
+      "source_reviews": 0,
+      "reviewer_cost": 8.834006875,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 10.460499299999995,
+      "candidate": "05d1b2be71ae7b559281609e2c9397a233caa418",
+      "pr": "https://github.com/valsteen/pinboard/pull/173",
+      "footprint": {
+        "production": [
+          747,
+          15,
+          12
+        ],
+        "tests": [
+          1095,
+          3,
+          5
+        ],
+        "documentation/guidance": [
+          15,
+          14,
+          4
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 19.294506174999984,
+      "quality": 2,
+      "maintenance": 7,
+      "profile": "model-haiku-5-5-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 2.0213329,
+          "charged": null
+        },
+        "review": {
+          "tariff": 8.834006875,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 8.18168895,
+          "charged": null
+        },
+        "final": {
+          "tariff": 0.25747745000000005,
+          "charged": null
+        }
+      }
+    },
+    {
+      "arm": "haiku-xhigh",
+      "model": "Haiku 5.5 xhigh",
+      "cost": 22.94133624999997,
+      "active_minutes": 205.94020343124868,
+      "candidate_reviews": 10,
+      "correction_rounds": 9,
+      "source_reviews": 0,
+      "reviewer_cost": 11.778046200000002,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 11.162322549999994,
+      "candidate": "2bd2299e1cff4a9c41ff68c37efd740945ef2452",
+      "pr": "https://github.com/valsteen/pinboard/pull/174",
+      "footprint": {
+        "production": [
+          813,
+          25,
+          12
+        ],
+        "tests": [
+          880,
+          12,
+          5
+        ],
+        "documentation/guidance": [
+          15,
+          14,
+          3
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 22.94133624999997,
+      "quality": 4,
+      "maintenance": 4,
+      "profile": "model-haiku-5-5-xhigh",
+      "phase_prices": {
+        "initial": {
+          "tariff": 4.32118495,
+          "charged": null
+        },
+        "review": {
+          "tariff": 11.7780462,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 6.5608337500000005,
+          "charged": null
+        },
+        "final": {
+          "tariff": 0.2812713499999767,
+          "charged": null
+        }
+      }
+    },
+    {
+      "arm": "luna-medium",
+      "model": "Luna 6 medium",
+      "cost": 1.4507013,
+      "active_minutes": 76.99947684096793,
+      "candidate_reviews": 8,
+      "correction_rounds": 7,
+      "source_reviews": 0,
+      "reviewer_cost": 0.3141614399999999,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 1.13653986,
+      "candidate": "0bedbf3357055e0e41387e27111ef6de749afbe4",
+      "pr": "https://github.com/valsteen/pinboard/pull/177",
+      "footprint": {
+        "production": [
+          743,
+          31,
+          13
+        ],
+        "tests": [
+          634,
+          7,
+          6
+        ],
+        "documentation/guidance": [
+          30,
+          9,
+          6
+        ],
+        "other": [
+          0,
+          0,
+          0
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 1.4507013,
+      "quality": 0,
+      "maintenance": 6,
+      "profile": "model-luna-6-medium",
+      "phase_prices": {
+        "initial": {
+          "tariff": 0.58078502,
+          "charged": null
+        },
+        "review": {
+          "tariff": 0.37731274000000004,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 0.41872616,
+          "charged": null
+        },
+        "final": {
+          "tariff": 0.07387738,
+          "charged": null
+        }
+      }
+    },
+    {
+      "arm": "glm",
+      "model": "GLM 5.3 high",
+      "cost": 18.2334484,
+      "active_minutes": 93.68579747916665,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 0,
+      "reviewer_cost": 2.47869657,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 15.75475183,
+      "candidate": "8e846e2c9109bc3eff65f7ea618599b9c433f891",
+      "pr": "https://github.com/valsteen/pinboard/pull/179",
+      "footprint": {
+        "production": [
+          790,
+          23,
+          12
+        ],
+        "tests": [
+          926,
+          3,
+          5
+        ],
+        "documentation/guidance": [
+          19,
+          18,
+          6
+        ]
+      },
+      "provider_model": "glm-5.3",
+      "provider_charged_usd": "4.433961",
+      "reviewer_provider_charged_usd": "0.695539",
+      "owner_provider_charged_usd": "3.738422",
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 18.2334484,
+      "quality": 4,
+      "maintenance": 5,
+      "profile": "model-glm-5-3-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 13.5703453,
+          "charged": 3.283139
+        },
+        "review": {
+          "tariff": 2.58867605,
+          "charged": 0.726182
+        },
+        "correction": {
+          "tariff": 0.91075191,
+          "charged": 0.159239
+        },
+        "final": {
+          "tariff": 1.16367514,
+          "charged": 0.265401
+        }
+      }
+    },
+    {
+      "arm": "glm-flash",
+      "model": "GLM 5.3 Flash high",
+      "cost": 3.18657729,
+      "active_minutes": 76.3523852625008,
+      "candidate_reviews": 3,
+      "correction_rounds": 1,
+      "source_reviews": 0,
+      "reviewer_cost": 0.61804724,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 2.56853005,
+      "candidate": "e5bbbeac3c9dcabf654c1bf0dbb08371badaaaab",
+      "pr": "https://github.com/valsteen/pinboard/pull/180",
+      "footprint": {
+        "production": [
+          807,
+          14,
+          9
+        ],
+        "tests": [
+          562,
+          3,
+          4
+        ],
+        "documentation/guidance": [
+          18,
+          15,
+          4
+        ]
+      },
+      "provider_model": "glm-5.3-flash",
+      "provider_charged_usd": "1.413517",
+      "reviewer_provider_charged_usd": "0.391675",
+      "owner_provider_charged_usd": "1.021842",
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 3.18657729,
+      "quality": 0,
+      "maintenance": 5,
+      "profile": "model-glm-5-3-flash-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 2.2256969,
+          "charged": 0.803529
+        },
+        "review": {
+          "tariff": 0.66144397,
+          "charged": 0.422038
+        },
+        "correction": {
+          "tariff": 0.05842022,
+          "charged": 0.02348
+        },
+        "final": {
+          "tariff": 0.2410162,
+          "charged": 0.16447
+        }
+      }
+    },
+    {
+      "arm": "deepseek",
+      "model": "DeepSeek V4.1 Flash high",
+      "cost": 2.14839873,
+      "active_minutes": 79.29186977359932,
+      "candidate_reviews": 1,
+      "correction_rounds": 0,
+      "source_reviews": 0,
+      "reviewer_cost": 0.1273719,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 2.02102683,
+      "candidate": "eeb10ae452b00515f0b3f946db6bc22ab7d62dcb",
+      "pr": "https://github.com/valsteen/pinboard/pull/181",
+      "footprint": {
+        "production": [
+          741,
+          19,
+          14
+        ],
+        "tests": [
+          543,
+          4,
+          5
+        ],
+        "documentation/guidance": [
+          17,
+          16,
+          5
+        ]
+      },
+      "provider_model": "deepseek-v4.1-flash",
+      "provider_charged_usd": "0.985927",
+      "reviewer_provider_charged_usd": "0.058354",
+      "owner_provider_charged_usd": "0.927573",
+      "wall_minutes": null,
+      "setup_caveat": "Isolation policy denied one Read of a CLI-saved tool response. Model re-read original brief in smaller sections without observer help. No inputs/configuration changed; all elapsed time/spending retained; counterfactual impact unknown. Fix output-file access before Kimi.",
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 2.14839873,
+      "quality": 2,
+      "maintenance": 5,
+      "profile": "model-deepseek-v4-1-flash-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 1.87370511,
+          "charged": 0.851443
+        },
+        "review": {
+          "tariff": 0.13605288,
+          "charged": 0.059687
+        },
+        "correction": {
+          "tariff": 0,
+          "charged": 0
+        },
+        "final": {
+          "tariff": 0.13864074,
+          "charged": 0.074797
+        }
+      }
+    },
+    {
+      "arm": "kimi",
+      "model": "Kimi K3 high",
+      "cost": 50.5006536,
+      "active_minutes": 165.29816566806596,
+      "candidate_reviews": 3,
+      "correction_rounds": 2,
+      "source_reviews": 0,
+      "reviewer_cost": 9.757158,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 40.7434956,
+      "candidate": "3dcaf304af24ca3077b52453e29a30931e7d1396",
+      "pr": "https://github.com/valsteen/pinboard/pull/183",
+      "footprint": {
+        "production": [
+          874,
+          16,
+          12
+        ],
+        "tests": [
+          1040,
+          3,
+          6
+        ],
+        "documentation/guidance": [
+          17,
+          15,
+          6
+        ]
+      },
+      "provider_model": "kimi-k3",
+      "provider_charged_usd": "18.821699",
+      "reviewer_provider_charged_usd": "3.098034",
+      "owner_provider_charged_usd": "15.723665",
+      "wall_minutes": 179.0194699,
+      "setup_caveat": "Two provider cold-prefill rate-limit interruptions; same native conversation/candidate resumed with two administrative Continue prompts. CLI native retries changed from zero to twelve after isolated compatibility verification. Active time and actual inclusive elapsed are retained; observer diagnosis/setup pauses are not all model/provider time. No reset or estimated recovery subtraction.",
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 50.5006536,
+      "quality": 1,
+      "maintenance": 5,
+      "profile": "model-kimi-k3-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 27.4767624,
+          "charged": 11.231982
+        },
+        "review": {
+          "tariff": 10.2170796,
+          "charged": 3.1895000000000002
+        },
+        "correction": {
+          "tariff": 10.075474799999999,
+          "charged": 3.515482
+        },
+        "final": {
+          "tariff": 2.7313368,
+          "charged": 0.884735
+        }
+      }
+    },
+    {
+      "arm": "mimo",
+      "model": "MiMo v2.6 Pro high",
+      "cost": 8.404813806,
+      "active_minutes": 74.78742333472086,
+      "candidate_reviews": 6,
+      "correction_rounds": 6,
+      "source_reviews": 0,
+      "reviewer_cost": 1.471784484,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 6.933029322,
+      "candidate": "b0df8f4344c972d805507412ae29223f112cde3f",
+      "pr": "https://github.com/valsteen/pinboard/pull/185",
+      "footprint": {
+        "production": [
+          888,
+          22,
+          12
+        ],
+        "tests": [
+          569,
+          3,
+          4
+        ],
+        "documentation/guidance": [
+          18,
+          17,
+          6
+        ]
+      },
+      "provider_model": "mimo-v2.6-pro",
+      "provider_charged_usd": "3.997158",
+      "reviewer_provider_charged_usd": "0.841727",
+      "owner_provider_charged_usd": "3.155431",
+      "wall_minutes": null,
+      "setup_caveat": "Default 200k attempt stopped on automatic-compaction thrashing; preserved separately. Human approved a fresh 1M-context restart using only the remaining original allowance. This run uses that documented client setting, unlike the four earlier Neuralwatt runs.",
+      "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
+      "outcome": "model-stopped-before-approval",
+      "client_context_tokens": 1000000,
+      "content_review_verdicts": 3,
+      "approvals": 0,
+      "code_correction_rounds": 3,
+      "review_history_only_resubmissions": 3,
+      "final_candidate_reviewed": false,
+      "last_reviewed_candidate": "4107a9184271931bae9245fd20e9d5a702b0c040",
+      "last_review_outcome": "needs-correction",
+      "no_limit_reached": true,
+      "current_cost": 8.404813806,
+      "quality": 2,
+      "maintenance": 5,
+      "profile": "model-mimo-v2-6-pro-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 4.013379468,
+          "charged": 1.800157
+        },
+        "review": {
+          "tariff": 2.728078644,
+          "charged": 1.409964
+        },
+        "correction": {
+          "tariff": 1.663355694,
+          "charged": 0.787037
+        },
+        "final": {
+          "tariff": 0.0,
+          "charged": 0.0
+        }
+      }
+    },
+    {
+      "arm": "astra-medium",
+      "model": "Astra 6 medium",
+      "cost": 48.594978,
+      "active_minutes": 60.131482291221616,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 1,
+      "reviewer_cost": 9.475466,
+      "source_review_cost": 2.4074479999999996,
+      "correction_worker_cost": 6.2893719999999975,
+      "owner_cost": 30.422691999999987,
+      "candidate": "3634a5298709d595e367b9f8fa057b68a85bb99d",
+      "pr": "https://github.com/valsteen/pinboard/pull/186",
+      "footprint": {
+        "production": [
+          702,
+          24,
+          13
+        ],
+        "tests": [
+          628,
+          3,
+          5
+        ],
+        "documentation/guidance": [
+          27,
+          14,
+          6
+        ],
+        "other": [
+          0,
+          0,
+          0
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null,
+      "current_cost": 48.594978,
+      "quality": 4,
+      "maintenance": 2,
+      "profile": "model-astra-6-medium",
+      "phase_prices": {
+        "initial": {
+          "tariff": 18.615748,
+          "charged": null
+        },
+        "review": {
+          "tariff": 12.849222000000001,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 15.861232,
+          "charged": null
+        },
+        "final": {
+          "tariff": 1.268776,
+          "charged": null
+        }
+      }
+    }
+  ],
+  "baseline": "luna"
+}

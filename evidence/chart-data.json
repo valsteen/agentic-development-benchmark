@@ -1,5 +1,5 @@
 {
-  "report_revision": 45,
+  "report_revision": 46,
   "assessment_date": "2026-10-11",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
