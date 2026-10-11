@@ -1,5 +1,5 @@
 {
-  "report_revision": 44,
+  "report_revision": 45,
   "assessment_date": "2026-10-11",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
@@ -698,6 +698,60 @@
       "last_reviewed_candidate": "4107a9184271931bae9245fd20e9d5a702b0c040",
       "last_review_outcome": "needs-correction",
       "no_limit_reached": true
+    },
+    {
+      "arm": "astra-medium",
+      "model": "Astra 6 medium",
+      "cost": 48.594978,
+      "active_minutes": 60.131482291221616,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 1,
+      "reviewer_cost": 9.475466,
+      "source_review_cost": 2.4074479999999996,
+      "correction_worker_cost": 6.2893719999999975,
+      "owner_cost": 30.422691999999987,
+      "candidate": "3634a5298709d595e367b9f8fa057b68a85bb99d",
+      "pr": "https://github.com/valsteen/pinboard/pull/186",
+      "footprint": {
+        "production": [
+          702,
+          24,
+          13
+        ],
+        "tests": [
+          628,
+          3,
+          5
+        ],
+        "documentation/guidance": [
+          27,
+          14,
+          6
+        ],
+        "other": [
+          0,
+          0,
+          0
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": null,
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": null
     }
   ],
   "neuralwatt_billing": {
@@ -1381,6 +1435,51 @@
     "cli_version": "0.160.0",
     "setup_verified_before_measurement": true
   },
+  "astra_medium_billing": {
+    "model": "gpt-6-astra",
+    "effort": "medium",
+    "pricing_source": "https://developers.openai.com/api/docs/pricing",
+    "rates_usd_per_million": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "output": 50
+    },
+    "long_context_rule": "Above 272000 input tokens including cache: double input/cache prices and 1.5 times output prices. Reasoning is part of output, not charged twice.",
+    "deduplication": "Last native token_usage_record per response_id across all five isolated sessions.",
+    "response_count": 292,
+    "tokens": {
+      "input_tokens": 33999305,
+      "cached_input_tokens": 33063808,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 123524,
+      "reasoning_output_tokens": 32950,
+      "total_tokens": 34122829
+    },
+    "long_context_response_count": 0,
+    "cost": 48.594978,
+    "owner_cost": 30.422691999999987,
+    "reviewer_cost": 9.475466,
+    "source_review_cost": 2.4074479999999996,
+    "correction_worker_cost": 6.2893719999999975,
+    "basis": "API-equivalent of recorded usage; not an invoice or a measurement of subscription quota.",
+    "limits": {
+      "usd": 60,
+      "active_hours": 2,
+      "shutdown_reserve_seconds": 20
+    },
+    "elapsed_active_minutes": 60.131482291221616,
+    "human_answer_waiting_seconds": 151.07379269599915,
+    "base_revision": "d83a480c99785fe0c4f754c439454d331c97e90c",
+    "brief_sha256": "755649bb02eb2dd7b1b4aab5fb6cb8d721775c428ba05ffe74ad66ce153e7ca6",
+    "cli_version": "0.160.0",
+    "setup_verified_before_measurement": true,
+    "preparation_inference_calls": 0,
+    "phase_costs_reconciled": true,
+    "phase_minutes_reconciled": true,
+    "responses_assigned_exactly_once": true,
+    "phase_basis": "All-agent recorded costs by response completion timestamp; nonoverlapping measured invocation windows split at native code-review, source-review and correction-worker endpoints. Human-answer waiting is excluded; native evidence follow-up and launcher time remain in coordination/final stages. Role costs are separately summed by native session identity. No estimated recovery time deducted."
+  },
   "experiment_accounting": {
     "original_six_comparison_runs_usd": 97.30049386000002,
     "original_experiment_including_its_discarded_attempts_usd_rounded": 106.71,
@@ -1478,6 +1577,8 @@
       "active_hours": 6,
       "previous_spending_deducted": false
     },
+    "astra_medium_recorded_api_equivalent_usd": 48.594978,
+    "astra_medium_preparation_inference_calls": 0,
     "neuralwatt_comparison_provider_charged_usd": 29.652262,
     "neuralwatt_preparation_provider_charged_usd": "1.407057",
     "neuralwatt_excluded_mimo_default_context": {
@@ -2585,9 +2686,79 @@
       "provider_charged_usd": "0",
       "catalog_equivalent_usd": "0",
       "billed_requests": 0
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "initial brief clarification",
+      "minutes": 3.86735288699468,
+      "all_agent_cost": 3.736292,
+      "owner_cost": 3.736292
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "initial implementation/verification",
+      "minutes": 24.085114816824596,
+      "all_agent_cost": 14.879456,
+      "owner_cost": 14.879456
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "review 1",
+      "minutes": 5.419116667906443,
+      "all_agent_cost": 6.833408,
+      "owner_cost": 2.46179
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "correction 1 and coordination",
+      "minutes": 2.9018333315849305,
+      "all_agent_cost": 2.33213,
+      "owner_cost": 1.872004
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "correction 1 source review",
+      "minutes": 3.1959166685740152,
+      "all_agent_cost": 3.468736,
+      "owner_cost": 1.061288
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "correction 1 and coordination",
+      "minutes": 0.7623499989509582,
+      "all_agent_cost": 0.59631,
+      "owner_cost": 0.59631
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "correction 1 implementation/verification",
+      "minutes": 8.221616665522257,
+      "all_agent_cost": 8.823193999999999,
+      "owner_cost": 2.533822
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "correction 1 and coordination",
+      "minutes": 0.4165500005086263,
+      "all_agent_cost": 0.640862,
+      "owner_cost": 0.640862
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "review 2",
+      "minutes": 5.584916667143504,
+      "all_agent_cost": 6.015814,
+      "owner_cost": 1.3720919999999999
+    },
+    {
+      "arm": "astra-medium",
+      "phase": "final disposition/report",
+      "minutes": 5.676714587211609,
+      "all_agent_cost": 1.268776,
+      "owner_cost": 1.268776
     }
   ],
-  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt role costs join explicit client agent/session headers to actual provider billing IDs through SDK log IDs. Stage costs assign reviewer requests to their review round and implementer requests by provider created_at timestamp. Native review intervals define stage boundaries; stage time intersects each invocation\u2019s observed client timestamps, excluding pauses. Unlocated launcher overhead below 0.4 seconds per run is retained separately. Costs and active minutes reconcile to original full-run totals. See neuralwatt_phase_accounting for exact decimal amounts, coverage and limitations.",
+  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. Astra 6 medium partitions its two measured invocations at native code-review, source-review and correction-worker endpoints, assigning each recorded response once by completion timestamp. Its answer pause is excluded, and native evidence follow-up plus launcher time stay inside the measured coordination/final stages. Role costs are separately summed by session. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt role costs join explicit client agent/session headers to actual provider billing IDs through SDK log IDs. Stage costs assign reviewer requests to their review round and implementer requests by provider created_at timestamp. Native review intervals define stage boundaries; stage time intersects each invocation\u2019s observed client timestamps, excluding pauses. Unlocated launcher overhead below 0.4 seconds per run is retained separately. Costs and active minutes reconcile to original full-run totals. See neuralwatt_phase_accounting for exact decimal amounts, coverage and limitations.",
   "checks": [
     {
       "check": "Ordinary change present or absent",
@@ -2605,7 +2776,8 @@
         "GLM 5.3 Flash high": "Pass",
         "DeepSeek V4.1 Flash high": "Pass",
         "Kimi K3 high": "Pass",
-        "MiMo v2.6 Pro high": "Pass"
+        "MiMo v2.6 Pro high": "Pass",
+        "Astra 6 medium": "Pass"
       },
       "failure_penalty": 0
     },
@@ -2625,7 +2797,8 @@
         "GLM 5.3 Flash high": "False present",
         "DeepSeek V4.1 Flash high": "False present",
         "Kimi K3 high": "False present",
-        "MiMo v2.6 Pro high": "False present"
+        "MiMo v2.6 Pro high": "False present",
+        "Astra 6 medium": "False present"
       },
       "failure_penalty": 4
     },
@@ -2645,7 +2818,8 @@
         "GLM 5.3 Flash high": "Wrong diagnosis",
         "DeepSeek V4.1 Flash high": "Wrong diagnosis",
         "Kimi K3 high": "Wrong diagnosis",
-        "MiMo v2.6 Pro high": "Reports absent"
+        "MiMo v2.6 Pro high": "Reports absent",
+        "Astra 6 medium": "Wrong diagnosis"
       },
       "failure_penalty": 2
     },
@@ -2665,7 +2839,8 @@
         "GLM 5.3 Flash high": "False present",
         "DeepSeek V4.1 Flash high": "Pass",
         "Kimi K3 high": "Pass",
-        "MiMo v2.6 Pro high": "Pass"
+        "MiMo v2.6 Pro high": "Pass",
+        "Astra 6 medium": "Pass"
       },
       "failure_penalty": 4
     },
@@ -2685,7 +2860,8 @@
         "GLM 5.3 Flash high": "Pass",
         "DeepSeek V4.1 Flash high": "Pass",
         "Kimi K3 high": "Unexpected error",
-        "MiMo v2.6 Pro high": "Pass"
+        "MiMo v2.6 Pro high": "Pass",
+        "Astra 6 medium": "Pass"
       },
       "failure_penalty": 1
     },
@@ -2705,7 +2881,8 @@
         "GLM 5.3 Flash high": "Changes",
         "DeepSeek V4.1 Flash high": "Changes",
         "Kimi K3 high": "Changes",
-        "MiMo v2.6 Pro high": "Changes"
+        "MiMo v2.6 Pro high": "Changes",
+        "Astra 6 medium": "Pass"
       },
       "failure_penalty": 2
     }
@@ -3008,6 +3185,23 @@
             "penalty": 2
           }
         ]
+      },
+      {
+        "arm": "astra-medium",
+        "rating": 4,
+        "penalty": 6,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          }
+        ]
       }
     ]
   },
@@ -3022,6 +3216,7 @@
       "haiku-high": 7,
       "haiku-xhigh": 4,
       "luna-medium": 6,
+      "astra-medium": 2,
       "mimo": 5,
       "kimi": 5,
       "glm": 5,
@@ -3084,6 +3279,10 @@
         "The installed MCP tool description omits the integration operation, though its schema includes it.",
         "Checkpoint outcome decoding and intrinsic receipt checks repeat before the existing package validator."
       ],
+      "astra-medium": [
+        "Part of the existing selected review-package validation is reimplemented in the integration path.",
+        "The status dispatcher constructs a store, then the integration handler constructs another for the same operation and discards the first. This does not establish duplicate database reads."
+      ],
       "mimo": [
         "An internal source tag and nullable checkpoint identity can represent combinations the operation does not support. Current producers emit valid combinations.",
         "Checkpoint outcomes are manually decoded and checked in the new storage reader despite an existing typed outcome and focused package validator. The damaged-receipt construction is also repeated within that path.",
@@ -3122,7 +3321,7 @@
     },
     "unit": "one documented finding per candidate; unweighted",
     "scope": "Static reading of the feature path, changed neighbors, relevant tests and documentation; not timed maintenance or systematic naming assessment.",
-    "reviewer": "Sol 6.1 high with root review and cross-candidate calibration; MiMo assessed directly by the authoring agent, without a new independent assessment reviewer",
+    "reviewer": "Sol 6.1 high with root review and cross-candidate calibration; MiMo and Astra 6 medium assessed directly by the authoring agent, without a new independent assessment reviewer",
     "reassessment": "Later issue families were checked against earlier frozen candidates; revised older counts are observer reassessments, not additional findings by the models during their runs."
   },
   "haiku_workflow_evidence": {
@@ -3222,6 +3421,52 @@
     },
     "task_disposition": "left in review, candidate retained unmerged; read-only SQLite verified after RUN_COMPLETE"
   },
+  "astra_medium_workflow_evidence": {
+    "human_exchanges": {
+      "astra-medium": 1
+    },
+    "new_product_decisions": {
+      "astra-medium": 0
+    },
+    "human_implementation_rescue": false,
+    "review_attempts": {
+      "astra-medium": 2
+    },
+    "review_verdicts": {
+      "astra-medium": 2
+    },
+    "code_correction_rounds": {
+      "astra-medium": 1
+    },
+    "history_only_resubmissions": {
+      "astra-medium": 0
+    },
+    "source_review_attempts": {
+      "astra-medium": 1
+    },
+    "correction_worker_contexts": {
+      "astra-medium": 1
+    },
+    "native_configuration": {
+      "astra-medium": {
+        "model": "gpt-6-astra",
+        "effort": "medium",
+        "cli_version": "0.160.0",
+        "native_sessions_verified": 5,
+        "independent_review_contexts": true
+      }
+    },
+    "post_run_checks": {
+      "astra-medium": {
+        "adapter_cases": 10,
+        "native_cases": 10,
+        "selected_unittests": 14,
+        "selected_unittests_passed": true,
+        "candidate_unchanged": true
+      }
+    },
+    "task_disposition": "Item and attempt done; candidate retained unmerged; read-only SQLite confirms subject revision 20 after RUN_COMPLETE."
+  },
   "human_cost_scenario": {
     "baseline": "Luna 6 high",
     "formula": "net saving = assumed human minutes saved * hourly human cost / 60 - (alternative AI cost - baseline AI cost)",
@@ -3271,6 +3516,8 @@
     "range_note": "Two attribution choices, not confidence intervals; real timings can fall outside the range."
   },
   "references": [
+    "https://developers.openai.com/api/docs/pricing",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
     "https://developers.openai.com/api/docs/models/gpt-6-luna",
     "https://learn.chatgpt.com/docs/pricing",
     "https://learn.chatgpt.com/docs/agent-configuration/speed",
