@@ -1,12 +1,12 @@
 {
-  "report_revision": 41,
-  "assessment_date": "2026-10-10",
+  "report_revision": 42,
+  "assessment_date": "2026-10-11",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
-    "cost": "USD at recorded API prices, not subscription invoices; Sonnet current-pricing values are a separate recalculation",
+    "cost": "USD at recorded API prices; Neuralwatt runs use the retained catalog token-tariff equivalent, with provider charges separately reported. These are not subscription invoices. Sonnet current-pricing values are a separate recalculation.",
     "time": "minutes"
   },
-  "accounting": "Run totals include implementation, review, correction and managing the work; exclude human-answer pauses, evidence PR creation and later assessment.",
+  "accounting": "Run totals include implementation, review, correction, retries and managing the work. Active times exclude pauses between invocations, evidence PR creation and later assessment. Kimi also retains its actual inclusive elapsed interval; observer pauses cannot all be attributed to model or provider.",
   "runs": [
     {
       "arm": "opus",
@@ -38,7 +38,12 @@
           3,
           6
         ]
-      }
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null
     },
     {
       "arm": "sonnet",
@@ -70,7 +75,12 @@
           6,
           5
         ]
-      }
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null
     },
     {
       "arm": "astra",
@@ -102,7 +112,12 @@
           3,
           4
         ]
-      }
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null
     },
     {
       "arm": "sol",
@@ -134,7 +149,12 @@
           3,
           4
         ]
-      }
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null
     },
     {
       "arm": "luna",
@@ -166,7 +186,12 @@
           5,
           6
         ]
-      }
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null
     },
     {
       "arm": "luna-xhigh",
@@ -198,7 +223,12 @@
           29,
           6
         ]
-      }
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null
     },
     {
       "arm": "haiku-high",
@@ -230,7 +260,12 @@
           14,
           4
         ]
-      }
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null
     },
     {
       "arm": "haiku-xhigh",
@@ -262,7 +297,12 @@
           14,
           3
         ]
-      }
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null
     },
     {
       "arm": "luna-medium",
@@ -299,9 +339,340 @@
           0,
           0
         ]
-      }
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": null
+    },
+    {
+      "arm": "glm",
+      "model": "GLM 5.3 high",
+      "cost": 18.2334484,
+      "active_minutes": 93.68579747916665,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 0,
+      "reviewer_cost": null,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": null,
+      "candidate": "8e846e2c9109bc3eff65f7ea618599b9c433f891",
+      "pr": "https://github.com/valsteen/pinboard/pull/179",
+      "footprint": {
+        "production": [
+          790,
+          23,
+          12
+        ],
+        "tests": [
+          926,
+          3,
+          5
+        ],
+        "documentation/guidance": [
+          19,
+          18,
+          6
+        ]
+      },
+      "provider_model": "glm-5.3",
+      "provider_charged_usd": "4.433961",
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": "Unknown; full workflow is included in totals"
+    },
+    {
+      "arm": "glm-flash",
+      "model": "GLM 5.3 Flash high",
+      "cost": 3.18657729,
+      "active_minutes": 76.3523852625008,
+      "candidate_reviews": 3,
+      "correction_rounds": 1,
+      "source_reviews": 0,
+      "reviewer_cost": null,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": null,
+      "candidate": "e5bbbeac3c9dcabf654c1bf0dbb08371badaaaab",
+      "pr": "https://github.com/valsteen/pinboard/pull/180",
+      "footprint": {
+        "production": [
+          807,
+          14,
+          9
+        ],
+        "tests": [
+          562,
+          3,
+          4
+        ],
+        "documentation/guidance": [
+          18,
+          15,
+          4
+        ]
+      },
+      "provider_model": "glm-5.3-flash",
+      "provider_charged_usd": "1.413517",
+      "wall_minutes": null,
+      "setup_caveat": null,
+      "phase_split_status": "Unknown; full workflow is included in totals"
+    },
+    {
+      "arm": "deepseek",
+      "model": "DeepSeek V4.1 Flash high",
+      "cost": 2.14839873,
+      "active_minutes": 79.29186977359932,
+      "candidate_reviews": 1,
+      "correction_rounds": 0,
+      "source_reviews": 0,
+      "reviewer_cost": null,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": null,
+      "candidate": "eeb10ae452b00515f0b3f946db6bc22ab7d62dcb",
+      "pr": "https://github.com/valsteen/pinboard/pull/181",
+      "footprint": {
+        "production": [
+          741,
+          19,
+          14
+        ],
+        "tests": [
+          543,
+          4,
+          5
+        ],
+        "documentation/guidance": [
+          17,
+          16,
+          5
+        ]
+      },
+      "provider_model": "deepseek-v4.1-flash",
+      "provider_charged_usd": "0.985927",
+      "wall_minutes": null,
+      "setup_caveat": "Isolation policy denied one Read of a CLI-saved tool response. Model re-read original brief in smaller sections without observer help. No inputs/configuration changed; all elapsed time/spending retained; counterfactual impact unknown. Fix output-file access before Kimi.",
+      "phase_split_status": "Unknown; full workflow is included in totals"
+    },
+    {
+      "arm": "kimi",
+      "model": "Kimi K3 high",
+      "cost": 50.5006536,
+      "active_minutes": 165.29816566806596,
+      "candidate_reviews": 3,
+      "correction_rounds": 2,
+      "source_reviews": 0,
+      "reviewer_cost": null,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": null,
+      "candidate": "3dcaf304af24ca3077b52453e29a30931e7d1396",
+      "pr": "https://github.com/valsteen/pinboard/pull/183",
+      "footprint": {
+        "production": [
+          874,
+          16,
+          12
+        ],
+        "tests": [
+          1040,
+          3,
+          6
+        ],
+        "documentation/guidance": [
+          17,
+          15,
+          6
+        ]
+      },
+      "provider_model": "kimi-k3",
+      "provider_charged_usd": "18.821699",
+      "wall_minutes": 179.0194699,
+      "setup_caveat": "Two provider cold-prefill rate-limit interruptions; same native conversation/candidate resumed with two administrative Continue prompts. CLI native retries changed from zero to twelve after isolated compatibility verification. Active time and actual inclusive elapsed are retained; observer diagnosis/setup pauses are not all model/provider time. No reset or estimated recovery subtraction.",
+      "phase_split_status": "Unknown; full workflow is included in totals"
     }
   ],
+  "neuralwatt_billing": {
+    "glm": {
+      "model": "glm-5.3",
+      "requested_models": [
+        "glm-5.3"
+      ],
+      "served_models": [
+        "zai-org/GLM-5.3"
+      ],
+      "successful_billed_requests": 648,
+      "usage": {
+        "prompt_tokens": 91700092,
+        "cached_tokens": 90035200,
+        "completion_tokens": 614278,
+        "total_tokens": 92314370
+      },
+      "rates": {
+        "input_per_million": 1.45,
+        "output_per_million": 4.5,
+        "cached_input_per_million": 0.145,
+        "cached_output_per_million": null,
+        "currency": "USD",
+        "pricing_tbd": false,
+        "cached_input_is_default": true,
+        "service_tier": "standard",
+        "flex_discount_multiplier": null
+      },
+      "formula": "((prompt_tokens - cached_tokens) * input_per_million + cached_tokens * cached_input_per_million + completion_tokens * output_per_million) / 1000000",
+      "catalog_token_tariff_equivalent_usd": "18.23344840",
+      "provider_charged_usd": "4.433961",
+      "review_only_charge_usd": null,
+      "billing_adjustments": null,
+      "charged_energy_kwh": null,
+      "charge_complete": true,
+      "catalog_equivalent_complete": true,
+      "model_effort": "high",
+      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date"
+    },
+    "glm-flash": {
+      "model": "glm-5.3-flash",
+      "requested_models": [
+        "glm-5.3-flash"
+      ],
+      "served_models": [
+        "zai-org/GLM-5.3-Flash"
+      ],
+      "successful_billed_requests": 640,
+      "usage": {
+        "prompt_tokens": 90907727,
+        "cached_tokens": 88994048,
+        "completion_tokens": 459408,
+        "total_tokens": 91367135
+      },
+      "rates": {
+        "input_per_million": 0.15,
+        "output_per_million": 0.5,
+        "cached_input_per_million": 0.03,
+        "cached_output_per_million": null,
+        "currency": "USD",
+        "pricing_tbd": false,
+        "cached_input_is_default": false,
+        "service_tier": "standard",
+        "flex_discount_multiplier": null
+      },
+      "formula": "((prompt_tokens - cached_tokens) * input_per_million + cached_tokens * cached_input_per_million + completion_tokens * output_per_million) / 1000000",
+      "catalog_token_tariff_equivalent_usd": "3.18657729",
+      "provider_charged_usd": "1.413517",
+      "review_only_charge_usd": null,
+      "billing_adjustments": null,
+      "charged_energy_kwh": null,
+      "charge_complete": true,
+      "catalog_equivalent_complete": true,
+      "model_effort": "high",
+      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date"
+    },
+    "deepseek": {
+      "model": "deepseek-v4.1-flash",
+      "model_effort": "high",
+      "requested_models": [
+        "deepseek-v4.1-flash"
+      ],
+      "served_models": [
+        "deepseek-ai/DeepSeek-V4.1-Flash"
+      ],
+      "successful_billed_requests": 712,
+      "usage": {
+        "prompt_tokens": 105187935,
+        "cached_tokens": 103554432,
+        "completion_tokens": 583428,
+        "total_tokens": 105771363
+      },
+      "rates": {
+        "input_per_million": 0.15,
+        "output_per_million": 0.6,
+        "cached_input_per_million": 0.015,
+        "cached_output_per_million": null,
+        "currency": "USD",
+        "pricing_tbd": false,
+        "cached_input_is_default": false,
+        "service_tier": "standard",
+        "flex_discount_multiplier": null
+      },
+      "formula": "((prompt_tokens - cached_tokens) * input_per_million + cached_tokens * cached_input_per_million + completion_tokens * output_per_million) / 1000000",
+      "catalog_token_tariff_equivalent_usd": "2.14839873",
+      "provider_charged_usd": "0.985927",
+      "charge_complete": true,
+      "catalog_equivalent_complete": true,
+      "review_only_charge_usd": null,
+      "billing_adjustments": null,
+      "charged_energy_kwh": null,
+      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date"
+    },
+    "kimi": {
+      "model": "kimi-k3",
+      "requested_models": [
+        "kimi-k3"
+      ],
+      "served_models": [
+        "moonshotai/Kimi-K3"
+      ],
+      "successful_billed_requests": 714,
+      "usage": {
+        "prompt_tokens": 98980402,
+        "cached_tokens": 94643712,
+        "completion_tokens": 606498,
+        "total_tokens": 99586900
+      },
+      "rates": {
+        "input_per_million": 3.0,
+        "output_per_million": 15.0,
+        "cached_input_per_million": 0.3,
+        "cached_output_per_million": null,
+        "currency": "USD",
+        "pricing_tbd": false,
+        "cached_input_is_default": false,
+        "service_tier": "standard",
+        "flex_discount_multiplier": null
+      },
+      "formula": "((prompt_tokens - cached_tokens) * input_per_million + cached_tokens * cached_input_per_million + completion_tokens * output_per_million) / 1000000",
+      "catalog_token_tariff_equivalent_usd": "50.5006536",
+      "provider_charged_usd": "18.821699",
+      "review_only_charge_usd": null,
+      "billing_adjustments": null,
+      "charged_energy_kwh": null,
+      "charge_complete": true,
+      "catalog_equivalent_complete": true,
+      "model_effort": "high",
+      "effective_date": "snapshot verified 2026-10-10; not a claim of public rate-change effective date",
+      "interrupted_rejected_request_count": 217
+    }
+  },
+  "kimi_interruption_timing": {
+    "started_at": "2026-10-10T20:39:30.798262+00:00",
+    "last_native_invocation_finished_at": "2026-10-10T23:38:31.966456+00:00",
+    "active_minutes": 165.29816566806596,
+    "observed_elapsed_minutes": 179.0194699,
+    "invocations": 3,
+    "pause_attribution": "Provider interruption diagnosis and observer setup checks; not all pauses can be attributed to model or provider.",
+    "retry_policy": "Zero native retries in the first two invocations; twelve bounded native retries from the third invocation.",
+    "same_context_and_candidate_continued": true,
+    "budget_reset": false,
+    "estimated_recovery_time_subtracted": false
+  },
+  "neuralwatt_conditions": {
+    "client": "Claude Code 2.1.293",
+    "protocol": "Neuralwatt native Messages",
+    "reasoning_effort": "high for implementer and fresh independent reviewers; equal labels do not imply equal capability",
+    "client_context_tokens": 200000,
+    "thinking_replay": "Thinking blocks and signatures were structurally replayed after tools and continuation; backend interpretation and quality impact were not verified.",
+    "frozen_source": "d83a480c99785fe0c4f754c439454d331c97e90c",
+    "allowances_each": {
+      "active_seconds": 21600,
+      "provider_charged_usd": 40
+    },
+    "role_cost_status": "Unknown: request-level totals include reviewers, but exact attribution to implementer versus reviewer is unavailable.",
+    "preparation_provider_charged_usd": "1.244225",
+    "preparation_catalog_equivalent_usd": "7.37702971"
+  },
   "sonnet_current_pricing": {
     "status": "same observed run, recalculated at current prices; no rerun",
     "effective_date": "2026-10-07",
@@ -592,7 +963,10 @@
       "usd": 20,
       "active_hours": 6,
       "previous_spending_deducted": false
-    }
+    },
+    "neuralwatt_comparison_provider_charged_usd": 25.655103999999998,
+    "neuralwatt_preparation_provider_charged_usd": "1.244225",
+    "basis": "Historical original accounting is preserved; provider charges and token-tariff workload equivalents are separate."
   },
   "stages": [
     {
@@ -1289,7 +1663,7 @@
       "owner_cost": 0
     }
   ],
-  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged.",
+  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt stage and exact role attribution are unavailable; charts show neutral full-workflow totals, and reviewer/implementer role costs remain null.",
   "checks": [
     {
       "check": "Ordinary change present or absent",
@@ -1302,7 +1676,11 @@
         "Luna 6 xhigh": "Pass",
         "Haiku 5.5 high": "Pass",
         "Haiku 5.5 xhigh": "Pass",
-        "Luna 6 medium": "Pass"
+        "Luna 6 medium": "Pass",
+        "GLM 5.3 high": "Pass",
+        "GLM 5.3 Flash high": "Pass",
+        "DeepSeek V4.1 Flash high": "Pass",
+        "Kimi K3 high": "Pass"
       },
       "failure_penalty": 0
     },
@@ -1317,7 +1695,11 @@
         "Luna 6 xhigh": "False present",
         "Haiku 5.5 high": "False present",
         "Haiku 5.5 xhigh": "False present",
-        "Luna 6 medium": "False present"
+        "Luna 6 medium": "False present",
+        "GLM 5.3 high": "False present",
+        "GLM 5.3 Flash high": "False present",
+        "DeepSeek V4.1 Flash high": "False present",
+        "Kimi K3 high": "False present"
       },
       "failure_penalty": 4
     },
@@ -1332,7 +1714,11 @@
         "Luna 6 xhigh": "Wrong diagnosis",
         "Haiku 5.5 high": "Reports absent",
         "Haiku 5.5 xhigh": "Reports absent",
-        "Luna 6 medium": "Reports absent"
+        "Luna 6 medium": "Reports absent",
+        "GLM 5.3 high": "Wrong diagnosis",
+        "GLM 5.3 Flash high": "Wrong diagnosis",
+        "DeepSeek V4.1 Flash high": "Wrong diagnosis",
+        "Kimi K3 high": "Wrong diagnosis"
       },
       "failure_penalty": 2
     },
@@ -1347,7 +1733,11 @@
         "Luna 6 xhigh": "Pass",
         "Haiku 5.5 high": "Pass",
         "Haiku 5.5 xhigh": "Pass",
-        "Luna 6 medium": "False present"
+        "Luna 6 medium": "False present",
+        "GLM 5.3 high": "Pass",
+        "GLM 5.3 Flash high": "False present",
+        "DeepSeek V4.1 Flash high": "Pass",
+        "Kimi K3 high": "Pass"
       },
       "failure_penalty": 4
     },
@@ -1362,7 +1752,11 @@
         "Luna 6 xhigh": "Pass",
         "Haiku 5.5 high": "Pass",
         "Haiku 5.5 xhigh": "Pass",
-        "Luna 6 medium": "Pass"
+        "Luna 6 medium": "Pass",
+        "GLM 5.3 high": "Pass",
+        "GLM 5.3 Flash high": "Pass",
+        "DeepSeek V4.1 Flash high": "Pass",
+        "Kimi K3 high": "Unexpected error"
       },
       "failure_penalty": 1
     },
@@ -1377,12 +1771,16 @@
         "Luna 6 xhigh": "Stable\u00b9",
         "Haiku 5.5 high": "Changes",
         "Haiku 5.5 xhigh": "Pass",
-        "Luna 6 medium": "Changes"
+        "Luna 6 medium": "Changes",
+        "GLM 5.3 high": "Stable\u00b9",
+        "GLM 5.3 Flash high": "Changes",
+        "DeepSeek V4.1 Flash high": "Changes",
+        "Kimi K3 high": "Changes"
       },
       "failure_penalty": 2
     }
   ],
-  "check_notes": "Selected after examining the runs; not exhaustive or representative. Stable whitespace behavior for Luna 6 xhigh deliberately ignores context whitespace and is not counted as a proven defect.",
+  "check_notes": "Selected after the original six runs and applied unchanged to later configurations; not exhaustive or representative. Luna 6 xhigh and GLM 5.3 high deliberately ignore context whitespace; that stable behavior is recorded without an additional defect penalty.",
   "quality_rating": {
     "label": "Quality rating on selected checks (/10)",
     "formula": "max(0, 10 - sum(remaining failure penalties))",
@@ -1565,40 +1963,166 @@
             "penalty": 2
           }
         ]
+      },
+      {
+        "arm": "glm",
+        "rating": 4,
+        "penalty": 6,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          }
+        ]
+      },
+      {
+        "arm": "glm-flash",
+        "rating": 0,
+        "penalty": 12,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          },
+          {
+            "check": "Absent change checked from a nested directory",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Result independent of user whitespace setting",
+            "result": "Changes",
+            "penalty": 2
+          }
+        ]
+      },
+      {
+        "arm": "deepseek",
+        "rating": 2,
+        "penalty": 8,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          },
+          {
+            "check": "Result independent of user whitespace setting",
+            "result": "Changes",
+            "penalty": 2
+          }
+        ]
+      },
+      {
+        "arm": "kimi",
+        "rating": 1,
+        "penalty": 9,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          },
+          {
+            "check": "Target containing a NUL character",
+            "result": "Unexpected error",
+            "penalty": 1
+          },
+          {
+            "check": "Result independent of user whitespace setting",
+            "result": "Changes",
+            "penalty": 2
+          }
+        ]
       }
     ]
   },
   "maintenance": {
     "counts": {
-      "opus": 3,
-      "sonnet": 1,
+      "opus": 4,
+      "sonnet": 2,
       "astra": 3,
       "sol": 2,
-      "luna": 3,
-      "luna-xhigh": 3,
-      "haiku-high": 6,
-      "haiku-xhigh": 3,
-      "luna-medium": 6
+      "luna": 4,
+      "luna-xhigh": 5,
+      "haiku-high": 7,
+      "haiku-xhigh": 4,
+      "luna-medium": 6,
+      "kimi": 5,
+      "glm": 5,
+      "glm-flash": 5,
+      "deepseek": 5
     },
-    "unit": "one documented finding per candidate; unweighted",
-    "scope": "Static reading of the feature path, changed neighbors, relevant tests and documentation; not timed maintenance or systematic naming assessment.",
-    "reviewer": "Sol 6.1 high",
-    "haiku_findings": {
+    "findings": {
+      "opus": [
+        "An unused interface for reading integration status.",
+        "The MCP tool description omits the new operation, though its schema includes it.",
+        "Part of the existing review-package validation is reimplemented in the integration path.",
+        "The same checkout is resolved twice during one integration read."
+      ],
+      "sonnet": [
+        "The same saved review outcome is decoded twice, first during storage reads and then when choosing the revision.",
+        "The same checkout is resolved twice during one integration read."
+      ],
+      "astra": [
+        "Part of the existing review-package validation is reimplemented.",
+        "Failure-detail formatting repeats an existing formatter.",
+        "The error schema allows a retry instruction that should be invalid for a damaged-evidence error. Current callers give the correct instruction."
+      ],
+      "sol": [
+        "Part of the existing review-package validation is reimplemented.",
+        "A second error type carries the same damaged-receipt facts, adding another representation for shared consumers to handle."
+      ],
+      "luna": [
+        "Part of the existing review-package validation is reimplemented.",
+        "A new damaged-receipt wrapper is immediately converted to the existing error type.",
+        "The error schema has the same retry permissiveness as Astra 6 low. Current callers give the correct instruction.",
+        "The same checkout is resolved twice during one integration read."
+      ],
+      "luna-xhigh": [
+        "Receipt validity rules are repeated before calling the existing package validator.",
+        "Unused facts, mutually exclusive optional values and a redundant pair of verified values complicate the internal data flow. These form one grouped finding.",
+        "A store object is constructed twice; the first is discarded. This does not establish duplicate database reads.",
+        "The same checkout is resolved twice during one integration read.",
+        "The registered MCP tool description omits the integration operation."
+      ],
       "haiku-high": [
         "An already selected source is converted to a string discriminator and matched again before presentation.",
         "The rejection schema permits code/retry combinations that the brief rules out. Current callers use the correct combination.",
         "An extra adapter function only forwards the verified diff to the Git adapter.",
         "Successful checkpoint facts carry a history identifier that no consumer uses.",
         "Target restrictions are checked in Python but absent from the advertised input schema.",
-        "A separate partial checkpoint receipt/package validation path repeats rules with an existing focused validator."
+        "A separate partial checkpoint receipt/package validation path repeats rules with an existing focused validator.",
+        "The same checkout is resolved twice during one integration read."
       ],
       "haiku-xhigh": [
         "A successful observation carries the same verified candidate identity twice.",
         "A parallel error-detail serializer repeats an existing formatter and passes loosely typed facts and retry strings.",
-        "Two tests check the same checkpoint query-plan obligation; one adds no distinct scenario."
-      ]
-    },
-    "luna_medium_findings": {
+        "Two tests check the same checkpoint query-plan obligation; one adds no distinct scenario.",
+        "The same checkout is resolved twice during one integration read."
+      ],
       "luna-medium": [
         "A selected checkpoint still carries optional references, requiring repeated availability checks; other handoffs retain unused facts.",
         "Evidence failure details are flattened, searched by field name and reconstructed at the MCP boundary.",
@@ -1606,8 +2130,40 @@
         "The architecture map assigns Git comparison composition to the evidence adapter, although the MCP owner performs it.",
         "The installed MCP tool description omits the integration operation, though its schema includes it.",
         "Checkpoint outcome decoding and intrinsic receipt checks repeat before the existing package validator."
+      ],
+      "kimi": [
+        "The same checkout is resolved twice during one integration read.",
+        "A typed Git failure code is converted to an unrestricted internal string before response validation.",
+        "Internal and output records permit presence and nullable target-revision combinations that contradict their documented relationship. Current producers emit valid combinations.",
+        "Unused branch/base facts and an unconsumed reader interface add transport and discovery work.",
+        "Part of the existing focused checkpoint-package validation is reimplemented in the integration path."
+      ],
+      "glm": [
+        "A source conversion silently falls back to completion instead of matching every supported source explicitly.",
+        "The advertised error schema permits any nonempty code, although runtime validation recognizes four operational codes. Current producers use the correct codes.",
+        "The same checkout is resolved twice during one integration read.",
+        "A new environment option on a Git helper has no production caller.",
+        "The registered MCP tool description omits the integration operation."
+      ],
+      "glm-flash": [
+        "An internal source tag and nullable checkpoint identity can represent combinations the operation does not support.",
+        "An internal failure carrier permits loose combinations of rejection facts, adding validation work for downstream code.",
+        "The storage reader also chooses which candidate source the product should use, mixing data access with application policy.",
+        "The same immutable checkpoint outcome is decoded during storage lookup and again during package validation.",
+        "The registered MCP tool description omits the integration operation."
+      ],
+      "deepseek": [
+        "An internal source tag and nullable checkpoint identity can represent combinations the operation does not support.",
+        "The same checkout is resolved twice during one integration read.",
+        "The registered MCP tool description omits the integration operation.",
+        "The native guide describes the comparison as Git-free, although it runs Git to build an index and check the patch.",
+        "An attempt branch is selected and carried through integration facts although that read has no consumer for it."
       ]
-    }
+    },
+    "unit": "one documented finding per candidate; unweighted",
+    "scope": "Static reading of the feature path, changed neighbors, relevant tests and documentation; not timed maintenance or systematic naming assessment.",
+    "reviewer": "Sol 6.1 high with root review and cross-candidate calibration",
+    "reassessment": "Later issue families were checked against earlier frozen candidates; revised older counts are observer reassessments, not additional findings by the models during their runs."
   },
   "haiku_workflow_evidence": {
     "human_exchanges": {
@@ -1759,7 +2315,10 @@
     "https://learn.chatgpt.com/docs/pricing",
     "https://learn.chatgpt.com/docs/agent-configuration/speed",
     "https://www.anthropic.com/claude-haiku-5-5",
-    "https://platform.claude.com/docs/en/about-claude/pricing"
+    "https://platform.claude.com/docs/en/about-claude/pricing",
+    "https://docs.neuralwatt.com/api/messages",
+    "https://docs.neuralwatt.com/api/usage-requests",
+    "https://docs.neuralwatt.com/guides/rate-limits"
   ],
   "evidence_limits": "Contains exported values and selected outcomes, not raw session logs, prompts, private reasoning or a complete reproduction package. The original model-authored PR descriptions predate the later checks."
 }
