@@ -1,12 +1,12 @@
 {
-  "report_revision": 47,
-  "assessment_date": "2026-10-11",
+  "report_revision": 48,
+  "assessment_date": "2026-10-17",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
     "cost": "USD at recorded API prices; Neuralwatt runs use the retained catalog token-tariff equivalent, with provider charges separately reported. These are not subscription invoices. Sonnet current-pricing values are a separate recalculation.",
     "time": "minutes"
   },
-  "accounting": "Run totals include implementation, review, correction, retries and managing the work. Active times exclude pauses between invocations, evidence PR creation and later assessment. Kimi also retains its actual inclusive elapsed interval; observer pauses cannot all be attributed to model or provider.",
+  "accounting": "Run totals include implementation, review, correction, retries and managing the work. Active times exclude pauses between invocations, evidence PR creation and later assessment. Kimi and Terra also retain their actual inclusive elapsed intervals; observer pauses cannot all be attributed to model or provider.",
   "runs": [
     {
       "arm": "opus",
@@ -44,6 +44,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -93,6 +95,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -142,6 +146,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -191,6 +197,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -240,6 +248,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -289,6 +299,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -338,6 +350,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -387,6 +401,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -441,6 +457,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -490,6 +508,8 @@
       "reviewer_provider_charged_usd": "0.695539",
       "owner_provider_charged_usd": "3.738422",
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
       "outcome": null,
@@ -539,6 +559,8 @@
       "reviewer_provider_charged_usd": "0.391675",
       "owner_provider_charged_usd": "1.021842",
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
       "outcome": null,
@@ -588,6 +610,8 @@
       "reviewer_provider_charged_usd": "0.058354",
       "owner_provider_charged_usd": "0.927573",
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": "Isolation policy denied one Read of a CLI-saved tool response. Model re-read original brief in smaller sections without observer help. No inputs/configuration changed; all elapsed time/spending retained; counterfactual impact unknown. Fix output-file access before Kimi.",
       "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
       "outcome": null,
@@ -637,6 +661,8 @@
       "reviewer_provider_charged_usd": "3.098034",
       "owner_provider_charged_usd": "15.723665",
       "wall_minutes": 179.0194699,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": "Two provider cold-prefill rate-limit interruptions; same native conversation/candidate resumed with two administrative Continue prompts. CLI native retries changed from zero to twelve after isolated compatibility verification. Active time and actual inclusive elapsed are retained; observer diagnosis/setup pauses are not all model/provider time. No reset or estimated recovery subtraction.",
       "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
       "outcome": null,
@@ -686,6 +712,8 @@
       "reviewer_provider_charged_usd": "0.841727",
       "owner_provider_charged_usd": "3.155431",
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": "Default 200k attempt stopped on automatic-compaction thrashing; preserved separately. Human approved a fresh 1M-context restart using only the remaining original allowance. This run uses that documented client setting, unlike the four earlier Neuralwatt runs.",
       "phase_split_status": "Reconciled from client agent/session headers, provider request billing IDs and observed native workflow intervals; sub-second unlocated launcher time retained separately",
       "outcome": "model-stopped-before-approval",
@@ -740,6 +768,8 @@
       "reviewer_provider_charged_usd": null,
       "owner_provider_charged_usd": null,
       "wall_minutes": null,
+      "workflow_approved": null,
+      "workflow_complete": null,
       "setup_caveat": null,
       "phase_split_status": null,
       "outcome": null,
@@ -752,6 +782,62 @@
       "last_reviewed_candidate": null,
       "last_review_outcome": null,
       "no_limit_reached": null
+    },
+    {
+      "arm": "terra-high",
+      "model": "Terra 5.6 high",
+      "cost": 9.9920936,
+      "active_minutes": 46.47996921936671,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 0,
+      "reviewer_cost": 2.198024,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 7.794069599999996,
+      "candidate": "40c4d92969b1762816452b94210bb7df67eced22",
+      "pr": "https://github.com/valsteen/pinboard/pull/211",
+      "footprint": {
+        "production": [
+          724,
+          10,
+          10
+        ],
+        "tests": [
+          70,
+          3,
+          4
+        ],
+        "documentation/guidance": [
+          24,
+          13,
+          6
+        ],
+        "other": [
+          0,
+          0,
+          0
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": 49.109495202700295,
+      "workflow_approved": false,
+      "workflow_complete": false,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": "Stopped after two rejected reviews; incomplete and unapproved.",
+      "client_context_tokens": null,
+      "content_review_verdicts": 2,
+      "approvals": 0,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": true,
+      "last_reviewed_candidate": "40c4d92969b1762816452b94210bb7df67eced22",
+      "last_review_outcome": "needs_correction",
+      "no_limit_reached": true
     }
   ],
   "neuralwatt_billing": {
@@ -1480,6 +1566,92 @@
     "responses_assigned_exactly_once": true,
     "phase_basis": "All-agent recorded costs by response completion timestamp; nonoverlapping measured invocation windows split at native code-review, source-review and correction-worker endpoints. Human-answer waiting is excluded; native evidence follow-up and launcher time remain in coordination/final stages. Role costs are separately summed by native session identity. No estimated recovery time deducted."
   },
+  "terra_high_billing": {
+    "model": "gpt-5.6-terra",
+    "effort": "high",
+    "standard_rates_per_million": {
+      "input": 2,
+      "cache_hit": 0.2,
+      "cache_write": 2.5,
+      "output": 12
+    },
+    "long_context_rates_per_million": {
+      "input": 4,
+      "cache_hit": 0.4,
+      "cache_write": 5,
+      "output": 18
+    },
+    "long_context_threshold_input_tokens": 272000,
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "checked_date": "2026-10-17",
+    "response_count": 273,
+    "long_context_responses": 0,
+    "recorded_cost_usd": 9.9920936,
+    "preparation_cost_usd": 0.1213228,
+    "all_responses_assigned_once": true,
+    "analysis_support_included": true,
+    "authentication": "ChatGPT sign-in; actual plan or credit consumption not attributed",
+    "formula": "sum(((input-cached-cache_write)*input_rate + cached*cache_rate + cache_write*write_rate + output*output_rate)/1000000) at each response context tier; output already includes reasoning",
+    "scope": "Run cost includes owner, analysis helper, both reviewers, correction and final report. Preparation is separate.",
+    "tokens": {
+      "input_tokens": 35273506,
+      "cached_input_tokens": 34345728,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 105616,
+      "reasoning_output_tokens": 22725,
+      "total_tokens": 35379122
+    }
+  },
+  "terra_high_workflow_evidence": {
+    "human_exchanges": {
+      "terra-high": 1
+    },
+    "new_product_decisions": {
+      "terra-high": 0
+    },
+    "human_implementation_rescue": false,
+    "review_attempts": {
+      "terra-high": 2
+    },
+    "review_verdicts": {
+      "terra-high": 2
+    },
+    "code_correction_rounds": {
+      "terra-high": 1
+    },
+    "native_configuration": {
+      "model": "gpt-5.6-terra",
+      "effort": "high",
+      "cli_version": "0.160.0",
+      "sessions": 4,
+      "independent_review_contexts": true
+    },
+    "post_run_checks": {
+      "adapter_cases": 10,
+      "native_cases": 10,
+      "candidate_unchanged": true,
+      "selected_unittests": 19,
+      "selected_unittests_passed": true
+    },
+    "workflow_approved": false,
+    "workflow_complete": false
+  },
+  "terra_high_conditions": {
+    "frozen_base": "d83a480c99785fe0c4f754c439454d331c97e90c",
+    "active_hour_allowance": 6,
+    "token_price_allowance_usd": 60,
+    "preparation_cost_usd": 0.1213228,
+    "setup_clarifications": 1,
+    "new_product_decisions": 0,
+    "resumed_same_native_conversation_in_new_isolated_client_home": true,
+    "active_minutes": 46.47996921936671,
+    "inclusive_elapsed_minutes": 49.109495202700295,
+    "no_limit_reached": true,
+    "outcome": "Stopped after two rejected reviews with checkpoint selection, required behavior tests and coverage unfinished.",
+    "accounting": "273 unique billed responses across owner, inherited analysis helper and two fresh reviewers. Duplicated ancestor history deduplicated by native response ID with consistent usage; each response assigned once. No estimated recovery subtraction.",
+    "owner_session_cost": 7.384973599999996,
+    "analysis_support_cost": 0.409096
+  },
   "experiment_accounting": {
     "original_six_comparison_runs_usd": 97.30049386000002,
     "original_experiment_including_its_discarded_attempts_usd_rounded": 106.71,
@@ -1577,6 +1749,8 @@
       "active_hours": 6,
       "previous_spending_deducted": false
     },
+    "terra_high_recorded_api_equivalent_usd": 9.9920936,
+    "terra_high_preparation_api_equivalent_usd": 0.1213228,
     "astra_medium_recorded_api_equivalent_usd": 48.594978,
     "astra_medium_preparation_inference_calls": 0,
     "neuralwatt_comparison_provider_charged_usd": 29.652262,
@@ -2756,9 +2930,51 @@
       "minutes": 5.676714587211609,
       "all_agent_cost": 1.268776,
       "owner_cost": 1.268776
+    },
+    {
+      "arm": "terra-high",
+      "phase": "initial setup clarification",
+      "minutes": 3.2636428316434225,
+      "all_agent_cost": 0.8319068000000001,
+      "owner_cost": 0.8319068000000001
+    },
+    {
+      "arm": "terra-high",
+      "phase": "initial implementation/verification",
+      "minutes": 25.409246301651002,
+      "all_agent_cost": 5.4958800000000005,
+      "owner_cost": 5.4958800000000005
+    },
+    {
+      "arm": "terra-high",
+      "phase": "review 1",
+      "minutes": 6.755383332570394,
+      "all_agent_cost": 1.3593924,
+      "owner_cost": 0.1134548
+    },
+    {
+      "arm": "terra-high",
+      "phase": "correction 1 and coordination",
+      "minutes": 3.0131333311398825,
+      "all_agent_cost": 0.937032,
+      "owner_cost": 0.937032
+    },
+    {
+      "arm": "terra-high",
+      "phase": "review 2",
+      "minutes": 6.9213333368301395,
+      "all_agent_cost": 1.0341092,
+      "owner_cost": 0.0820228
+    },
+    {
+      "arm": "terra-high",
+      "phase": "final disposition/report",
+      "minutes": 1.1172300855318704,
+      "all_agent_cost": 0.3337732,
+      "owner_cost": 0.3337732
     }
   ],
-  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. Astra 6 medium partitions its two measured invocations at native code-review, source-review and correction-worker endpoints, assigning each recorded response once by completion timestamp. Its answer pause is excluded, and native evidence follow-up plus launcher time stay inside the measured coordination/final stages. Role costs are separately summed by session. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt role costs join explicit client agent/session headers to actual provider billing IDs through SDK log IDs. Stage costs assign reviewer requests to their review round and implementer requests by provider created_at timestamp. Native review intervals define stage boundaries; stage time intersects each invocation\u2019s observed client timestamps, excluding pauses. Unlocated launcher overhead below 0.4 seconds per run is retained separately. Costs and active minutes reconcile to original full-run totals. See neuralwatt_phase_accounting for exact decimal amounts, coverage and limitations.",
+  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. Astra 6 medium partitions its two measured invocations at native code-review, source-review and correction-worker endpoints, assigning each recorded response once by completion timestamp. Its answer pause is excluded, and native evidence follow-up plus launcher time stay inside the measured coordination/final stages. Role costs are separately summed by session. Terra partitions both measured invocations at its native review and correction boundaries; implementation includes its analysis helper. All 273 unique response IDs and active minutes reconcile, with the recorded between-invocation gap excluded. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt role costs join explicit client agent/session headers to actual provider billing IDs through SDK log IDs. Stage costs assign reviewer requests to their review round and implementer requests by provider created_at timestamp. Native review intervals define stage boundaries; stage time intersects each invocation\u2019s observed client timestamps, excluding pauses. Unlocated launcher overhead below 0.4 seconds per run is retained separately. Costs and active minutes reconcile to original full-run totals. See neuralwatt_phase_accounting for exact decimal amounts, coverage and limitations.",
   "checks": [
     {
       "check": "Ordinary change present or absent",
@@ -2777,7 +2993,8 @@
         "DeepSeek V4.1 Flash high": "Pass",
         "Kimi K3 high": "Pass",
         "MiMo v2.6 Pro high": "Pass",
-        "Astra 6 medium": "Pass"
+        "Astra 6 medium": "Pass",
+        "Terra 5.6 high": "Pass"
       },
       "failure_penalty": 0
     },
@@ -2798,7 +3015,8 @@
         "DeepSeek V4.1 Flash high": "False present",
         "Kimi K3 high": "False present",
         "MiMo v2.6 Pro high": "False present",
-        "Astra 6 medium": "False present"
+        "Astra 6 medium": "False present",
+        "Terra 5.6 high": "False present"
       },
       "failure_penalty": 4
     },
@@ -2819,7 +3037,8 @@
         "DeepSeek V4.1 Flash high": "Wrong diagnosis",
         "Kimi K3 high": "Wrong diagnosis",
         "MiMo v2.6 Pro high": "Reports absent",
-        "Astra 6 medium": "Wrong diagnosis"
+        "Astra 6 medium": "Wrong diagnosis",
+        "Terra 5.6 high": "Reports absent"
       },
       "failure_penalty": 2
     },
@@ -2840,7 +3059,8 @@
         "DeepSeek V4.1 Flash high": "Pass",
         "Kimi K3 high": "Pass",
         "MiMo v2.6 Pro high": "Pass",
-        "Astra 6 medium": "Pass"
+        "Astra 6 medium": "Pass",
+        "Terra 5.6 high": "Pass"
       },
       "failure_penalty": 4
     },
@@ -2861,7 +3081,8 @@
         "DeepSeek V4.1 Flash high": "Pass",
         "Kimi K3 high": "Unexpected error",
         "MiMo v2.6 Pro high": "Pass",
-        "Astra 6 medium": "Pass"
+        "Astra 6 medium": "Pass",
+        "Terra 5.6 high": "Unexpected error"
       },
       "failure_penalty": 1
     },
@@ -2882,7 +3103,8 @@
         "DeepSeek V4.1 Flash high": "Changes",
         "Kimi K3 high": "Changes",
         "MiMo v2.6 Pro high": "Changes",
-        "Astra 6 medium": "Pass"
+        "Astra 6 medium": "Pass",
+        "Terra 5.6 high": "Changes"
       },
       "failure_penalty": 2
     }
@@ -3202,6 +3424,33 @@
             "penalty": 2
           }
         ]
+      },
+      {
+        "arm": "terra-high",
+        "rating": 1,
+        "penalty": 9,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Reports absent",
+            "penalty": 2
+          },
+          {
+            "check": "Target containing a NUL character",
+            "result": "Unexpected error",
+            "penalty": 1
+          },
+          {
+            "check": "Result independent of user whitespace setting",
+            "result": "Changes",
+            "penalty": 2
+          }
+        ]
       }
     ]
   },
@@ -3217,6 +3466,7 @@
       "haiku-xhigh": 4,
       "luna-medium": 6,
       "astra-medium": 2,
+      "terra-high": 4,
       "mimo": 5,
       "kimi": 5,
       "glm": 5,
@@ -3283,6 +3533,12 @@
         "Part of the existing selected review-package validation is reimplemented in the integration path.",
         "The status dispatcher constructs a store, then the integration handler constructs another for the same operation and discards the first. This does not establish duplicate database reads."
       ],
+      "terra-high": [
+        "Snapshot verification repeats the existing artifact reader\u2019s size/digest checks and part of the canonical snapshot validator.",
+        "Internal candidate facts combine a source label with optional checkpoint fields, and candidate availability uses another pair of optional values.",
+        "The same checkout is resolved twice during one integration read.",
+        "The registered MCP tool description omits the new integration operation."
+      ],
       "mimo": [
         "An internal source tag and nullable checkpoint identity can represent combinations the operation does not support. Current producers emit valid combinations.",
         "Checkpoint outcomes are manually decoded and checked in the new storage reader despite an existing typed outcome and focused package validator. The damaged-receipt construction is also repeated within that path.",
@@ -3321,7 +3577,7 @@
     },
     "unit": "one documented finding per candidate; unweighted",
     "scope": "Static reading of the feature path, changed neighbors, relevant tests and documentation; not timed maintenance or systematic naming assessment.",
-    "reviewer": "Sol 6.1 high with root review and cross-candidate calibration; MiMo and Astra 6 medium assessed directly by the authoring agent, without a new independent assessment reviewer",
+    "reviewer": "Sol 6.1 high with root review and cross-candidate calibration; MiMo, Astra 6 medium and Terra 5.6 high assessed directly by the authoring agent, without a new independent assessment reviewer",
     "reassessment": "Later issue families were checked against earlier frozen candidates; revised older counts are observer reassessments, not additional findings by the models during their runs."
   },
   "haiku_workflow_evidence": {
@@ -3518,6 +3774,7 @@
   "references": [
     "https://developers.openai.com/api/docs/pricing",
     "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
     "https://developers.openai.com/api/docs/models/gpt-6-luna",
     "https://learn.chatgpt.com/docs/pricing",
     "https://learn.chatgpt.com/docs/agent-configuration/speed",
