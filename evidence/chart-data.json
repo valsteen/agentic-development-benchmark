@@ -1,6 +1,6 @@
 {
-  "report_revision": 48,
-  "assessment_date": "2026-10-17",
+  "report_revision": 49,
+  "assessment_date": "2026-10-25",
   "scope": "One autonomous run per configuration on one task; same model and effort implement and review in separate chats, with repeated correction rounds.",
   "units": {
     "cost": "USD at recorded API prices; Neuralwatt runs use the retained catalog token-tariff equivalent, with provider charges separately reported. These are not subscription invoices. Sonnet current-pricing values are a separate recalculation.",
@@ -838,6 +838,57 @@
       "last_reviewed_candidate": "40c4d92969b1762816452b94210bb7df67eced22",
       "last_review_outcome": "needs_correction",
       "no_limit_reached": true
+    },
+    {
+      "arm": "fable-low",
+      "model": "Fable 5.1 low",
+      "cost": 30.639029,
+      "active_minutes": 45.04366739096586,
+      "candidate_reviews": 1,
+      "correction_rounds": 0,
+      "source_reviews": 0,
+      "reviewer_cost": 5.3317435,
+      "source_review_cost": 0,
+      "correction_worker_cost": 0,
+      "owner_cost": 25.3072855,
+      "candidate": "711ac5f0b87abfb2fd404596f68867732298a65d",
+      "pr": "https://github.com/valsteen/pinboard/pull/231",
+      "footprint": {
+        "documentation/guidance": [
+          15,
+          14,
+          3
+        ],
+        "production": [
+          792,
+          12,
+          11
+        ],
+        "tests": [
+          802,
+          55,
+          5
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "workflow_approved": true,
+      "workflow_complete": true,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": "First independent review approved; task completed.",
+      "client_context_tokens": 1000000,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": true
     }
   ],
   "neuralwatt_billing": {
@@ -1566,6 +1617,52 @@
     "responses_assigned_exactly_once": true,
     "phase_basis": "All-agent recorded costs by response completion timestamp; nonoverlapping measured invocation windows split at native code-review, source-review and correction-worker endpoints. Human-answer waiting is excluded; native evidence follow-up and launcher time remain in coordination/final stages. Role costs are separately summed by native session identity. No estimated recovery time deducted."
   },
+  "fable_low_billing": {
+    "model": "claude-fable-5-1",
+    "effort": "low",
+    "client": "Claude Code 2.1.293",
+    "authentication": "Claude Max subscription; overflow disabled and unused",
+    "recorded_api_equivalent_usd": "30.63902900",
+    "rates_usd_per_million_tokens": {
+      "uncached_input": 10,
+      "output_including_reasoning": 50,
+      "cache_read": 0.25,
+      "cache_write_5m": 12.5,
+      "cache_write_1h": 20
+    },
+    "pricing_source": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+    "checked_date": "2026-10-25",
+    "tokens": {
+      "input_tokens": 3280,
+      "output_tokens": 149314,
+      "cache_read_input_tokens": 43943676,
+      "cache_creation_input_tokens": 706669,
+      "ephemeral_5m_input_tokens": 263836,
+      "ephemeral_1h_input_tokens": 442833
+    },
+    "unique_responses": 110,
+    "formula": "(uncached_input*10 + output*50 + cache_read*0.25 + cache_write_5m*12.5 + cache_write_1h*20)/1000000; output already includes reasoning",
+    "native_cli_reconciliation": true,
+    "subscription_consumption_exact": null
+  },
+  "fable_low_conditions": {
+    "frozen_base": "d83a480c99785fe0c4f754c439454d331c97e90c",
+    "client": "Claude Code 2.1.293",
+    "model": "claude-fable-5-1",
+    "effort": "low for implementer and fresh independent reviewer",
+    "context_tokens": 1000000,
+    "client_max_output_tokens": 64000,
+    "frozen_guidance_and_runtime": true,
+    "personal_guidance_excluded": true,
+    "human_questions": 0,
+    "review_approvals": 1,
+    "code_correction_rounds": 0,
+    "workflow_complete": true,
+    "no_limit_reached": true,
+    "common_checks": "Same six selected checks and weights, unchanged native probes; adapter probe selects the candidate callable.",
+    "maintenance_assessor": "Report authoring agent; same scoped protocol, without a new independent assessment reviewer"
+  },
+  "fable_low_phase_accounting": "Observed parent dispatch/return timestamps delimit the independent review. Every deduplicated native response is assigned once; complete phase time includes launcher startup and shutdown. Costs and time reconcile to the clean run. No estimated recovery time removed.",
   "terra_high_billing": {
     "model": "gpt-5.6-terra",
     "effort": "high",
@@ -1749,6 +1846,10 @@
       "active_hours": 6,
       "previous_spending_deducted": false
     },
+    "fable_low_comparison_api_equivalent_usd": "30.63902900",
+    "fable_excluded_preparation_and_setup_api_equivalent_usd": "41.98286425",
+    "fable_all_experiment_api_equivalent_usd": "72.62189325",
+    "scope": "Only the clean comparison run is plotted; excluded preparation/setup spending is retained separately.",
     "terra_high_recorded_api_equivalent_usd": 9.9920936,
     "terra_high_preparation_api_equivalent_usd": 0.1213228,
     "astra_medium_recorded_api_equivalent_usd": 48.594978,
@@ -2972,9 +3073,30 @@
       "minutes": 1.1172300855318704,
       "all_agent_cost": 0.3337732,
       "owner_cost": 0.3337732
+    },
+    {
+      "arm": "fable-low",
+      "phase": "initial implementation/verification",
+      "minutes": 35.29575414657593,
+      "all_agent_cost": 23.5513765,
+      "owner_cost": 23.5513765
+    },
+    {
+      "arm": "fable-low",
+      "phase": "review 1",
+      "minutes": 6.6559333324432375,
+      "all_agent_cost": 5.3317435,
+      "owner_cost": 0
+    },
+    {
+      "arm": "fable-low",
+      "phase": "final disposition/report",
+      "minutes": 3.0919799129168193,
+      "all_agent_cost": 1.755909,
+      "owner_cost": 1.755909
     }
   ],
-  "stage_accounting": "Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. Astra 6 medium partitions its two measured invocations at native code-review, source-review and correction-worker endpoints, assigning each recorded response once by completion timestamp. Its answer pause is excluded, and native evidence follow-up plus launcher time stay inside the measured coordination/final stages. Role costs are separately summed by session. Terra partitions both measured invocations at its native review and correction boundaries; implementation includes its analysis helper. All 273 unique response IDs and active minutes reconcile, with the recorded between-invocation gap excluded. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt role costs join explicit client agent/session headers to actual provider billing IDs through SDK log IDs. Stage costs assign reviewer requests to their review round and implementer requests by provider created_at timestamp. Native review intervals define stage boundaries; stage time intersects each invocation\u2019s observed client timestamps, excluding pauses. Unlocated launcher overhead below 0.4 seconds per run is retained separately. Costs and active minutes reconcile to original full-run totals. See neuralwatt_phase_accounting for exact decimal amounts, coverage and limitations.",
+  "stage_accounting": "Observed parent dispatch/return timestamps delimit the independent review. Every deduplicated native response is assigned once; complete phase time includes launcher startup and shutdown. Costs and time reconcile to the clean run. No estimated recovery time removed. Original elapsed stages include roughly 26 seconds of answer pauses for Astra and 42 for Sol; review answer recording can continue afterward. Haiku and Luna medium stages intersect native intervals with active invocations, exclude answer waiting, and separately retain launcher startup/shutdown time. Astra 6 medium partitions its two measured invocations at native code-review, source-review and correction-worker endpoints, assigning each recorded response once by completion timestamp. Its answer pause is excluded, and native evidence follow-up plus launcher time stay inside the measured coordination/final stages. Role costs are separately summed by session. Terra partitions both measured invocations at its native review and correction boundaries; implementation includes its analysis helper. All 273 unique response IDs and active minutes reconcile, with the recorded between-invocation gap excluded. The stages array retains original costs and reconciles to each original run total. The phase-cost chart uses the separate sonnet_current_pricing.stages recalculation for Sonnet; the role and individual-stage tables show both current and original amounts. Time is unchanged. Neuralwatt role costs join explicit client agent/session headers to actual provider billing IDs through SDK log IDs. Stage costs assign reviewer requests to their review round and implementer requests by provider created_at timestamp. Native review intervals define stage boundaries; stage time intersects each invocation\u2019s observed client timestamps, excluding pauses. Unlocated launcher overhead below 0.4 seconds per run is retained separately. Costs and active minutes reconcile to original full-run totals. See neuralwatt_phase_accounting for exact decimal amounts, coverage and limitations.",
   "checks": [
     {
       "check": "Ordinary change present or absent",
@@ -2994,7 +3116,8 @@
         "Kimi K3 high": "Pass",
         "MiMo v2.6 Pro high": "Pass",
         "Astra 6 medium": "Pass",
-        "Terra 5.6 high": "Pass"
+        "Terra 5.6 high": "Pass",
+        "Fable 5.1 low": "Pass"
       },
       "failure_penalty": 0
     },
@@ -3016,7 +3139,8 @@
         "Kimi K3 high": "False present",
         "MiMo v2.6 Pro high": "False present",
         "Astra 6 medium": "False present",
-        "Terra 5.6 high": "False present"
+        "Terra 5.6 high": "False present",
+        "Fable 5.1 low": "False present"
       },
       "failure_penalty": 4
     },
@@ -3038,7 +3162,8 @@
         "Kimi K3 high": "Wrong diagnosis",
         "MiMo v2.6 Pro high": "Reports absent",
         "Astra 6 medium": "Wrong diagnosis",
-        "Terra 5.6 high": "Reports absent"
+        "Terra 5.6 high": "Reports absent",
+        "Fable 5.1 low": "Wrong diagnosis"
       },
       "failure_penalty": 2
     },
@@ -3060,7 +3185,8 @@
         "Kimi K3 high": "Pass",
         "MiMo v2.6 Pro high": "Pass",
         "Astra 6 medium": "Pass",
-        "Terra 5.6 high": "Pass"
+        "Terra 5.6 high": "Pass",
+        "Fable 5.1 low": "Pass"
       },
       "failure_penalty": 4
     },
@@ -3082,7 +3208,8 @@
         "Kimi K3 high": "Unexpected error",
         "MiMo v2.6 Pro high": "Pass",
         "Astra 6 medium": "Pass",
-        "Terra 5.6 high": "Unexpected error"
+        "Terra 5.6 high": "Unexpected error",
+        "Fable 5.1 low": "Unexpected error"
       },
       "failure_penalty": 1
     },
@@ -3104,7 +3231,8 @@
         "Kimi K3 high": "Changes",
         "MiMo v2.6 Pro high": "Changes",
         "Astra 6 medium": "Pass",
-        "Terra 5.6 high": "Changes"
+        "Terra 5.6 high": "Changes",
+        "Fable 5.1 low": "Pass"
       },
       "failure_penalty": 2
     }
@@ -3451,6 +3579,28 @@
             "penalty": 2
           }
         ]
+      },
+      {
+        "arm": "fable-low",
+        "rating": 3,
+        "penalty": 7,
+        "failures": [
+          {
+            "check": "Executable permission change absent",
+            "result": "False present",
+            "penalty": 4
+          },
+          {
+            "check": "Required Git content unreadable",
+            "result": "Wrong diagnosis",
+            "penalty": 2
+          },
+          {
+            "check": "Target containing a NUL character",
+            "result": "Unexpected error",
+            "penalty": 1
+          }
+        ]
       }
     ]
   },
@@ -3467,6 +3617,7 @@
       "luna-medium": 6,
       "astra-medium": 2,
       "terra-high": 4,
+      "fable-low": 2,
       "mimo": 5,
       "kimi": 5,
       "glm": 5,
@@ -3539,6 +3690,10 @@
         "The same checkout is resolved twice during one integration read.",
         "The registered MCP tool description omits the new integration operation."
       ],
+      "fable-low": [
+        "The registered item-status tool description does not advertise its new integration operation.",
+        "The integration operation resolves the same source checkout twice rather than retaining the first resolved value."
+      ],
       "mimo": [
         "An internal source tag and nullable checkpoint identity can represent combinations the operation does not support. Current producers emit valid combinations.",
         "Checkpoint outcomes are manually decoded and checked in the new storage reader despite an existing typed outcome and focused package validator. The damaged-receipt construction is also repeated within that path.",
@@ -3577,7 +3732,7 @@
     },
     "unit": "one documented finding per candidate; unweighted",
     "scope": "Static reading of the feature path, changed neighbors, relevant tests and documentation; not timed maintenance or systematic naming assessment.",
-    "reviewer": "Sol 6.1 high with root review and cross-candidate calibration; MiMo, Astra 6 medium and Terra 5.6 high assessed directly by the authoring agent, without a new independent assessment reviewer",
+    "reviewer": "Sol 6.1 high with root review and cross-candidate calibration; MiMo, Astra 6 medium Terra 5.6 high and Fable 5.1 low assessed directly by the authoring agent, without a new independent assessment reviewer",
     "reassessment": "Later issue families were checked against earlier frozen candidates; revised older counts are observer reassessments, not additional findings by the models during their runs."
   },
   "haiku_workflow_evidence": {
@@ -3772,6 +3927,7 @@
     "range_note": "Two attribution choices, not confidence intervals; real timings can fall outside the range."
   },
   "references": [
+    "https://platform.claude.com/docs/en/models/fable-5-1/overview",
     "https://developers.openai.com/api/docs/pricing",
     "https://developers.openai.com/api/docs/models/gpt-6-astra",
     "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
