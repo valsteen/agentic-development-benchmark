@@ -1255,6 +1255,79 @@
           "charged": null
         }
       }
+    },
+    {
+      "arm": "terra-6-1-high",
+      "model": "Terra 6.1 high",
+      "cost": 9.7568175,
+      "active_minutes": 36.83778989315033,
+      "candidate_reviews": 2,
+      "correction_rounds": 1,
+      "source_reviews": 1,
+      "reviewer_cost": 0.3793746,
+      "source_review_cost": 0.22503519999999996,
+      "correction_worker_cost": 0.4512236,
+      "owner_cost": 8.701184099999999,
+      "candidate": "fc8a8ef290e21511f7291e1a9ee4cebf1a44082f",
+      "pr": "https://github.com/valsteen/pinboard/pull/239",
+      "footprint": {
+        "production": [
+          844,
+          23,
+          12
+        ],
+        "tests": [
+          805,
+          6,
+          6
+        ],
+        "documentation/guidance": [
+          25,
+          13,
+          6
+        ]
+      },
+      "provider_model": null,
+      "provider_charged_usd": null,
+      "reviewer_provider_charged_usd": null,
+      "owner_provider_charged_usd": null,
+      "wall_minutes": null,
+      "workflow_approved": true,
+      "workflow_complete": true,
+      "setup_caveat": null,
+      "phase_split_status": null,
+      "outcome": "Completed after two code reviews, one review of proposed fixes and one delegated correction.",
+      "client_context_tokens": null,
+      "content_review_verdicts": null,
+      "approvals": null,
+      "code_correction_rounds": null,
+      "review_history_only_resubmissions": null,
+      "final_candidate_reviewed": null,
+      "last_reviewed_candidate": null,
+      "last_review_outcome": null,
+      "no_limit_reached": true,
+      "current_cost": 9.7568175,
+      "quality": 0,
+      "maintenance": 3,
+      "profile": "model-terra-6-1-high",
+      "phase_prices": {
+        "initial": {
+          "tariff": 8.0485714,
+          "charged": null
+        },
+        "review": {
+          "tariff": 0.6312895000000001,
+          "charged": null
+        },
+        "correction": {
+          "tariff": 0.8599842,
+          "charged": null
+        },
+        "final": {
+          "tariff": 0.2169724,
+          "charged": null
+        }
+      }
     }
   ],
   "baseline": "luna"

@@ -1,0 +1,267 @@
+{
+  "model": "Terra 6.1 high",
+  "reference_run": 1,
+  "main_comparison_unchanged": true,
+  "conditions": {
+    "frozen_base": "d83a480c99785fe0c4f754c439454d331c97e90c",
+    "client": "Codex CLI 0.160.0",
+    "effort": "high for implementation and fresh independent reviewers",
+    "allowance_per_run": {
+      "token_price_usd": 30,
+      "active_minutes": 180
+    },
+    "fresh_source_board_and_contexts": true,
+    "prior_solutions_or_findings_supplied": false,
+    "human_code_guidance": false,
+    "cost_basis": "Token-price equivalents from retained response-ID-deduplicated usage, not subscription invoices; preparation is separate.",
+    "time_basis": "Active elapsed time, excluding human-answer and evidence-publication waits; no estimated recovery time subtracted.",
+    "run_1_compaction_records": 1,
+    "run_1_compaction_cost_already_in_total_usd": 0.0667774
+  },
+  "runs": [
+    {
+      "run": 1,
+      "reference_in_main_comparison": true,
+      "model": "Terra 6.1 high",
+      "outcome": "Completed and reviewer-approved",
+      "active_minutes": 36.83778989315033,
+      "token_price_cost_usd": 9.7568175,
+      "preparation_token_price_cost_usd": 0.0586634,
+      "candidate": "fc8a8ef290e21511f7291e1a9ee4cebf1a44082f",
+      "evidence_pr": "https://github.com/valsteen/pinboard/pull/239",
+      "code_reviews": 2,
+      "correction_rounds": 1,
+      "rating": 0,
+      "remaining_penalty": 12,
+      "remaining_common_failures": 4,
+      "maintenance_finding_count": 3,
+      "maintenance_findings": [
+        "The checkpoint outcome is decoded in storage to select evidence, then decoded again when its review package is validated.",
+        "Damaged submission receipts are parsed and classified separately in the storage and evidence paths.",
+        "The same source checkout is resolved twice during an integration read instead of carrying the resolved value forward."
+      ],
+      "phases": [
+        {
+          "arm": "terra-6-1-high",
+          "phase": "initial implementation/verification",
+          "minutes": 26.80528648296992,
+          "all_agent_cost": 8.0485714,
+          "owner_cost": 8.0485714,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "review 1",
+          "minutes": 1.4923833330472311,
+          "all_agent_cost": 0.4098579,
+          "owner_cost": 0.2618321,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 and coordination",
+          "minutes": 0.4912499984105428,
+          "all_agent_cost": 0.0801892,
+          "owner_cost": 0.0801892,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 source review",
+          "minutes": 1.276200000445048,
+          "all_agent_cost": 0.2590202,
+          "owner_cost": 0.033985,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 and coordination",
+          "minutes": 0.22461666663487753,
+          "all_agent_cost": 0.0182762,
+          "owner_cost": 0.0182762,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 implementation/verification",
+          "minutes": 2.9343166669209797,
+          "all_agent_cost": 0.4737194,
+          "owner_cost": 0.0224958,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 and coordination",
+          "minutes": 0.16131666501363118,
+          "all_agent_cost": 0.028779199999999998,
+          "owner_cost": 0.028779199999999998,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "review 2",
+          "minutes": 1.9303500016530355,
+          "all_agent_cost": 0.2214316,
+          "owner_cost": 0.023725200000000002,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "final report and publication request",
+          "minutes": 1.0220003445943198,
+          "all_agent_cost": 0.1548312,
+          "owner_cost": 0.1211888,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "final task closure",
+          "minutes": 0.5000697334607442,
+          "all_agent_cost": 0.0621412,
+          "owner_cost": 0.0621412,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        }
+      ],
+      "code_reviewer_agent_cost_usd": 0.3793746,
+      "product_questions": 0
+    },
+    {
+      "run": 2,
+      "reference_in_main_comparison": false,
+      "model": "Terra 6.1 high",
+      "outcome": "Ended incomplete without a candidate",
+      "active_minutes": 1.9840701541630552,
+      "token_price_cost_usd": 0.3425204,
+      "preparation_token_price_cost_usd": 0.1011928,
+      "candidate": null,
+      "evidence_pr": null,
+      "code_reviews": 0,
+      "correction_rounds": 0,
+      "rating": null,
+      "remaining_penalty": null,
+      "remaining_common_failures": null,
+      "maintenance_finding_count": null,
+      "maintenance_findings": null,
+      "phases": [
+        {
+          "arm": "terra-6-1-high",
+          "phase": "initial implementation/verification",
+          "minutes": 1.9840701540311179,
+          "all_agent_cost": 0.3425204,
+          "owner_cost": 0.3425204,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        }
+      ],
+      "code_reviewer_agent_cost_usd": 0,
+      "product_questions": 0
+    },
+    {
+      "run": 3,
+      "reference_in_main_comparison": false,
+      "model": "Terra 6.1 high",
+      "outcome": "Completed and reviewer-approved",
+      "active_minutes": 43.77204773426056,
+      "token_price_cost_usd": 11.6536724,
+      "preparation_token_price_cost_usd": 0.0634776,
+      "candidate": "f811360c88fbd3ef9795fca627ff60893134864a",
+      "evidence_pr": "https://github.com/valsteen/pinboard/pull/240",
+      "code_reviews": 2,
+      "correction_rounds": 1,
+      "rating": 0,
+      "remaining_penalty": 10,
+      "remaining_common_failures": 3,
+      "maintenance_finding_count": 3,
+      "maintenance_findings": [
+        "The same checkpoint outcome is decoded before selection and again during package validation.",
+        "One integration read resolves the same source checkout twice and discards the resolved value.",
+        "The registered MCP description omits the new integration operation, although its schema includes it."
+      ],
+      "phases": [
+        {
+          "arm": "terra-6-1-high",
+          "phase": "initial implementation/verification",
+          "minutes": 33.31528329849243,
+          "all_agent_cost": 10.1650177,
+          "owner_cost": 10.1650177,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "review 1",
+          "minutes": 1.8816499988238016,
+          "all_agent_cost": 0.3970527,
+          "owner_cost": 0.22548590000000002,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 and coordination",
+          "minutes": 0.7889666676521301,
+          "all_agent_cost": 0.1000282,
+          "owner_cost": 0.1000282,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 source review",
+          "minutes": 1.1498499989509583,
+          "all_agent_cost": 0.202319,
+          "owner_cost": 0.030055600000000002,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 and coordination",
+          "minutes": 0.2031333367029826,
+          "all_agent_cost": 0.0170848,
+          "owner_cost": 0.0170848,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 implementation/verification",
+          "minutes": 2.8923499981562295,
+          "all_agent_cost": 0.3773642,
+          "owner_cost": 0.0460498,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "correction 1 and coordination",
+          "minutes": 0.13519999980926514,
+          "all_agent_cost": 0.0152698,
+          "owner_cost": 0.0152698,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "review 2",
+          "minutes": 1.8739333351453145,
+          "all_agent_cost": 0.1828922,
+          "owner_cost": 0.0260514,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        },
+        {
+          "arm": "terra-6-1-high",
+          "phase": "final report and publication request",
+          "minutes": 1.5316811005274455,
+          "all_agent_cost": 0.1966438,
+          "owner_cost": 0.152232,
+          "time_basis": "Measured invocation windows split at native independent-review endpoints; human-answer waiting excluded; no recovery-time subtraction."
+        }
+      ],
+      "code_reviewer_agent_cost_usd": 0.3728193999999999,
+      "product_questions": 0
+    }
+  ],
+  "accounting": {
+    "reference_measured_usd": 9.7568175,
+    "additional_measured_usd": 11.9961928,
+    "additional_preparation_usd": 0.1646704,
+    "all_three_including_preparation_usd": 21.9763441
+  },
+  "interpretation": "Two completed and one ended early. Third run fixes whitespace-configuration dependence; both completed runs retain permission and nested-directory false positives and an incorrect unreadable-content diagnosis. Equal zero ratings hide penalties of 12 versus 10. Three trials do not estimate a general completion rate or variability for the other configurations.",
+  "additional_observation": "Run 3 implementing agent reproduced and prevented partial-clone lazy fetching. That case has not been replayed against Run 1 and receives no added comparative score.",
+  "run_3_tool_refusal": "An agent-initiated scratch experiment command containing recursive deletion was refused; the agent continued without the deletion. Time and cost remain included.",
+  "evidence_limits": "No raw transcripts, prompts, private reasoning, local paths or complete reproduction package are published."
+}
