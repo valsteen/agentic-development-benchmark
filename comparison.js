@@ -117,9 +117,9 @@
     line.before(group); group.append(line, name, amount);
     return {curve, group, y:Number(name.getAttribute('y'))};
   });
-  const baselineLegend = humanLegend.at(-1).group.nextElementSibling;
-  const baselineParts = [baselineLegend, baselineLegend.nextElementSibling, baselineLegend.nextElementSibling.nextElementSibling];
-  const originalBaselineY = Number(baselineLegend.getAttribute('y1'));
+  const baselineLegend = humanChart.querySelector('#human-baseline-legend');
+  const legendReading = humanChart.querySelector('#human-legend-reading');
+  const originalBaselineY = Number(baselineLegend.dataset.baseY);
   const priceCharts = [...scatters, costPhases, humanChart];
   priceCharts.forEach((svg,index) => {
     const figure = svg.closest('figure');
@@ -241,7 +241,9 @@
     });
     const legends = humanLegend.filter(item => item.curve.style.display !== 'none').sort((a,b) => Number(b.curve.dataset.saving) - Number(a.curve.dataset.saving));
     legends.forEach((item,index) => item.group.setAttribute('transform', `translate(0 ${190+index*43-item.y})`));
-    baselineParts.forEach(n => n.setAttribute('transform', `translate(0 ${190+legends.length*43+12-originalBaselineY})`));
+    const referenceShift = 190 + legends.length * 43 + 12 - originalBaselineY;
+    baselineLegend.setAttribute('transform', `translate(0 ${referenceShift})`);
+    legendReading.setAttribute('transform', `translate(0 ${referenceShift})`);
     document.querySelectorAll('.price-mode-note').forEach(n => n.hidden = !mixed);
     const status = document.getElementById('price-basis-status');
     status.hidden = !mixed; status.textContent = mixedNote;
